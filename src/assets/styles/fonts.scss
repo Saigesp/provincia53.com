@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'dharma_gothic_eregular';
+    src: url('../fonts/dharma/dharmagothice-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dharma/dharmagothice-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'webfontregular';
+    src: url('../fonts/dharma/dharmagothice-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dharma/dharmagothice-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'dharma_gothic_eregular', 'webfontregular', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}

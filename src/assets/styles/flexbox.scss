@@ -1,0 +1,99 @@
+/* FLEX
+
+*****************************************/
+.flex {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+
+  &--full,
+  &--twothird,
+  &--middle,
+  &--third,
+  &--fourth,
+  &--fifth,
+  &--sixth {
+    box-sizing: border-box;
+    flex-basis: 100%;
+  }
+
+  &--shrink {
+    flex-shrink: 1;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 520px) {
+  .flex--wrap__mobile {
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .flex {
+    &--full {
+      flex-basis: 100%;
+    }
+
+    &--twothird {
+      flex-basis: 66.66%;
+    }
+
+    &--middle {
+      flex-basis: 50%;
+    }
+
+    &--third {
+      flex-basis: 33.33%;
+    }
+
+    &--fourth {
+      flex-basis: 25%;
+    }
+
+    &--wrap__tablet {
+      flex-wrap: nowrap;
+
+      &--fifth {
+        flex-basis: 20%;
+      }
+
+      &--sixth {
+        flex-basis: 16.66%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .flex--wrap__desktop {
+    flex-wrap: nowrap;
+  }
+
+}
+
+@media print {
+  .flex {
+    display: block;
+
+    &--full,
+    &--twothird,
+    &--middle,
+    &--third,
+    &--fourth,
+    &--fifth,
+    &--sixth {
+      box-sizing: border-box;
+      flex: none;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
