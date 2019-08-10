@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'AviatComponent',
+  name: 'aviat-app',
 }
 </script>
 

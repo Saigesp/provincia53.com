@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import AviatComponent from '@/components/AviatComponent'
+require('../views')
 
 Vue.use(Router)
 
+var ComponentFactory = function(htmltag){
+    return { template: '<'+htmltag+'/>' }
+}
+
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'AviatComponent',
-      component: AviatComponent
-    }
+    { path: '/',                       name: 'aviat-app',                   component: ComponentFactory('aviat-app') }
   ]
 })
