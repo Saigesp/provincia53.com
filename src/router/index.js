@@ -4,12 +4,10 @@ require('../views')
 
 Vue.use(Router)
 
-var ComponentFactory = function(htmltag){
-    return { template: '<'+htmltag+'/>' }
-}
+var ComponentFactory = htmltag => { return { template: '<'+htmltag+'/>' }}
 
 export default new Router({
   routes: [
-    { path: '/',                       name: 'aviat-app',                   component: ComponentFactory('aviat-app') }
+    { path: '/',                name: 'aviat-app',                   component: ComponentFactory('aviat-app') }
   ]
 })
