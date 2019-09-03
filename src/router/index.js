@@ -8,6 +8,6 @@ var ComponentFactory = htmltag => { return { template: '<'+htmltag+'/>' }}
 
 export default new Router({
   routes: [
-    { path: '/',                name: 'aviat-app',                   component: ComponentFactory('aviat-app') }
+    { path: '/',                name: 'home-app',                   component: ComponentFactory('home-app') }
   ]
 })
