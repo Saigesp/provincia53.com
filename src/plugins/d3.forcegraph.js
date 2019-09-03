@@ -31,7 +31,18 @@ class ForceGraph {
             } else this.cfg[key] = config[key];
         });
 
-        this.svg = this.selection.append('svg').attr("class", `chart chart--${this.cfg.class}`)
+        this.svg = this.selection.append('svg').attr("class", `chart chart--${this.cfg.class}`);
+        this.g = this.svg.append('g')
+
+        var zoom = d3.zoom()
+            .scaleExtent([1 / 2, 96])
+            .on("zoom", d => {
+                this.g.attr("transform", d3.event.transform);
+            });
+
+        this.svg
+            .call(zoom)
+            .call(zoom.transform, d3.zoomIdentity);
 
         this.getCanvasSize()
         this.mapData(data)
@@ -79,20 +90,18 @@ class ForceGraph {
             .attr("width", this.cfg.width)
             .attr("height", this.cfg.height);
 
-        const link = this.svg.append("g")
+        const link = this.g.selectAll("line")
+            .data(this.links)
+          .join("line")
             .attr("stroke", "#777")
             .attr("stroke-opacity", 0.5)
-            .selectAll("line")
-            .data(this.links)
-            .join("line")
             .attr("stroke-width", '1px');
 
-        const node = this.svg.append("g")
+        const node = this.g.selectAll("circle")
+            .data(this.nodes)
+          .join("circle")
             .attr("stroke", "#fff")
             .attr("stroke-width", 1.5)
-            .selectAll("circle")
-          .data(this.nodes)
-            .join("circle")
             .attr("r", 5)
             .attr("fill", 'white')
             //.call(drag(this.simulation));
