@@ -1,6 +1,9 @@
 @import './variables';
 
 body {
-    background-color: #282b2b;
+    background-color: #ffffff;
     color: #e3e7e8;
+    background-image: url('/static/img/background.jpg');
+    background-size: cover;
+    background-position: center;
 }
