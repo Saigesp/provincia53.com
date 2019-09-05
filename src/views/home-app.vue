@@ -1,8 +1,11 @@
 <template>
   <div id="homechart" class="chart__wrap" ref="chart">
     <parallax-container>
-      <parallax-element :parallaxStrength="-5" :type="'translation'">
-        <svg class="chart" :viewBox="`0 0 ${width} ${height}`" :width="width" :height="height+50">
+      <parallax-element :parallaxStrength="100" :type="'translation'">
+        <div class="background"></div>
+      </parallax-element>
+      <parallax-element :parallaxStrength="-10" :type="'translation'">
+        <svg class="chart" :viewBox="`0 0 ${width} ${height}`" :width="width+400" :height="height+100">
           <g ref="gengroup">
             <g v-for="(yeargroup, i) in datum.years" class="chart__ygroup">
               <circle class="year-hover" :cx="center[0]" :cy="center[1]" :r="circleRadius(yeargroup.year)" @click="resetZoom()"></circle>
@@ -40,7 +43,7 @@ export default {
     computed: {
         center(){
             if(this.width < this.minScaleSize){
-                return [this.width/2, this.height]
+                return [this.width/2, this.height-100]
             }else if(this.height < this.minScaleSize){
                 return [this.width/2, this.height/2]
             }else return [this.width/2, this.height/2]
@@ -59,14 +62,6 @@ export default {
         this.svg = d3.select(this.$refs.chart)
             .call(this.zoom);
 
-        d3.select(window).on("mousemove", ()=>{
-            var x = ((d3.event.pageX*-1)/10) ,
-                y = ((d3.event.pageY*-1)/10) ;
-
-/*            d3.select('body')
-                .style("background-position", () => `${x}px ${y}px`)
-*/
-        })
     },
     methods: {
         getCanvasSize(){
@@ -77,7 +72,7 @@ export default {
         },
         calcCircleRadius(){
             if(this.width < this.minScaleSize){
-                return this.height-100;
+                return this.height-200;
             }else if(this.height < this.minScaleSize){
                 return d3.min([this.width, this.height])-50;
             }else{
@@ -100,16 +95,34 @@ export default {
 <style lang="scss">
 .parallax-container {
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.parallax-element {
+    position: absolute;
+}
+.background {
+    pointer-events: none;
+    position: relative;
+    top: -100px;
+    left: -200px;
+    width: calc(100vw + 400px);
+    height: calc(100vh + 200px);
+    background-image: url('/static/img/background.jpg');
+    background-size: cover;
+    background-position: 0 0;
+
 }
 .chart {
     display: block;
     margin: 0 auto;
     min-width: 100px;
     min-height: 100px;
+    margin-left: -200px;
     &__wrap {
         width: 100vw;
         height: 100vh;
-    overflow: hidden;
+        overflow: hidden;
     }
     &__ygroup {
         .year {
@@ -138,6 +151,8 @@ export default {
         }
     }
 }
+
+
 
 @keyframes rotation {
   0% {
