@@ -1,7 +1,17 @@
 <template>
   <div class="hello">
     <h1>Provincia53</h1>
-    <p>Próximamente</p>
+    <p><span>Próximamente</span>
+      <a href="https://www.facebook.com/Provincia-53-103922694326409/" target="_blank">
+        <img src="/static/img/icons/facebook.svg" alt="Provincia53 en Facebook">
+      </a>
+      <a href="https://twitter.com/provincia_53" target="_blank">
+        <img src="/static/img/icons/twitter.svg" alt="Provincia53 en Twitter">
+      </a>
+      <a href="https://www.instagram.com/provincia_53/" target="_blank">
+        <img src="/static/img/icons/instagram.svg" alt="Provincia53 en Instagram">
+      </a>
+    </p>
   </div>
 </template>
 
@@ -19,30 +29,62 @@ export default {
 
 <style lang="scss">
 body {
-    background-color: #9edcec;
-    background-image: url(data:image/png;base64,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);
+  background-image: url(/static/img/piscina-white.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hello {
   text-align: center;
-  margin-top: 60px;
-
+  background-image: url(/static/img/piscina.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: calc(100% - 40px);
+  height: 60vh;
+  margin: 20vh auto; 
+  position: relative;
   h1 {
-    font-size: 10vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 20vw;
+    line-height: 1;
+    margin-bottom: 0;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.3);
   }
-
   p {
-    font-size: 3.6vw;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    line-height: 1;
+    color: #2b2b2b;
+    font-family: 'dharma_gothic_eregular', 'webfontregular', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    span {
+      display: block;
+      margin-bottom: 12px;
+    }
+    img {
+      width: 24px;
+      margin: 0 6px;
+      height: auto;
+    }
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .hello {
+    width: 90vw;
+    max-width: 1000px;
+    height: 60vh;
+    margin: 20vh auto; 
     h1 {
-      font-size: 100px;
-    }
-
-    p {
-      font-size: 30px;
+      font-size: 200px;
     }
   }
 }
