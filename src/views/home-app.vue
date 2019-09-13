@@ -1,5 +1,8 @@
 <template>
-  <div id="homechart" class="chart__wrap" ref="chart">
+  <div id="homechart" class="chart__wrap" :class="{'is-zoomed': isZoomed}" ref="chart">
+    <div class="overlay">
+        <button class="resetzoom" @click="resetZoom()">Centrar</button>
+    </div>
     <parallax-container>
       <parallax-element :parallaxStrength="100" :type="'translation'">
         <div class="background"></div>
@@ -8,8 +11,11 @@
         <svg class="chart" :viewBox="`0 0 ${width} ${height}`" :width="width+400" :height="height+100">
           <g ref="gengroup">
             <g v-for="(yeargroup, i) in datum.years" class="chart__ygroup">
-              <circle class="year-hover" :cx="center[0]" :cy="center[1]" :r="circleRadius(yeargroup.year)" @click="resetZoom()"></circle>
+              <circle class="year-hover" :cx="center[0]" :cy="center[1]" :r="circleRadius(yeargroup.year)"></circle>
               <circle class="year" :cx="center[0]" :cy="center[1]" :r="circleRadius(yeargroup.year)"></circle>
+              <g v-for="item in yeargroup.items" class="item">
+                  <circle class="item__dot" :cx="calcItemCenter(item.date, yeargroup.year)[0]" :cy="calcItemCenter(item.date, yeargroup.year)[1]" r="10"></circle>
+              </g>
             </g>
           </g>
         </svg>
@@ -34,6 +40,7 @@ export default {
             circleRadius: ()=>1,
             zoom: ()=>{},
             datum: require('../assets/data/data.json'),
+            isZoomed: false,
         }
     },
     created: function(){
@@ -47,7 +54,7 @@ export default {
             }else if(this.height < this.minScaleSize){
                 return [this.width/2, this.height/2]
             }else return [this.width/2, this.height/2]
-        }
+        },
     },
     mounted: function(){
         this.getCanvasSize();
@@ -56,6 +63,7 @@ export default {
         this.zoom = d3.zoom()
             .scaleExtent([1 / 4, 30])
             .on("zoom", d => {
+                this.isZoomed = d3.event.transform.k === 1 && d3.event.transform.x === 0 ? false : true;
                 d3.select(this.$refs.gengroup).attr("transform", d3.event.transform);
             });
 
@@ -68,21 +76,37 @@ export default {
             this.width = parseInt(this.$refs.chart.offsetWidth);
             this.height = parseInt(this.$refs.chart.offsetHeight);
             this.calcCircleRadius();
-            this.circleRadius.range([this.calcCircleRadius(),50]);
+            this.circleRadius.range([this.calcCircleRadius(),30]);
         },
         calcCircleRadius(){
             if(this.width < this.minScaleSize){
-                return this.height-200;
+                return this.height-100;
             }else if(this.height < this.minScaleSize){
                 return d3.min([this.width, this.height])-50;
             }else{
                 return d3.min([this.width/2, this.height/2])-80;
             }
         },
+        calcItemCenter(strdate, year){
+            let date = new Date(strdate)
+            return [
+                (Math.sin(this.dateToRadians(date))*this.circleRadius(+year))+this.center[0],
+                (Math.cos(this.dateToRadians(date))*this.circleRadius(+year))+this.center[1]
+            ]
+        },
+        dateToRadians(date){
+            if(this.width < this.minScaleSize){
+                return Math.PI;
+            }else{
+                let start = new Date(date.getFullYear(), 0, 0);
+                return Math.floor((date-start)/(1000*60*60*24))/(183/Math.PI);
+            }
+        },
         resetZoom(){
             this.svg.transition()
                 .duration(1000)
                 .call(this.zoom.transform, d3.zoomIdentity.scale(1));
+
         }
     },
     beforeDestroy(){
@@ -101,6 +125,26 @@ export default {
 .parallax-element {
     position: absolute;
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    * {
+        pointer-events: all;
+    }
+    .resetzoom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 20px;
+        opacity: 0;
+        transition: opacity 200ms ease, background 250ms ease;
+    }
+}
 .background {
     pointer-events: none;
     position: relative;
@@ -108,10 +152,9 @@ export default {
     left: -200px;
     width: calc(100vw + 400px);
     height: calc(100vh + 200px);
-    background-image: url('/static/img/background.jpg');
+    background-image: url('/static/img/piscina-black.png');
     background-size: cover;
     background-position: 0 0;
-
 }
 .chart {
     display: block;
@@ -123,30 +166,46 @@ export default {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
+        &.is-zoomed .resetzoom {
+            opacity: 1;
+        }
     }
     &__ygroup {
         .year {
-            stroke: #1b1b1b;
+            stroke: #fff;
             stroke-width: 1px;
             fill: transparent;
             pointer-events: none;
-            transition: cy 1000ms ease-in-out, r 1000ms 300ms ease-in-out;
+            transition: cy 1000ms ease-in-out, r 1000ms 300ms ease-in-out, opacity 200ms ease;
             animation: rotation 5s ease-out 500ms 1 forwards;
             stroke-dasharray: 6000px;
             stroke-dashoffset: 100%;
-            opacity: 0.6;
+            opacity: 0.4;
         }
         .year-hover {
             stroke: transparent;
-            stroke-width: 10px;
+            stroke-width: 16px;
             fill: transparent;
-            cursor: pointer;
             pointer-events: stroke;
             transition: cy 1000ms ease-in-out, r 1000ms 300ms ease-in-out;
         }
+        .item {
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 200ms ease 100ms;
+            circle {
+                transition: cy 1000ms ease-in-out, cx 1000ms ease-in-out;
+                stroke: white;
+                stroke-width: 1px;
+                fill: #050505;
+            }
+        }
         &:hover {
-            .year-hover {
-                stroke: blue;
+            .year {
+                opacity: 1;
+            }
+            .item {
+                opacity: 1;
             }
         }
     }

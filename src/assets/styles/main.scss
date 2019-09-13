@@ -4,3 +4,14 @@ body {
     background-color: #ffffff;
     color: #e3e7e8;
 }
+
+button {
+    background: #f1f1f1;
+    border: 0;
+    padding: 6px 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.36);
+    &:hover {
+        background: #d1d1d1;
+    }
+}

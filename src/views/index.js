@@ -1,3 +1,3 @@
 import Vue from 'vue'
 
-Vue.component('home-app',                            require('./aviat-app').default);
+Vue.component('home-app',                            require('./home-app').default);

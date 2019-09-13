@@ -1,40 +1,423 @@
 {
     "years": [{
-        "year": 2005,
-        "items": []
-    },{
-        "year": 1978,
-        "items": []
-    },{
-        "year": 1976,
-        "items": []
-    },{
-        "year": 1945,
+        "year": 2019,
         "items": [{
-            "id": "hola",
-            "title": "Que tal como estamos",
-            "type": "audio"
+            "type": "text",
+            "date": "2019-04-21",
+            "name": "¿Y ahora qué?",
+            "desc": "En los últimos años, la actualidad política española ha sido un hervidero. El bipartidismo se da por muerto con la aparición de nuevos partidos que irrumpen en el Parlamento y los ayuntamientos. Cataluña declara unilateralmente su independencia. Una moción de censura echa a Mariano Rajoy del Gobierno. Pedro Sánchez pasa a ocuparlo. Las elecciones se siguen sucediendo. El frenesí político no parece que vaya a parar pronto. El Sáhara Occidental, por su parte, sigue esperando.",
+            "poems": [{
+                "text": "…un mañana distinto, que no conoce\nde espera.",
+                "author": "Saleh Abdalahi"
+            },{
+                "text": "Las costas de ayer\nlos muros de hoy\nlas heridas de siempre.",
+                "author": "Ebnu"
+            },{
+                "text": "«Nadie preguntará\npor el tiempo que has estado ausente,\nhijo mío,\ntodos querrán saber\nsi has vuelto\nmás útil,\nmás inteligente,\nun poco más sabio».",
+                "author": "Limam Boisha"
+            },{
+                "text": "Mientras tanto, seguimos sobreviviendo:\npedazos rotos de ideal y barro.",
+                "author": "Limam Boisha"
+            },{
+                "text": "Mírame siempre.\nTrata de entenderme,\nver mi destino como el tuyo,\nnunca dejes de observarme,\nsi lo haces habremos desaparecido.",
+                "author": "Ali Salem Iselmu"
+            }]
         }]
     },{
-        "year": 1942,
-        "items": []
+        "year": 2013,
+        "items": [{
+            "type": "text",
+            "date": "2013-05-21",
+            "name": "Apátridas por ley",
+            "desc": "La Audiencia Nacional española reconoce en dos sentencias el estatus de apátridas a las personas saharauis, una petición histórica porque supone de facto reconocer su condición de refugiadas, y la no obligación de acogerse a una segunda nacionalidad en aquellos países que no reconocen la saharaui. El documento de apatridia permite residir en España y viajar libremente dentro de Europa.",
+            "poems": [{
+                "text": "Yo soy beduino, y como beduino soy gavilán\nde altas alturas, pero qué le voy a hacer,\nhasta en el cielo fronteras trazaron\ny yo en la tierra soy exiliado.",
+                "author": "Saleh Abdalahi"
+            }]
+        }]
+    },{
+        "year": 2010,
+        "items": [{
+            "type": "text",
+            "date": "2010-06-15",
+            "name": "Jaimas en todas las plazas",
+            "desc": "En Gdeim Izik, a las afueras de El Aaiún, una protesta saharaui contra las malas condiciones de vida bajo la ocupación marroquí se convierte en el que será llamado «campamento de la dignidad». En su desmantelamiento hubo una veintena de muertos y cientos de heridos y desaparecidos, y 19 activistas detenidos siguen cumpliendo penas de prisión. Se dice que fue la primera de las revueltas de la llamada «primavera árabe». Campamentos como aquel pronto llegaron a plazas de todo el mundo. A Sol, por ejemplo, cuando el 15 de mayo de 2011 el centro de Madrid también supo lo que era improvisar una jaima, sin saber por cuánto tiempo."
+        }]
+    },{
+        "year": 2007,
+        "items": [{
+            "type": "text",
+            "date": "2007-04-15",
+            "name": "Las conversaciones de Nueva York",
+            "desc": "En Nueva York tienen lugar las negociaciones de Manhasset: tres rondas de conversaciones en las que el gobierno marroquí y el Frente Polisario negocian de manera directa por primera vez, en presencia de Argelia y Mauritania. España no tiene ninguna implicación. José Luis Rodríguez Zapatero lleva tres años en el Gobierno.",
+            "poems": [{
+                "text": "Un día cualquiera me revelaré\ncontra los oráculos,\nque me asignan mañanas sin sol,\nque se niegan a augurar mis huellas\nen el próximo amanecer,\nborran mi nombre de los atardeceres\ndel universo,\nrifan mi corazón en una subasta de\nvidas probables.",
+                "author": "Luali Lesham"
+            }]
+        }]
+    },{
+        "year": 2002,
+        "items": [{
+            "type": "pdf",
+            "date": "2002-02-15",
+            "name": "¿Nadie hace caso a la ONU?",
+            "desc": "La Asesoría Jurídica de Naciones Unidas, por petición del Consejo de Seguridad, dictamina que Marruecos no era una potencia administradora del territorio del Sáhara Occidental, que los Acuerdos de Madrid de 1975 no habían transferido ninguna soberanía a sus firmantes y que la condición de territorio no autónomo del Sáhara Occidental no se había visto afectada por esos acuerdos. Esta declaración no tiene ninguna consecuencia. En esos años se suceden las propuestas de acuerdo a la RASD y Marruecos por parte de la ONU (los sucesivos planes Baker), pero ninguna fructifica. En España gobierna José María Aznar.",
+            "file": "/media/resolucion2002.pdf",
+            "poems": [{
+                "text": "«entonces soy culpable de tus heridas»\n(…)\n«lo siento, lo siento,\nos hemos olvidado hasta en los periódicos gratuitos»",
+                "author": "Bahia M. Awad"
+            }]
+        }]
+    },{
+        "year": 1992,
+        "items": [{
+            "type": "text",
+            "date": "1992-09-15",
+            "name": "El año en que el mundo miró a España",
+            "desc": "El referéndum de autodeterminación saharaui no se celebra. Los Juegos Olímpicos de Barcelona y la Expo de Sevilla son el escaparate ante el mundo de una «nueva España» que hace gala de su progreso. En agosto se produce la primera llegada masiva de migrantes marroquíes en patera a las costas españolas, y la inmigración empieza a convertirse en un tema central. En el Sáhara, en septiembre se lleva a cabo la primera Intifada, cuando los participantes en manifestaciones pacíficas frente al palacio del gobernador fueron atacados por unidades de policía y del ejército. Desde entonces, septiembre ha sido el «mes de Intifada» del territorio."
+        }]
+    },{
+        "year": 1991,
+        "items": [{
+            "type": "text",
+            "date": "1991-03-06",
+            "name": "La guerra ha terminado",
+            "desc": "Alto el fuego entre Marruecos y el Frente POLISARIO. La MINURSO (Misión de las Naciones Unidas para la Organización de un Referéndum en el Sáhara Occidental) se despliega en el territorio y se fija la fecha de 26 de enero de 1992 para la celebración del referéndum, nunca realizado.",
+            "poems": [{
+                "text": "Quién dijo\nque se terminó la guerra.\nQuizá para los muertos.",
+                "author": ""
+            }]
+        }]
+    },{
+        "year": 1982,
+        "items": [{
+            "type": "photo",
+            "date": "1982-11-30",
+            "name": "El dilema de Felipe",
+            "desc": "Felipe González gana las elecciones, y ocupará la Presidencia del Gobierno hasta 1996. En 1983 firma con Marruecos un acuerdo de pesca en aguas saharauis. En 1986 España entra en la Comunidad Económica Europea (ahora Unión Europea), que es quien centraliza hoy en día este tipo de acuerdos.",
+            "file": "/media/TODO"
+        }]
+    },{
+        "year": 1981,
+        "items": [{
+            "type": "text",
+            "date": "1981-11-30",
+            "name": "Referéndum o no referéndum",
+            "desc": "Marruecos acepta la celebración de un referéndum en el Sáhara Occidental. De nuevo, el spoiler es que nunca llegará a celebrarse. Es el año en que España vuelve a temblar con el intento de golpe de Estado del 23F."
+        }]
+    },{
+        "year": 1980,
+        "items": [{
+            "type": "text",
+            "date": "1980-08-30",
+            "name": "El Muro de la Vergüenza",
+            "desc": "Marruecos comienza la construcción del Muro de la Vergüenza, que en años sucesivos irá abarcando zonas cada vez más amplias de territorio. Terminado en abril de 1987, mide 2720km, protege los yacimientos de fosfatos de Bucráa, El Aaiún y Smara y está resguardado por más de 100000 soldados.",
+            "poems": [{
+                "text": "A veces visito\nla muralla que nos separa.\nIntento recuperar\ntantas oraciones perdidas\ny pedirle a Dios\nque nos libre de las langostas.",
+                "author": "Ebnu"
+            }]
+        }]
+    },{
+        "year": 1979,
+        "items": [{
+            "type": "pdf",
+            "date": "1979-10-30",
+            "name": "Hasta luego, Mauritania",
+            "desc": "Apenas unos días después de un golpe de Estado pacífico que supuso un cambio de régimen en Mauritania, este país abandona la guerra. Firma con el Frente Polisario su retirada renunciando a los territorios que le correspondían por los Acuerdos de Madrid, aunque en el transcurso del conflicto será Marruecos quien se anexione esas zonas.",
+            "file": "/media/TODO",
+            "poems": [{
+                "text": "Hemos elegido subsistir en este espacio abierto y remoto",
+                "author": "Limam Boisha"
+            }]
+        }]
+    },{
+        "year": 1977,
+        "items": [{
+            "type": "photo",
+            "date": "1977-07-31",
+            "name": "Cambia, todo cambia",
+            "desc": "Muchas cosas pasan ese año que empieza en Madrid con siete días sangrientos, marcados por el asesinato de los abogados laboralistas de Atocha y los de varios manifestantes a manos de la extrema derecha. En febrero se permite la legalización de los partidos políticos hasta entonces clandestinos, aunque el PCE se legalizó más tarde, el 9 de abril («sábado santo rojo») y dos días más tarde el PSUC. En abril se liquida el Movimiento Nacional. En junio se celebran elecciones, se forma el primer Gobierno de UCD, presidido por Adolfo Suárez, y se declara la apertura de las Cortes Constituyentes. En el Sahara, la guerra sigue. En Tinduf, los campamentos crecen. El 14 de noviembre, Felipe González, entonces Secretario General del PSOE, los visita y firma con el Frente Polisario un comunicado común en el que aseguraba su apoyo al pueblo saharaui hasta que este «no hubiera obtenido la liberación total de su territorio nacional».",
+            "file": "/media/visitax.jpg",
+            "poems": [{
+                "text": "En la pared una bandera.\nColores comunes trazados\nsobre una tela blanca.",
+                "author": "Ebnu"
+            }]
+        }]
+    },{
+        "year": 1976,
+        "items": [{
+            "type": "pdf",
+            "date": "1976-02-27",
+            "name": "Nace la RASD",
+            "desc": "En una noche sin luna en Bir Lahlu, a la luz de los faros de los Land Rover, se constituye la RASD, República Árabe Saharaui Democrática (que a día de hoy es reconocida por 82 países). El Frente Polisario declara la guerra a Marruecos y Mauritania. Al día siguiente, España arría la bandera, mientras sigue su construcción de la democracia. En julio, el Rey nombra presidente del Gobierno a Adolfo Suárez, antiguo secretario general del Movimiento, y comienzan a aprobarse sucesivas leyes de amnistía para presos políticos que acabarán teniendo como efecto colateral que tampoco los crímenes del franquismo puedan ser juzgados.",
+            "file": "/media/noti76.pdf",
+            "poems": [{
+                "text": "En la pared una bandera.\nColores comunes trazados\nsobre una tela blanca.",
+                "author": "Ebnu"
+            }]
+        }]
+    },{
+        "year": 1975,
+        "items": [{
+            "type": "slider",
+            "date": "1975-05-12",
+            "name": "Manifestaciones ante la ONU",
+            "desc": "Una misión de la ONU visita el Sahara para «determinar el estado del territorio» de cara a la celebración del referéndum. Las calles se llenan de manifestaciones en apoyo al Frente Polisario.",
+            "file": "/media/TODO"
+        },{
+            "type": "pdf",
+            "date": "1975-10-01",
+            "name": "Últimas negociaciones",
+            "desc": "El Tribunal de la Haya concluye que ni Marruecos ni Mauritania tienen ningún derecho sobre el Sáhara Occidental. Hassan II lo interpreta exactamente al revés y anuncia la Marcha Verde. Los servicios de Inteligencia del Ejército español informan a Franco, ya muy enfermo, de que EEUU está apoyando ese plan, que, según se ha revelado a posteriori, contaba además con financiación de Arabia Saudí. El día 31, Juan Carlos de Borbón preside un Consejo de Ministros donde se aborda como agenda prioritaria la crisis del Sáhara, pero no informa de que ya ha enviado a Washington a su hombre de confianza, Manuel Prado y Colón de Carvajal, para obtener la cobertura del Secretario de Estado de EEUU, Henry Kissinger. Este acepta actuar como mediador ante Hassan II para la negociación de un pacto secreto para la cesión del territorio.",
+            "file": "/media/documento1975.pdf"
+        },{
+            "type": "photo",
+            "date": "1975-11-02",
+            "name": "La visita del Rey",
+            "desc": "Juan Carlos de Borbón visita las tropas españolas en El Aaiún en un viaje sorpresa. Les dice que «España no dará un paso atrás, cumplirá todos sus compromisos, respetará el derecho de los saharauis a ser libres». «No dudéis que vuestro comandante en jefe estará aquí, con todos vosotros, en cuanto suene el primer disparo», les dice también.",
+            "file": "/media/reysahara.jpg"
+        },{
+            "type": "photo",
+            "date": "1975-11-06",
+            "name": "La marcha verde",
+            "desc": "Mientras Franco agoniza, el rey Hassán II lanza la «Marcha Verde». 350000 personas avanzan desde Marruecos con aire festivo y el discurso de recuperar un territorio perdido. 50000 cruzan la frontera y acampan. El Consejo de Seguridad de la ONU condena la marcha, pero EEUU y Francia dan su beneplácito a la anexión del territorio: en el contexto de la Guerra Fría, les preocupaba la fuerza del Polisario en alianza con una Argelia en la órbita de Moscú. El 9 de noviembre, el ministro de la Presidencia español, Antonio Carro Martínez, negocia en Agadir la entrega del territorio a Marruecos. Juan Carlos de Borbón da la orden de repliegue y los civiles abandonan la provincia española.",
+            "file": "/media/reyretirada.jpg",
+            "poems": [{
+                "text": "Las calles ya no eran las mismas,\nlas casas cambiaron de color\ny ya no entendía las palabras\ny de repente aquel hombre\nse sintió un intruso\nen su propia ciudad.",
+                "author": "Iselmu"
+            }]
+        },{
+            "type": "pdf",
+            "date": "1975-11-14",
+            "name": "Los acuerdos de Madrid",
+            "desc": "Se firman los Acuerdos de Madrid, mediante los que España cede la administración del territorio a Marruecos y Mauritania, sin contar con el Frente Polisario. Ese mismo día se disuelve el PUNS. En paralelo, el Gobierno español realiza declaraciones institucionales insistiendo en que cumplirá con sus compromisos en relación a la descolonización y la celebración del referéndum.",
+            "file": "/media/acuerdosdemadrid.pdf"
+        },{
+            "type": "pdf",
+            "date": "1975-11-20",
+            "name": "Atado y bien atado",
+            "desc": "Franco muere. El BOE publica la Ley de Descolonización del Sáhara Occidental, aprobada por las Cortes dos días antes, con 100 diputados ausentes. Consta de un solo artículo, que dice: «Se autoriza al Gobierno para que realice los actos y adopte las medidas que sean precisas para llevar a cabo la descolonización del territorio no autónomo del Sáhara, salvaguardando los intereses españoles». Dos días después, Juan Carlos I de Borbón es proclamado Rey de España.",
+            "file": "/media/BOE20nov75.pdf"
+        },{
+            "type": "audio",
+            "date": "1975-12-15",
+            "name": "La huida",
+            "desc": "España se reorganiza bajo el primer Gobierno de la Monarquía, presidido por Carlos Arias Navarro, un franquista conocido por su intransigencia y su severidad. En el Sáhara Occidental, los últimos colonos españoles recogen sus cosas. El día 20, la última compañía de la Legión abandona El Aaiún. En los meses siguientes población civil saharaui huye de manera masiva y comienza a establecerse en los campamentos de refugiados de Tinduf, en Argelia, donde continúa hasta hoy. Marruecos bombardea con napalm y fósforo blanco (armas prohibidas por los tratados internacionales) estos campamentos y la población en éxodo: uno de los bombardeos más graves es de Um Draiga, el 18 de febrero de 1976, con centenares de muertos.",
+            "file": "/media/TODO",
+            "poems": [{
+                "text": "El almuédano perdió la voz\ny el maestro cruzó la frontera",
+                "author": "Ebnu"
+            },{
+                "text": "El agua emigra hacia el norte\ny un niño pregunta por el mar.",
+                "author": "Ebnu"
+            },{
+                "text": "Hacia el camino contrario\nfuimos nosotros\ndesnudos como troncos\nsobre cristales rotos.\nNuestros hijos caían\nde nuestros brazos\nsin poder recogerlos.\n(…)\nLas semillas del retorno\nse han bifurcado\nbajo este cielo prestado.",
+                "author": "Limam Boisha"
+            },{
+                "text": "Lágrimas de un pueblo herido por pájaros de fuego\ny balas de veneno.",
+                "author": "Fatma Galia"
+            }]
+        }]
+    },{
+        "year": 1974,
+        "items": [{
+            "type": "photo",
+            "date": "1974-03-08",
+            "name": "Últimos muertos, primeros muertos",
+            "desc": "Muere el primer guerrillero del Polisario caído en combate con el ejército español, Bachir Lehlaui. No ha pasado ni una semana desde que fuera ejecutado en Barcelona Salvador Puig Antich, último condenado oficial a garrote vil del franquismo.",
+            "file": "/media/TODO"
+        },{
+            "type": "text",
+            "date": "1974-04-25",
+            "name": "Cuando las barbas de tu vecino veas pelar",
+            "desc": "La Revolución de los Claveles, protagonizada por militares que regresaban de perder las guerras coloniales en África, hace caer la dictadura en Portugal."
+        },{
+            "type": "photo",
+            "date": "1974-07-04",
+            "name": "Una transición controlada",
+            "desc": "La Yemáa aprueba un estatuto de autonomía para el Sáhara que había sido redactado en Madrid bajo el gobierno del nuevo presidente, Carlos Arias Navarro. Nunca llegó a ser promulgado. Ese año también se crea el Partido de Unión Nacional Saharaui (PUNS), fomentado desde Madrid para que ejerciera de contrapeso al Frente Polisario y pudiera convertirse en el artífice de una «transición controlada».",
+            "file": "/media/vivaespana.jpg"
+        },{
+            "type": "photo",
+            "date": "1974-09-30",
+            "name": "Todo empieza a acelerarse",
+            "desc": "España anuncia un referéndum de autodeterminación para el primer semestre de 1975 y va preparando un censo de población entre las tribus. Marruecos solicita al Tribunal de la Haya un veredicto acerca de sus derechos de soberanía sobre el territorio y empieza a concentrar a su ejército en la frontera. El Polisario atenta contra la cinta transportadora de Fos Bucráa. El Banco Mundial califica el territorio saharaui como el más rico de todo el Magreb y uno de los más ricos de África. La tensión no para de subir, parece claro.",
+            "file": "/media/tanques.jpg"
+        }]
+    },{
+        "year": 1973,
+        "items": [{
+            "type": "photo",
+            "date": "1973-05-10",
+            "name": "Ruido de disparos",
+            "desc": "Tras una reunión de diversos grupos en Zuérate (Mauritania) se funda el Frente Popular de Liberación de Saguía el Hamra y Río de Oro (POLISARIO), con Brahim Gali (actual presidente de la RASD) como secretario general. Apenas diez días después llevan a cabo su primera acción armada: atacar el puesto español de Janguet Quesat. Consiguieron un pequeño botín, liberaron a dos saharauis detenidos, arrancaron la bandera rojigualda y escribieron en las paredes eslóganes en castellano y hassanía. Era el comienzo. En los meses siguientes se sucedieron muchas otras acciones similares. La España peninsular, en realidad, está más nerviosa por el ruido de otros disparos. El 20 de diciembre de ese mismo año, el presidente del Gobierno designado por Franco, Luis Carrero Blanco, muere en Madrid en un atentado realizado por ETA.",
+            "file": "/media/fotocuartel.jpg"
+        }]
+    },{
+        "year": 1970,
+        "items": [{
+            "type": "photo",
+            "date": "1970-06-17",
+            "name": "La masacre de Zemla",
+            "desc": "Ante el creciente runrún nacionalista, la administración colonial, que tenía en ese momento al frente al gobernador José María Pérez de Lema, convoca en El Aaiún una manifestación de adhesión a España. Los integrantes del movimiento nacionalista tenían la consigna de manifestarse por su parte en un lugar no muy lejano. La concentración crece, se convierte en un pequeño campamento y exige hablar con el gobernador para entregarle una carta de reivindicaciones. Horas más tarde, mientras en los actos oficiales se pronuncian discursos de hermandad entre el pueblo español y el saharaui, la Legión disuelve a tiros a los manifestantes en lo que se conoce como «la masacre de Zemla». Nadie sabe con seguridad dónde estaba Basiri aquella noche. Nadie volvió a verle nunca.",
+            "file": "/media/pintadabasiri.jpg"
+        }]
+    },{
+        "year": 1969,
+        "items": [{
+            "type": "pdf",
+            "date": "1969-12-18",
+            "name": "Habemus rey",
+            "desc": "Se constituye el Movimiento de Vanguardia para la Liberación del Sáhara, una organización político-armada liderada por Mohamed Basiri. La fundan seis hombres, pero en solo unos meses llegará a tener cerca de 4700 integrantes. Estaba prohibida, claro: como cualquier organización política bajo la legislación franquista.",
+            "file": "/media/TODO"
+        },{
+            "type": "text",
+            "date": "1969-05-30",
+            "name": "Habemus rey",
+            "desc": "Franco nombra a Juan Carlos de Borbón como su sucesor, en virtud de una ley de sucesión aprobada en 1947. El entonces príncipe presta ante las Cortes juramento de guardar y hacer guardar las Leyes Fundamentales del Reino y los principios del Movimiento Nacional, es decir, el ideario franquista."
+        }]
+    },{
+        "year": 1968,
+        "items": [{
+            "type": "pdf",
+            "date": "1968-05-22",
+            "name": "Fosfatos de Bucráa",
+            "desc": "La Empresa Nacional Minera del Sahara, creada a principios de la década, se convierte en Fosfatos de Bucraa S.A., la entidad más lucrativa del territorio. En los siguientes años se construirá una cinta transportadora de más de 100km de largo que transportaba el fosfato hasta la costa, generando un fuerte auge económico y demográfico a la ciudad de El Aaiún.",
+            "file": "/media/fosfatos1970.pdf"
+        },{
+            "type": "text",
+            "date": "1968-10-12",
+            "name": "Guinea ya es guineana",
+            "desc": "Guinea Ecuatorial proclama su independencia. Manuel Fraga encabeza la delegación enviada para el traspaso de poderes a Francisco Macías Nguema (su nombre real era Mez-m Ngueme), un destacado funcionario colonial que no tardará mucho en convertir su presidencia en una dictadura particularmente sangrienta. Estuvo en el poder hasta 1979, cuando lo derrocó con un golpe militar el no menos autoritario Teodoro Obiang, que sigue en el poder."
+        }]
+    },{
+        "year": 1967,
+        "items": [{
+            "type": "text",
+            "date": "1967-05-30",
+            "name": "Cómo irse in irse",
+            "desc": "Como la ONU sigue insistiendo, España accede a organizar un referéndum de autodeterminación. Spoiler: nunca llegará a realizarse. Lo que sí ocurre es que Franco crea la Yemáa, una suerte de Parlamento autonómico formado por notables saharauis, con representantes en las Cortes franquistas de Madrid, con el objetivo de incorporar al sistema de gobierno a unas élites fieles a los intereses del régimen de la metrópoli. Por lo que pudiera pasar.",
+            "poems": [{
+                "text": "Para qué quiero al hombre si confunde\nmi llanto con mi canto",
+                "author": "Saleh Abdalahi"
+            }]
+        }]
+    },{
+        "year": 1965,
+        "items": [{
+            "type": "pdf",
+            "date": "1965-12-16",
+            "name": "España remolonea",
+            "desc": "La ONU insiste. Con la resolución 2072, que es la primera que trata específicamente sobre el Sáhara Occidental, proclama su derecho a la autodeterminación y pide a España que agilice su descolonización. Al año siguiente, Luis Carrero Blanco, que era entonces ministro de la Presidencia, visita El Aaiún y los yacimientos petrolíferos de la zona. Aprovechando la ocasión, declara que la soberanía de Marruecos nunca se extendió más allá de los montes del Atlas. Según el ABC, luego dio un paseo en barco «para admirar la riqueza pesquera de la bahía».",
+            "file": "/media/abc1965.pdf"
+        }]
+    },{
+        "year": 1961,
+        "items": [{
+            "type": "pdf",
+            "date": "1961-06-24",
+            "name": "¿Metrópolis Go Home?",
+            "desc": "El 14 de diciembre de 1960, la ONU promulga su resolución 1514, una «declaración sobre la concesión de la independencia a los países y pueblos coloniales» que, básicamente, obliga a las metrópolis a preparar su salida y facilitar la transición de sus colonias hacia la democracia. España responde de una manera peculiar: convierte al Sáhara en una provincia española más. La provincia número 53. En los años siguientes, firma acuerdos con once empresas, la mayoría estadounidenses, para la búsqueda y explotación de petróleo.",
+            "file": "/media/resolucion1514.pdf"
+        }]
+    },{
+        "year": 1956,
+        "items": [{
+            "type": "pdf",
+            "date": "1956-03-02",
+            "name": "Un nuevo vecino",
+            "desc": "Marruecos obtiene la independencia. España renuncia al Protectorado sobre el Califato del Rif y Francia a sus territorios coloniales del sur, entregándole el poder al sultán Mohamed V, padre de Hassan II. En los meses siguientes, el recién nacido país intenta hacerse con otros territorios que estaban bajo dominio español en la zona (Ifni, el protectorado Sur y el Sáhara). En 1957 comienza la guerra de Ifni, que dura hasta el año siguiente. En la zona del Sáhara se dan fuertes enfrentamientos, que terminan con la victoria hispanofrancesa tras la operación conjunta Huracán/Écouvillon. En 1958 se firman los Acuerdos de Angra de Cintra, por los que España cede a Marruecos Cabo Juby, con capital en Villa Bens, actual Tarfaya. La ciudad de Sidi Ifni permanece asediada durante diez años, y no se entregará a Marruecos hasta 1969.",
+            "file": "/media/decreto1958.pdf",
+            "poems": [{
+                "text": "Amigo, este es mi mayo,\nesta es mi primavera,\ntan diferente\na la suya en Fez, Tánger o Meknez.",
+                "author": "Bahia Mahmud Awah"
+            }]
+        }]
+    },{
+        "year": 1949,
+        "items": [{
+            "type": "video",
+            "date": "1949-09-20",
+            "name": "La maldición de los fosfatos",
+            "desc": "El valor militar se va a ver reforzado por el económico cuando se descubren los yacimientos de fosfatos en la región de Bucraa. El geólogo español Manuel Alia Medina los estudió durante más de una década y llegó a la conclusión de que eran los yacimientos más importantes del mundo a cielo abierto. Solo un año más tarde, en 1950, ya estaba creada la empresa Adaro y comenzaban las excavaciones. Casualidad o no, el 20 de octubre Franco visitaba el Sáhara Occidental.",
+            "file": "https://www.youtube.com/watch?v=YRRPPf_jzC0",
+            "poems": [{
+                "text": "Un beduino\nse hizo a la mar.\n(…)\nPor el mundo\nse extravió un camello.",
+                "author": "Ebnu"
+            }]
+        }]
+    },{
+        "year": 1939,
+        "items": [{
+            "type": "photo",
+            "date": "1939-07-17",
+            "name": "¿Neutraliqué?",
+            "desc": "Cuando estalla la II Guerra Mundial, que durará hasta 1945, España se declara neutral. Sin embargo, «neutralidad» puede ser una palabra bastante relativa. Las Islas Canarias y el Sáhara Occidental cobraron un nuevo valor estratégico por el incremento de la navegación aérea y la necesidad de escalas intermedias en los viajes al África subsahariana y a América. En este escenario, el cada vez mayor interés por delimitar las posesiones francesas y las españolas llevó en 1940 a la realización del primer mapa «científico» de la zona. Para ello se recorrió el desierto palmo a palmo, con la colaboración imprescindible de la población saharaui, que a menudo recurrió a la tradición poética oral no solo para orientarse, sino también para ir poblando ese mapa de topónimos.",
+            "file": "media/TODO"
+        }]
     },{
         "year": 1936,
-        "items": []
+        "items": [{
+            "type": "photo",
+            "date": "1936-07-17",
+            "name": "La parte africana de la guerra civil",
+            "desc": "Los generales Franco, Mola y Queipo de Llano ejecutan un golpe de Estado contra la Segunda República. Comienza la guerra civil española, que dura hasta el 1 de abril de 1939. El llamado Ejército de África, formado por las tropas del Protectorado de Marruecos, tuvo un papel tristemente importante en la sublevación y en el transcurso de la guerra. Franco tenía control sobre estos cuarteles, ganó de manera casi inmediata el territorio y se llevó a la Península a estos soldados y a otros muchos hombres reclutados ex profeso, convirtiéndolos en vanguardia del ataque a Madrid y operaciones posteriores. Fueron las llamadas «tropas moras», de aciaga memoria: otra consecuencia del contexto colonial. En el Sáhara también ocurrió: algunos hombres que formaban parte del ejército fueron enviados a la guerra con las tropas franquistas. Pero, alejado como estaba de la península y con sus particulares características, este territorio cumplió sobre todo otro papel: el de ser una tierra de deportaciones, una prisión a cielo abierto donde se cumplían trabajos forzados.",
+            "file": "media/TODO"
+        }]
     },{
-        "year": 1923,
-        "items": []
+        "year": 1934,
+        "items": [{
+            "type": "text",
+            "date": "1934-10-20",
+            "name": "Una colonización completada en silencio",
+            "desc": "Mientras los obreros se levantaban en Asturias y Lluis Companys proclamaba en Barcelona el Estado Catalán, los colonizadores del Sáhara se alejaban de la costa y negociaban con notables de las tribus del desierto un sometimiento amistoso en virtud del cual se comienza a conocer como «Sáhara Español». Ese año se completó la ocupación con las fronteras actuales y se fundó la ciudad de El Aaiún. Sin embargo, al contrario de lo ocurrido en el Rif, no hubo ni guerra ni ruido.",
+            "poems": [{
+                "text": "Una alfombra desvenciajada\ncubre el extraño suelo.\nUn par de sandalias\nesperan el largo viaje.\nY en la pared una bandera.",
+                "author": "Ebnu"
+            }]
+        }]
     },{
-        "year": 1905,
-        "items": []
+        "year": 1931,
+        "items": [{
+            "type": "text",
+            "date": "1931-04-14",
+            "name": "¡Viva la República!",
+            "desc": "Se declara la Segunda República, con Manuel Azaña como presidente. Entre las políticas que trató de llevar a cabo estuvo la de desmilitarizar el Protectorado marroquí para hacerlo más similar al francés, donde los asuntos civiles y militares estaban separados. Lo consiguió parcialmente, aumentando el rechazo de los militares de carrera, a los que no les venía demasiado bien."
+        }]
     },{
-        "year": 1898,
-        "items": []
-    },{
-        "year": 1886,
-        "items": []
-    },{
-        "year": 1884,
-        "items": []
+        "year": 1930,
+        "items": [{
+            "type": "text",
+            "date": "1921-08-01",
+            "name": "Las guerras de África",
+            "desc": "Aunque cuando comenzó la I Guerra Mundial en 1914 España se declaró neutral, las colonias del norte de África eran en ese tiempo escenario de otros conflictos. En 1909 había comenzado en el norte de Marruecos la guerra del Rif, que duraría casi 20 años. Pese a librarse lejos de casa, esta guerra tuvo fuertes consecuencias en la política española. Ya desde su mismo comienzo, cuando la llamada a cientos de reservistas para ir a luchar en esas montañas desconocidas fue el detonante de la llamada Semana Trágica, un levantamiento popular en Barcelona que fue fuertemente reprimido. En 1921 el llamado Desastre de Annual («victoria de Annual» para los rifeños, que instauraron de hecho una república independiente bajo el mando de Abd-el-Krim que duró cinco años) fue uno de los detonantes de la crisis política que llevaría al golpe de Estado y la dictadura de Miguel Primo de Rivera. También en el contexto de esta guerra se crea la Legión Española, con José Millán-Astray y Francisco Franco como jefes. Este tendrá un papel importante en el desembarco de Alhucemas, con el que España gana la guerra. En general, el africanismo fue un vivero tanto ideológico como de rápidos ascensos para un sector del Ejército que no tardaría mucho en empezar a tramar algo.",
+            "poems": [{
+                "text": "Decirles que la tierra no es de ellos.\nDecirles que la gente no es de ellos.\nDecirles que las piedras necesitan ser libres.",
+                "author": "Ali Salem Iselmu"
+            }]
+        },{
+            "type": "text",
+            "date": "1900-06-27",
+            "name": "Escuadra y cartabón sobre el desierto",
+            "desc": "La gente del desierto seguía su vida nómada ajena a las fronteras mientras, en el Convenio de París, escuadras y cartabones delimitaban el reparto del territorio del Sáhara Occidental (y también el de Guinea Ecuatorial) entre Francia y España. El mapa colonial se acabará de trazar en 1906, cuando en la Conferencia de Algeciras se delimite el protectorado sobre Marruecos. En toda la costa saharaui se van estableciendo guarniciones militares que poco a poco irán creciendo, convirtiéndose en ciudades. Para entender lo que vendrá luego, es importante fijarse en que, en torno a 1912, otros tratados van a atribuir estatutos jurídicos distintos a la región de Villa Bens (más al norte) y la del Sáhara Occidental.",
+            "poems": [{
+                "text": "Hombres del desierto\nindomables,\ncomo la tormenta roja,\ncomo el dolor de la paciencia,\ncomo la estela de un dromedario\nque persigue la sombra del sol.",
+                "author": "Ali Salem Iselmu"
+            },{
+                "text": "Recuerda que existe una tierra sin amo y sin dueño,\nespejo y alma de todo ser inocente.",
+                "author": "Ali Salem Iselmu"
+            }]
+        },{
+            "type": "text",
+            "date": "1898-11-10",
+            "name": "El declive del imperio",
+            "desc": "Mientras el africanismo cogía vuelo, España iba perdiendo sin embargo lo que quedaba de su antiguo imperio de ultramar. El tratado de París pone fin a una guerra con Estados Unidos con el mandato de ceder Puerto Rico y Filipinas a este país, y conceder a Cuba la independencia. Un duro golpe para el ego de un país que aún hoy se sigue refiriendo a este episodio como «Desastre del 98»."
+        },{
+            "type": "pdf",
+            "date": "1884-12-07",
+            "name": "Tres casetas en la Bahía",
+            "desc": "La historia de la colonización del Sáhara Occidental empieza con tres casetas. Concretamente, tres casetas-factoría construidas en la bahía del Río de Oro, la ensenada del Sintra y Cabo Blanco. Sobre ellas puso la bandera española una expedición que había mandado a la zona el primer ministro de Isabel II, Antonio Cánovas, con el propósito de adelantarse a otras potencias que pudieran tener intención de instalarse en esas costas que tenían enfrente las islas Canarias (y en especial a los ingleses). También les puso sendos nombres: Villa Cisneros, Puerto Badía y Medina Gatell. Con esos gestos y un real decreto se estableció un protectorado español en toda la zona, hasta la frontera con Marruecos, país con el que en 1767 se había firmado un tratado en el que el Sultán firmaba que su autoridad llegaba hasta el río Nun. Cuando, en 1885, las fuerzas coloniales se reparten África en el tratado de Berlín, todo quedó ratificado.",
+            "link": "/media/decreto1885.pdf"
+        }]
     }]
 }
