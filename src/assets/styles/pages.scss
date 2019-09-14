@@ -1,0 +1,48 @@
+/**
+* PAGES
+*/
+.page {
+  padding: 20px;
+  line-height: 1.5;
+
+  &__wrap {
+    max-width: 660px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 32px;
+  }
+
+  p {
+    color: #efefef;
+  }
+
+  ul {
+    color: #efefef;
+    margin-bottom: 24px;
+    .role {
+      display: block;
+      font-size: smaller;
+      font-style: italic;
+    }
+    .name {
+      display: block;
+    }
+  }
+  li {
+    margin-bottom: 16px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  .links {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}

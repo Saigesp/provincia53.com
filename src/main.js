@@ -8,6 +8,10 @@ Vue.use(VueMouseParallax)
 import './assets/styles/reset.scss';
 import './assets/styles/flexbox.scss';
 import './assets/styles/fonts.scss';
+import './assets/styles/menu.scss';
+import './assets/styles/pages.scss';
+import './assets/styles/overlay.scss';
+import './assets/styles/mobilick.scss';
 import './assets/styles/main.scss';
 
 Vue.config.productionTip = false

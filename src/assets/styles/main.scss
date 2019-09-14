@@ -3,6 +3,11 @@
 body {
   background-color: #ffffff;
   color: #e3e7e8;
+  background-image: url('/static/img/piscina-black.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 button {
@@ -20,97 +25,11 @@ button {
 
 
 /**
-* OVERLAY
-*/
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-
-  .logo {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-
-    h1 {
-      display: none;
-    }
-
-    img {
-      width: 50%;
-      max-width: 200px;
-    }
-  }
-
-  .hamburguer {
-    pointer-events: all;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    img {
-      width: 20px;
-      height: auto;
-      padding: 10px;
-      cursor: pointer;
-    }
-  }
-
-  .resetzoom {
-    pointer-events: all;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 20px;
-    opacity: 0;
-    transition: opacity 200ms ease, background 250ms ease;
-  }
-}
-
-
-/**
-* MENU
-*/
-.menu {
-  margin-top: 100px;
-  padding: 20px;
-  text-align: center;
-  pointer-events: all;
-
-  &__wrap {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 999;
-  }
-
-  ul {}
-
-  li {
-    a {
-      display: inline-block;
-      padding: 10px;
-    }
-  }
-}
-
-
-
-/**
 * PARALLAX
 */
 .parallax-container {
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -147,10 +66,13 @@ button {
   min-height: 100px;
   margin-left: -200px;
 
+  &__metawrap {
+    display: none;
+    pointer-events: none;
+  }
+
   &__wrap {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 
     &.is-zoomed .resetzoom {
       opacity: 1;
@@ -227,61 +149,18 @@ button {
   }
 }
 
-
-
-
-
-
-/**
-* PAGES
-*/
-.page {
-  padding: 20px;
-  line-height: 1.5;
-
-  &__wrap {
-    max-width: 660px;
-    margin: 10px auto;
-  }
-
-  h1 {
-    color: #3e4a8e;
-    font-size: 32px;
-  }
-
-  p {
-    color: #1b1b1b;
-  }
-
-  ul {
-    color: #1b1b1b;
-    margin-bottom: 24px;
-    .role {
+@media screen and (min-width: 700px) {
+  .chart {
+    &__metawrap {
       display: block;
-      font-size: smaller;
-      font-style: italic;
+      pointer-events: all;
     }
-    .name {
-      display: block;
+    &__wrap {
+    height: 100vh;
+      overflow: hidden;
     }
-  }
-  li {
-    margin-bottom: 16px;
-  }
-
-  a {
-    color: #3e4a8e;
-  }
-
-  .links {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
   }
 }
-
-
-
 
 
 /**
@@ -298,3 +177,5 @@ button {
     stroke-dashoffset: 0;
   }
 }
+
+
