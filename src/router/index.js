@@ -8,6 +8,10 @@ var ComponentFactory = htmltag => { return { template: '<'+htmltag+'/>' }}
 
 export default new Router({
   routes: [
-    { path: '/',                name: 'home-app',                   component: ComponentFactory('home-app') }
+    { path: '/',                      name: 'home',                   component: ComponentFactory('home-app') },
+    { path: '/el-proyecto',           name: 'project-page',           component: ComponentFactory('project-page') },
+    { path: '/quienes-somos',         name: 'about-page',             component: ComponentFactory('about-page') },
+    { path: '/guia-personajes',       name: 'characters-page',        component: ComponentFactory('characters-page') },
+    { path: '/referencias',           name: 'referrers-page',         component: ComponentFactory('referrers-page') },
   ]
 })

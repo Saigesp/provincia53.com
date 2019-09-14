@@ -1,17 +1,300 @@
 @import './variables';
 
 body {
-    background-color: #ffffff;
-    color: #e3e7e8;
+  background-color: #ffffff;
+  color: #e3e7e8;
 }
 
 button {
-    background: #f1f1f1;
-    border: 0;
-    padding: 6px 10px;
-    border-radius: 3px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.36);
-    &:hover {
-        background: #d1d1d1;
+  background: #f1f1f1;
+  border: 0;
+  padding: 6px 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.36);
+
+  &:hover {
+    background: #d1d1d1;
+  }
+}
+
+
+
+/**
+* OVERLAY
+*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      display: none;
     }
+
+    img {
+      width: 50%;
+      max-width: 200px;
+    }
+  }
+
+  .hamburguer {
+    pointer-events: all;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    img {
+      width: 20px;
+      height: auto;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .resetzoom {
+    pointer-events: all;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 200ms ease, background 250ms ease;
+  }
+}
+
+
+/**
+* MENU
+*/
+.menu {
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+  pointer-events: all;
+
+  &__wrap {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+
+  ul {}
+
+  li {
+    a {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+}
+
+
+
+/**
+* PARALLAX
+*/
+.parallax-container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.parallax-element {
+  position: absolute;
+}
+
+
+
+/**
+* BACKGROUND
+*/
+.background {
+  pointer-events: none;
+  position: relative;
+  top: -100px;
+  left: -200px;
+  width: calc(100vw + 400px);
+  height: calc(100vh + 200px);
+  background-image: url('/static/img/piscina-black.png');
+  background-size: cover;
+  background-position: 0 0;
+}
+
+
+
+/**
+* CHART
+*/
+.chart {
+  display: block;
+  margin: 0 auto;
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: -200px;
+
+  &__wrap {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    &.is-zoomed .resetzoom {
+      opacity: 1;
+    }
+  }
+
+  &__ygroup {
+    .year {
+      stroke: #fff;
+      stroke-width: 1px;
+      fill: transparent;
+      pointer-events: none;
+      transition: r 1000ms 300ms ease-in-out, opacity 200ms ease;
+      animation: rotation 5s ease-out 500ms 1 forwards;
+      stroke-dasharray: 6000px;
+      stroke-dashoffset: 100%;
+      opacity: 0.4;
+
+      &__hover {
+        stroke: transparent;
+        stroke-width: 16px;
+        fill: transparent;
+        pointer-events: stroke;
+        transition: r 1000ms 300ms ease-in-out;
+      }
+
+      &__title {
+        display: none;
+        fill: white;
+        text-anchor: middle;
+      }
+    }
+
+    .item {
+      cursor: pointer;
+      transition: opacity 200ms ease 100ms;
+
+      circle {
+        transition: cy 1000ms ease-in-out, cx 1000ms ease-in-out;
+        stroke: white;
+        stroke-width: 1px;
+      }
+
+      &__dot {
+        opacity: 0.7;
+        fill: white;
+      }
+
+      &__circle {
+        opacity: 0;
+        fill: #050505;
+      }
+    }
+
+    &:hover {
+      .year {
+        opacity: 1;
+
+        &__title {
+          display: block;
+        }
+      }
+
+      .item {
+        &__dot {
+          opacity: 1;
+        }
+
+        &__circle {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/**
+* PAGES
+*/
+.page {
+  padding: 20px;
+  line-height: 1.5;
+
+  &__wrap {
+    max-width: 660px;
+    margin: 10px auto;
+  }
+
+  h1 {
+    color: #3e4a8e;
+    font-size: 32px;
+  }
+
+  p {
+    color: #1b1b1b;
+  }
+
+  ul {
+    color: #1b1b1b;
+    margin-bottom: 24px;
+    .role {
+      display: block;
+      font-size: smaller;
+      font-style: italic;
+    }
+    .name {
+      display: block;
+    }
+  }
+  li {
+    margin-bottom: 16px;
+  }
+
+  a {
+    color: #3e4a8e;
+  }
+
+  .links {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+/**
+* ANIMATIONS
+*/
+@keyframes rotation {
+  0% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 100%;
+  }
+
+  100% {
+    stroke-dasharray: 6000px;
+    stroke-dashoffset: 0;
+  }
 }
