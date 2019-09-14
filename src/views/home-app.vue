@@ -10,12 +10,14 @@
       <parallax-element :parallaxStrength="-10" :type="'translation'">
         <svg class="chart" :viewBox="`0 0 ${width} ${height}`" :width="width+400" :height="height+100">
           <g ref="gengroup">
-            <g v-for="(yeargroup, i) in datum.years" class="chart__ygroup">
-              <circle class="year-hover" :cx="center[0]" :cy="center[1]" :r="circleRadius(yeargroup.year)"></circle>
-              <circle class="year" :cx="center[0]" :cy="center[1]" :r="circleRadius(yeargroup.year)"></circle>
-              <g v-for="item in yeargroup.items" class="item">
-                  <circle class="item__dot" :cx="calcItemCenter(item.date, yeargroup.year)[0]" :cy="calcItemCenter(item.date, yeargroup.year)[1]" r="10"></circle>
+            <g v-for="(yeargroup, i) in datum.years" class="chart__ygroup" :transform="`translate(${center[0]},${center[1]})`">
+              <circle class="year__hover" :r="circleRadius(i)"></circle>
+              <circle class="year" :r="circleRadius(i)"></circle>
+              <g v-for="item in yeargroup.items" class="item" :transform="`translate(${calcItemCenter(item.date, i)[0]},${calcItemCenter(item.date, i)[1]})`">
+                  <circle class="item__circle" r="10" @click="showItem(item)"></circle>
+                  <circle class="item__dot" r="1"></circle>
               </g>
+              <text class="year__title" y="4">{{yeargroup.title}}</text>
             </g>
           </g>
         </svg>
@@ -45,7 +47,7 @@ export default {
     },
     created: function(){
         this.circleRadius = d3.scaleLinear()
-            .domain(d3.extent(this.datum.years, d=>+d.year).reverse())
+            .domain([0, this.datum.years.length])
     },
     computed: {
         center(){
@@ -76,22 +78,22 @@ export default {
             this.width = parseInt(this.$refs.chart.offsetWidth);
             this.height = parseInt(this.$refs.chart.offsetHeight);
             this.calcCircleRadius();
-            this.circleRadius.range([this.calcCircleRadius(),30]);
+            this.circleRadius.range([this.calcCircleRadius(),60]);
         },
         calcCircleRadius(){
             if(this.width < this.minScaleSize){
-                return this.height-100;
+                return 0;
             }else if(this.height < this.minScaleSize){
-                return d3.min([this.width, this.height])-50;
+                return 0;
             }else{
                 return d3.min([this.width/2, this.height/2])-80;
             }
         },
-        calcItemCenter(strdate, year){
+        calcItemCenter(strdate, i){
             let date = new Date(strdate)
             return [
-                (Math.sin(this.dateToRadians(date))*this.circleRadius(+year))+this.center[0],
-                (Math.cos(this.dateToRadians(date))*this.circleRadius(+year))+this.center[1]
+                (Math.sin(this.dateToRadians(date))*this.circleRadius(+i)),
+                (Math.cos(this.dateToRadians(date))*this.circleRadius(+i))
             ]
         },
         dateToRadians(date){
@@ -101,6 +103,9 @@ export default {
                 let start = new Date(date.getFullYear(), 0, 0);
                 return Math.floor((date-start)/(1000*60*60*24))/(183/Math.PI);
             }
+        },
+        showItem(item){
+            console.log('showItem', item);
         },
         resetZoom(){
             this.svg.transition()
@@ -176,36 +181,55 @@ export default {
             stroke-width: 1px;
             fill: transparent;
             pointer-events: none;
-            transition: cy 1000ms ease-in-out, r 1000ms 300ms ease-in-out, opacity 200ms ease;
+            transition: r 1000ms 300ms ease-in-out, opacity 200ms ease;
             animation: rotation 5s ease-out 500ms 1 forwards;
             stroke-dasharray: 6000px;
             stroke-dashoffset: 100%;
             opacity: 0.4;
-        }
-        .year-hover {
-            stroke: transparent;
-            stroke-width: 16px;
-            fill: transparent;
-            pointer-events: stroke;
-            transition: cy 1000ms ease-in-out, r 1000ms 300ms ease-in-out;
+            &__hover {
+                stroke: transparent;
+                stroke-width: 16px;
+                fill: transparent;
+                pointer-events: stroke;
+                transition: r 1000ms 300ms ease-in-out;
+            }
+            &__title {
+                display: none;
+                fill: white;
+                text-anchor: middle;
+            }
         }
         .item {
             cursor: pointer;
-            opacity: 0;
             transition: opacity 200ms ease 100ms;
             circle {
                 transition: cy 1000ms ease-in-out, cx 1000ms ease-in-out;
                 stroke: white;
                 stroke-width: 1px;
+            }
+            &__dot {
+                opacity: 0.7;
+                fill: white;
+            }
+            &__circle {
+                opacity: 0;
                 fill: #050505;
             }
         }
         &:hover {
             .year {
                 opacity: 1;
+                &__title {
+                    display: block;
+                }
             }
             .item {
-                opacity: 1;
+                &__dot {
+                    opacity: 0;
+                }
+                &__circle {
+                    opacity: 1;
+                }
             }
         }
     }

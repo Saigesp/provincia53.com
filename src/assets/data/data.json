@@ -1,6 +1,7 @@
 {
     "years": [{
         "year": 2019,
+        "title": "2019",
         "items": [{
             "type": "text",
             "date": "2019-04-21",
@@ -25,6 +26,7 @@
         }]
     },{
         "year": 2013,
+        "title": "2013",
         "items": [{
             "type": "text",
             "date": "2013-05-21",
@@ -37,6 +39,7 @@
         }]
     },{
         "year": 2010,
+        "title": "2010",
         "items": [{
             "type": "text",
             "date": "2010-06-15",
@@ -45,6 +48,7 @@
         }]
     },{
         "year": 2007,
+        "title": "2007",
         "items": [{
             "type": "text",
             "date": "2007-04-15",
@@ -57,6 +61,7 @@
         }]
     },{
         "year": 2002,
+        "title": "2002",
         "items": [{
             "type": "pdf",
             "date": "2002-02-15",
@@ -70,15 +75,13 @@
         }]
     },{
         "year": 1992,
+        "title": "1992",
         "items": [{
             "type": "text",
             "date": "1992-09-15",
             "name": "El año en que el mundo miró a España",
             "desc": "El referéndum de autodeterminación saharaui no se celebra. Los Juegos Olímpicos de Barcelona y la Expo de Sevilla son el escaparate ante el mundo de una «nueva España» que hace gala de su progreso. En agosto se produce la primera llegada masiva de migrantes marroquíes en patera a las costas españolas, y la inmigración empieza a convertirse en un tema central. En el Sáhara, en septiembre se lleva a cabo la primera Intifada, cuando los participantes en manifestaciones pacíficas frente al palacio del gobernador fueron atacados por unidades de policía y del ejército. Desde entonces, septiembre ha sido el «mes de Intifada» del territorio."
-        }]
-    },{
-        "year": 1991,
-        "items": [{
+        },{
             "type": "text",
             "date": "1991-03-06",
             "name": "La guerra ha terminado",
@@ -90,6 +93,7 @@
         }]
     },{
         "year": 1982,
+        "title": "1982",
         "items": [{
             "type": "photo",
             "date": "1982-11-30",
@@ -99,6 +103,7 @@
         }]
     },{
         "year": 1981,
+        "title": "1981",
         "items": [{
             "type": "text",
             "date": "1981-11-30",
@@ -107,6 +112,7 @@
         }]
     },{
         "year": 1980,
+        "title": "1980",
         "items": [{
             "type": "text",
             "date": "1980-08-30",
@@ -119,6 +125,7 @@
         }]
     },{
         "year": 1979,
+        "title": "1979",
         "items": [{
             "type": "pdf",
             "date": "1979-10-30",
@@ -132,6 +139,7 @@
         }]
     },{
         "year": 1977,
+        "title": "1977",
         "items": [{
             "type": "photo",
             "date": "1977-07-31",
@@ -145,6 +153,7 @@
         }]
     },{
         "year": 1976,
+        "title": "1976",
         "items": [{
             "type": "pdf",
             "date": "1976-02-27",
@@ -158,6 +167,7 @@
         }]
     },{
         "year": 1975,
+        "title": "1975",
         "items": [{
             "type": "slider",
             "date": "1975-05-12",
@@ -220,6 +230,7 @@
         }]
     },{
         "year": 1974,
+        "title": "1974",
         "items": [{
             "type": "photo",
             "date": "1974-03-08",
@@ -246,6 +257,7 @@
         }]
     },{
         "year": 1973,
+        "title": "1973",
         "items": [{
             "type": "photo",
             "date": "1973-05-10",
@@ -255,6 +267,7 @@
         }]
     },{
         "year": 1970,
+        "title": "1970",
         "items": [{
             "type": "photo",
             "date": "1970-06-17",
@@ -264,6 +277,7 @@
         }]
     },{
         "year": 1969,
+        "title": "1969",
         "items": [{
             "type": "pdf",
             "date": "1969-12-18",
@@ -278,6 +292,7 @@
         }]
     },{
         "year": 1968,
+        "title": "1968",
         "items": [{
             "type": "pdf",
             "date": "1968-05-22",
@@ -292,6 +307,7 @@
         }]
     },{
         "year": 1967,
+        "title": "1967",
         "items": [{
             "type": "text",
             "date": "1967-05-30",
@@ -304,6 +320,7 @@
         }]
     },{
         "year": 1965,
+        "title": "1965",
         "items": [{
             "type": "pdf",
             "date": "1965-12-16",
@@ -313,6 +330,7 @@
         }]
     },{
         "year": 1961,
+        "title": "1961",
         "items": [{
             "type": "pdf",
             "date": "1961-06-24",
@@ -321,7 +339,8 @@
             "file": "/media/resolucion1514.pdf"
         }]
     },{
-        "year": 1956,
+        "year": 1960,
+        "title": "1931-1960",
         "items": [{
             "type": "pdf",
             "date": "1956-03-02",
@@ -332,10 +351,7 @@
                 "text": "Amigo, este es mi mayo,\nesta es mi primavera,\ntan diferente\na la suya en Fez, Tánger o Meknez.",
                 "author": "Bahia Mahmud Awah"
             }]
-        }]
-    },{
-        "year": 1949,
-        "items": [{
+        },{
             "type": "video",
             "date": "1949-09-20",
             "name": "La maldición de los fosfatos",
@@ -345,28 +361,19 @@
                 "text": "Un beduino\nse hizo a la mar.\n(…)\nPor el mundo\nse extravió un camello.",
                 "author": "Ebnu"
             }]
-        }]
-    },{
-        "year": 1939,
-        "items": [{
+        },{
             "type": "photo",
             "date": "1939-07-17",
             "name": "¿Neutraliqué?",
             "desc": "Cuando estalla la II Guerra Mundial, que durará hasta 1945, España se declara neutral. Sin embargo, «neutralidad» puede ser una palabra bastante relativa. Las Islas Canarias y el Sáhara Occidental cobraron un nuevo valor estratégico por el incremento de la navegación aérea y la necesidad de escalas intermedias en los viajes al África subsahariana y a América. En este escenario, el cada vez mayor interés por delimitar las posesiones francesas y las españolas llevó en 1940 a la realización del primer mapa «científico» de la zona. Para ello se recorrió el desierto palmo a palmo, con la colaboración imprescindible de la población saharaui, que a menudo recurrió a la tradición poética oral no solo para orientarse, sino también para ir poblando ese mapa de topónimos.",
             "file": "media/TODO"
-        }]
-    },{
-        "year": 1936,
-        "items": [{
+        },{
             "type": "photo",
             "date": "1936-07-17",
             "name": "La parte africana de la guerra civil",
             "desc": "Los generales Franco, Mola y Queipo de Llano ejecutan un golpe de Estado contra la Segunda República. Comienza la guerra civil española, que dura hasta el 1 de abril de 1939. El llamado Ejército de África, formado por las tropas del Protectorado de Marruecos, tuvo un papel tristemente importante en la sublevación y en el transcurso de la guerra. Franco tenía control sobre estos cuarteles, ganó de manera casi inmediata el territorio y se llevó a la Península a estos soldados y a otros muchos hombres reclutados ex profeso, convirtiéndolos en vanguardia del ataque a Madrid y operaciones posteriores. Fueron las llamadas «tropas moras», de aciaga memoria: otra consecuencia del contexto colonial. En el Sáhara también ocurrió: algunos hombres que formaban parte del ejército fueron enviados a la guerra con las tropas franquistas. Pero, alejado como estaba de la península y con sus particulares características, este territorio cumplió sobre todo otro papel: el de ser una tierra de deportaciones, una prisión a cielo abierto donde se cumplían trabajos forzados.",
             "file": "media/TODO"
-        }]
-    },{
-        "year": 1934,
-        "items": [{
+        },{
             "type": "text",
             "date": "1934-10-20",
             "name": "Una colonización completada en silencio",
@@ -375,17 +382,15 @@
                 "text": "Una alfombra desvenciajada\ncubre el extraño suelo.\nUn par de sandalias\nesperan el largo viaje.\nY en la pared una bandera.",
                 "author": "Ebnu"
             }]
-        }]
-    },{
-        "year": 1931,
-        "items": [{
+        },{
             "type": "text",
             "date": "1931-04-14",
             "name": "¡Viva la República!",
             "desc": "Se declara la Segunda República, con Manuel Azaña como presidente. Entre las políticas que trató de llevar a cabo estuvo la de desmilitarizar el Protectorado marroquí para hacerlo más similar al francés, donde los asuntos civiles y militares estaban separados. Lo consiguió parcialmente, aumentando el rechazo de los militares de carrera, a los que no les venía demasiado bien."
         }]
     },{
-        "year": 1930,
+        "year": 1940,
+        "title": "1884-1930",
         "items": [{
             "type": "text",
             "date": "1921-08-01",
