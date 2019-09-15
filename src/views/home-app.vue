@@ -9,7 +9,7 @@
           <img src="/static/img/logo.svg" alt="Provincia53">
         </div>
         <div class="hamburguer" v-show="!isMenuActive">
-          <img src="/static/img/icons/menu.svg" alt="Menu" @click="isMenuActive = true">
+          <img src="/static/img/icons/menu.svg" alt="Menu" @click="isMenuActive = true; currentComponent = false; currentComponentData = {}">
         </div>
         <button class="resetzoom" @click="resetZoom()">Centrar</button>
       </div>
@@ -18,7 +18,7 @@
       <!-- start menu -->
       <div class="menu__wrap" :class="{'is-active': isMenuActive}">
         <div class="menu__close">
-          <img src="/static/img/icons/close.svg" alt="Menu" @click="isMenuActive = false">
+          <img src="/static/img/icons/close.svg" alt="Cerrar" @click="isMenuActive = false">
         </div>
         <div class="menu">
           <ul>
@@ -59,10 +59,17 @@
                 <circle class="year__hover" :r="circleRadius(i)"></circle>
                 <circle class="year" :r="circleRadius(i)"></circle>
                 <g v-for="item in yeargroup.items" class="item" :transform="`translate(${calcItemCenter(item.date, i)[0]},${calcItemCenter(item.date, i)[1]})`">
+                  <polyline class="item__line" :points="calcLinePoints(item.date, i)"></polyline>
                   <circle class="item__circle" r="10" @click="showItem(item)"></circle>
                   <circle class="item__dot" r="1"></circle>
+                  <text
+                    class="item__text"
+                    :x="calcTextPosition(item.date, i)[0]"
+                    :y="calcTextPosition(item.date, i)[1]"
+                    :text-anchor="calcTextAnchor(item.date, i)"
+                    dy="5">{{item.title}}</text>
                 </g>
-                <text class="year__title" y="4">{{yeargroup.title}}</text>
+                <text class="year__title" y="10">{{yeargroup.title}}</text>
               </g>
             </g>
           </svg>
@@ -77,18 +84,24 @@
     <!-- start mobile content -->
     <div class="mobilick" v-if="width <= minScaleSize">
       <div v-for="(yeargroup, i) in datum.years">
-        {{yeargroup.title}}
+        <h3>{{yeargroup.title}}</h3>
         <div v-for="item in yeargroup.items">
-          {{item.name}}
+          <h4>{{item.title}}</h4>
         </div>
       </div>
     </div>
     <!-- end mobile content -->
+
+    <!-- start components -->
+    <component v-if="currentComponent" v-bind:is="currentComponent" :key="currentComponent" :datum="currentComponentData"></component>
+    <!-- end components -->
+
   </div>
 </template>
 
 
 <script>
+import EventBus from '../plugins/bus'
 import * as d3 from "d3";
 
 export default {
@@ -103,6 +116,8 @@ export default {
       datum: require('../assets/data/data.json'),
       isZoomed: false,
       isMenuActive: false,
+      currentComponent: false,
+      currentComponentData: {},
     }
   },
   created: function() {
@@ -111,18 +126,14 @@ export default {
   },
   computed: {
     center() {
-      if (this.width < this.minScaleSize) {
-        return [this.width / 2, this.height - 100]
-      } else if (this.height < this.minScaleSize) {
-        return [this.width / 2, this.height / 2]
-      } else return [this.width / 2, this.height / 2]
+      return [this.width/2, this.height/2]
     },
   },
   mounted: function() {
     this.getCanvasSize();
     window.addEventListener("resize", () => { this.getCanvasSize(); });
 
-    this.zoom = d3.zoom()
+/*    this.zoom = d3.zoom()
       .scaleExtent([1 / 4, 30])
       .on("zoom", d => {
         this.isZoomed = d3.event.transform.k === 1 && d3.event.transform.x === 0 ? false : true;
@@ -131,6 +142,11 @@ export default {
 
     this.svg = d3.select(this.$refs.chart)
       .call(this.zoom);
+*/
+    EventBus.$on('close-component', data => {
+      this.currentComponent = false;
+      this.currentComponentData = {};
+    })
 
   },
   methods: {
@@ -141,7 +157,7 @@ export default {
       this.circleRadius.range([this.calcCircleRadius(), 40]);
     },
     calcCircleRadius() {
-      return d3.min([this.width / 2, this.height / 2]) - 80;
+      return d3.min([d3.min([this.width / 2, this.height / 2]) - 150, 350]);
     },
     calcItemCenter(strdate, i) {
       let date = new Date(strdate)
@@ -149,6 +165,34 @@ export default {
         (Math.sin(this.dateToRadians(date)) * this.circleRadius(+i)),
         (Math.cos(this.dateToRadians(date)) * this.circleRadius(+i))
       ]
+    },
+    calcLinePoints(strdate, i){
+      let date = new Date(strdate);
+      let rads = this.dateToRadians(date);
+      let xtrsp = rads <= Math.PI ? 20 : -20;
+      return [
+        [0,0],
+        [
+          Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-2)),
+          Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-2))
+        ],
+        [
+          (Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-2)))+xtrsp,
+          (Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-2)))
+        ]
+      ]
+    },
+    calcTextPosition(strdate, i){
+      let date = new Date(strdate);
+      let rads = this.dateToRadians(date);
+      let xtrsp = rads <= Math.PI ? 26 : -26;
+      return [
+        (Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-2)))+xtrsp,
+        (Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-2)))
+      ]
+    },
+    calcTextAnchor(strdate, i){
+      return this.dateToRadians(new Date(strdate)) <= Math.PI ? 'start' : 'end'
     },
     dateToRadians(date) {
       if (this.width < this.minScaleSize) {
@@ -159,7 +203,8 @@ export default {
       }
     },
     showItem(item) {
-      console.log('showItem', item);
+      this.currentComponent = item.component;
+      this.currentComponentData = item;
     },
     resetZoom() {
       this.svg.transition()

@@ -103,6 +103,8 @@ button {
         display: none;
         fill: white;
         text-anchor: middle;
+        font-size: 32px;
+        font-family: 'dharma_gothic_eregular', 'webfontregular', Helvetica, Arial, sans-serif;
       }
     }
 
@@ -119,12 +121,36 @@ button {
       &__dot {
         opacity: 0.7;
         fill: white;
+        pointer-events: none;
       }
 
       &__circle {
         opacity: 0;
         fill: #050505;
       }
+
+      &__line {
+        stroke: white;
+        display: none;
+        fill: transparent;
+      }
+
+      &__text {
+        fill: white;
+        display: none;
+      }
+
+      &:hover {
+        .item {
+          &__line {
+            display: block;
+          }
+          &__text {
+            display: block;
+          }
+        }
+      }
+
     }
 
     &:hover {

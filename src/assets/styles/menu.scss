@@ -2,10 +2,12 @@
 * MENU
 */
 .menu {
-  margin-top: 100px;
+  margin-top: 40px;
   padding: 20px;
   text-align: center;
   pointer-events: all;
+  font-family: 'dharma_gothic_eregular', 'webfontregular', Helvetica, Arial, sans-serif;
+  font-size: 32px;
 
   &__wrap {
     background-color: rgba(0, 0, 0, 0.9);
@@ -48,7 +50,7 @@
   }
 
   .rrss {
-    margin-top: 40px;
+    margin-top: 6px;
     a {
       display: inline-block;
       padding: 0;
