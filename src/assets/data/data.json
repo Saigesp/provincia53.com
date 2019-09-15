@@ -214,12 +214,11 @@
             "desc": "Franco muere. El BOE publica la Ley de Descolonización del Sáhara Occidental, aprobada por las Cortes dos días antes, con 100 diputados ausentes. Consta de un solo artículo, que dice: «Se autoriza al Gobierno para que realice los actos y adopte las medidas que sean precisas para llevar a cabo la descolonización del territorio no autónomo del Sáhara, salvaguardando los intereses españoles». Dos días después, Juan Carlos I de Borbón es proclamado Rey de España.",
             "file": "/media/BOE20nov75.pdf"
         },{
-            "type": "audio",
-            "component": "audio-component",
+            "type": "text",
+            "component": "text-component",
             "date": "1975-12-15",
             "title": "La huida",
             "desc": "España se reorganiza bajo el primer Gobierno de la Monarquía, presidido por Carlos Arias Navarro, un franquista conocido por su intransigencia y su severidad. En el Sáhara Occidental, los últimos colonos españoles recogen sus cosas. El día 20, la última compañía de la Legión abandona El Aaiún. En los meses siguientes población civil saharaui huye de manera masiva y comienza a establecerse en los campamentos de refugiados de Tinduf, en Argelia, donde continúa hasta hoy. Marruecos bombardea con napalm y fósforo blanco (armas prohibidas por los tratados internacionales) estos campamentos y la población en éxodo: uno de los bombardeos más graves es de Um Draiga, el 18 de febrero de 1976, con centenares de muertos.",
-            "file": "/media/TODO",
             "poems": [{
                 "text": "El almuédano perdió la voz\ny el maestro cruzó la frontera",
                 "author": "Ebnu"
@@ -233,6 +232,10 @@
                 "text": "Lágrimas de un pueblo herido por pájaros de fuego\ny balas de veneno.",
                 "author": "Fatma Galia"
             }]
+        },{
+            "type": "shortaudio",
+            "date": "1975-02-15",
+            "file": "/media/audio/exodo1.mp3"
         }]
     },{
         "year": 1974,

@@ -59,7 +59,7 @@
                 <circle class="year__hover" :r="circleRadius(i)"></circle>
                 <circle class="year" :r="circleRadius(i)"></circle>
                 <g v-for="item in yeargroup.items" class="item" :transform="`translate(${calcItemCenter(item.date, i)[0]},${calcItemCenter(item.date, i)[1]})`">
-                  <polyline class="item__line" :points="calcLinePoints(item.date, i)"></polyline>
+                  <polyline class="item__line" :points="calcLinePoints(item.date, i)" v-if="item.title"></polyline>
                   <circle class="item__circle" r="10" @click="showItem(item)"></circle>
                   <circle class="item__dot" r="1"></circle>
                   <text
@@ -67,6 +67,7 @@
                     :x="calcTextPosition(item.date, i)[0]"
                     :y="calcTextPosition(item.date, i)[1]"
                     :text-anchor="calcTextAnchor(item.date, i)"
+                    v-if="item.title"
                     dy="5">{{item.title}}</text>
                 </g>
                 <text class="year__title" y="10">{{yeargroup.title}}</text>
@@ -133,7 +134,7 @@ export default {
     this.getCanvasSize();
     window.addEventListener("resize", () => { this.getCanvasSize(); });
 
-/*    this.zoom = d3.zoom()
+    this.zoom = d3.zoom()
       .scaleExtent([1 / 4, 30])
       .on("zoom", d => {
         this.isZoomed = d3.event.transform.k === 1 && d3.event.transform.x === 0 ? false : true;
@@ -142,7 +143,7 @@ export default {
 
     this.svg = d3.select(this.$refs.chart)
       .call(this.zoom);
-*/
+
     EventBus.$on('close-component', data => {
       this.currentComponent = false;
       this.currentComponentData = {};

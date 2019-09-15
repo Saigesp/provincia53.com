@@ -25,7 +25,6 @@
         <li><strong>Mbarka Ibrahim Buyemaá</strong> es alcaldesa de la daira (administración) 27 de Febrero, en los campamentos de refugiados. Fue parte de los grupos clandestinos que iniciaron el movimiento de liberación saharaui.</li>
         <li><strong>Mohamed Abdalahi Sidihaiba Kori (Tiba)</strong> es el director de cooperación del ministerio de cultura saharaui. Vive en los campamentos de refugiados.</li>
         <li><strong>Paco Etxeberria</strong> es antropólogo forense, y uno de los responsables de la exhumación de muchas de las fosas comunes más importantes que se han encontrado en España.</li>
-        <li><strong>Pedro Domínguez</strong> es ingeniero y trabajó en Fos Bucráa en El Aiún entre 1972 y 1974.</li>
         <li><strong>Sidi Brahim Najem</strong> es estudiante de cine en los campamentos de refugiados, donde nació y sigue viviendo.</li>
         <li><strong>Sidi Elhamed</strong> era primo de Mohamed Basiri, y vivió cerca de él todos los acontecimientos de los inicios del movimiento de liberación saharaui, así como los días previos a su desaparición.</li>
       </ul>
