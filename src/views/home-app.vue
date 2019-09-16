@@ -12,6 +12,10 @@
           <img src="/static/img/icons/menu.svg" alt="Menu" @click="isMenuActive = true; currentComponent = false; currentComponentData = {}">
         </div>
         <button class="resetzoom" @click="resetZoom()">Centrar</button>
+        <div class="logos">
+            <img src="/static/img/logoi25M.png" alt="i25m">
+            <img src="/static/img/logoAECID.png" alt="AECID">
+        </div>
       </div>
       <!-- end overlay -->
 

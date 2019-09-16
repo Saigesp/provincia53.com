@@ -1,5 +1,5 @@
 <template>
-  <div class="page__wrap">
+  <div class="page__wrap page__wrap--characters">
     <article class="page">
       <div class="page__close">
         <router-link :to="{name: 'home'}">

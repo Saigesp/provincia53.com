@@ -76,6 +76,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "2013-05-21",
             "title": "Apátridas por ley",
             "desc": "La Audiencia Nacional española reconoce en dos sentencias el estatus de apátridas a las personas saharauis, una petición histórica porque supone de facto reconocer su condición de refugiadas, y la no obligación de acogerse a una segunda nacionalidad en aquellos países que no reconocen la saharaui. El documento de apatridia permite residir en España y viajar libremente dentro de Europa.",
@@ -103,6 +104,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "2010-06-15",
             "title": "Jaimas en todas las plazas",
             "desc": "En Gdeim Izik, a las afueras de El Aaiún, una protesta saharaui contra las malas condiciones de vida bajo la ocupación marroquí se convierte en el que será llamado «campamento de la dignidad». En su desmantelamiento hubo una veintena de muertos y cientos de heridos y desaparecidos, y 19 activistas detenidos siguen cumpliendo penas de prisión. Se dice que fue la primera de las revueltas de la llamada «primavera árabe». Campamentos como aquel pronto llegaron a plazas de todo el mundo. A Sol, por ejemplo, cuando el 15 de mayo de 2011 el centro de Madrid también supo lo que era improvisar una jaima, sin saber por cuánto tiempo."
@@ -114,6 +116,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "2007-04-15",
             "title": "Las conversaciones de Nueva York",
             "desc": "En Nueva York tienen lugar las negociaciones de Manhasset: tres rondas de conversaciones en las que el gobierno marroquí y el Frente Polisario negocian de manera directa por primera vez, en presencia de Argelia y Mauritania. España no tiene ninguna implicación. José Luis Rodríguez Zapatero lleva tres años en el Gobierno.",
@@ -145,6 +148,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1992-09-15",
             "title": "El año en que el mundo miró a España",
             "desc": "El referéndum de autodeterminación saharaui no se celebra. Los Juegos Olímpicos de Barcelona y la Expo de Sevilla son el escaparate ante el mundo de una «nueva España» que hace gala de su progreso. En agosto se produce la primera llegada masiva de migrantes marroquíes en patera a las costas españolas, y la inmigración empieza a convertirse en un tema central. En el Sáhara, en septiembre se lleva a cabo la primera Intifada, cuando los participantes en manifestaciones pacíficas frente al palacio del gobernador fueron atacados por unidades de policía y del ejército. Desde entonces, septiembre ha sido el «mes de Intifada» del territorio."
@@ -152,6 +156,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1991-03-06",
             "title": "La guerra ha terminado",
             "desc": "Alto el fuego entre Marruecos y el Frente POLISARIO. La MINURSO (Misión de las Naciones Unidas para la Organización de un Referéndum en el Sáhara Occidental) se despliega en el territorio y se fija la fecha de 26 de enero de 1992 para la celebración del referéndum, nunca realizado.",
@@ -180,6 +185,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1981-11-30",
             "title": "Referéndum o no referéndum",
             "desc": "Marruecos acepta la celebración de un referéndum en el Sáhara Occidental. De nuevo, el spoiler es que nunca llegará a celebrarse. Es el año en que España vuelve a temblar con el intento de golpe de Estado del 23F."
@@ -191,6 +197,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1980-08-30",
             "title": "El Muro de la Vergüenza",
             "desc": "Marruecos comienza la construcción del Muro de la Vergüenza, que en años sucesivos irá abarcando zonas cada vez más amplias de territorio. Terminado en abril de 1987, mide 2720km, protege los yacimientos de fosfatos de Bucráa, El Aaiún y Smara y está resguardado por más de 100000 soldados.",
@@ -357,9 +364,9 @@
             "date": "1975-09-15",
             "file": "/media/audio/exodo4.mp3"
         },{
-            "type": "shortaudio",
-            "rext": "8",
-            "rint": "2",
+            "type": "goodaudio",
+            "rext": "10",
+            "rint": "4",
             "date": "1975-10-15",
             "file": "/media/audio/exodo5.mp3"
         }]
@@ -370,6 +377,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1974-03-08",
             "title": "Últimos muertos, primeros muertos",
             "desc": "Muere el primer guerrillero del Polisario caído en combate con el ejército español, Bachir Lehlaui. No ha pasado ni una semana desde que fuera ejecutado en Barcelona Salvador Puig Antich, último condenado oficial a garrote vil del franquismo."
@@ -377,6 +385,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1974-04-25",
             "title": "Cuando las barbas de tu vecino veas pelar",
             "desc": "La Revolución de los Claveles, protagonizada por militares que regresaban de perder las guerras coloniales en África, hace caer la dictadura en Portugal."
@@ -458,6 +467,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1969-05-30",
             "title": "Habemus rey",
             "desc": "Franco nombra a Juan Carlos de Borbón como su sucesor, en virtud de una ley de sucesión aprobada en 1947. El entonces príncipe presta ante las Cortes juramento de guardar y hacer guardar las Leyes Fundamentales del Reino y los principios del Movimiento Nacional, es decir, el ideario franquista."
@@ -483,6 +493,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1968-10-12",
             "title": "Guinea ya es guineana",
             "desc": "Guinea Ecuatorial proclama su independencia. Manuel Fraga encabeza la delegación enviada para el traspaso de poderes a Francisco Macías Nguema (su nombre real era Mez-m Ngueme), un destacado funcionario colonial que no tardará mucho en convertir su presidencia en una dictadura particularmente sangrienta. Estuvo en el poder hasta 1979, cuando lo derrocó con un golpe militar el no menos autoritario Teodoro Obiang, que sigue en el poder."
@@ -500,6 +511,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1967-05-30",
             "title": "Cómo irse in irse",
             "desc": "Como la ONU sigue insistiendo, España accede a organizar un referéndum de autodeterminación. Spoiler: nunca llegará a realizarse. Lo que sí ocurre es que Franco crea la Yemáa, una suerte de Parlamento autonómico formado por notables saharauis, con representantes en las Cortes franquistas de Madrid, con el objetivo de incorporar al sistema de gobierno a unas élites fieles a los intereses del régimen de la metrópoli. Por lo que pudiera pasar.",
@@ -624,6 +636,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1939-07-17",
             "title": "¿Neutraliqué?",
             "desc": "Cuando estalla la II Guerra Mundial, que durará hasta 1945, España se declara neutral. Sin embargo, «neutralidad» puede ser una palabra bastante relativa. Las Islas Canarias y el Sáhara Occidental cobraron un nuevo valor estratégico por el incremento de la navegación aérea y la necesidad de escalas intermedias en los viajes al África subsahariana y a América. En este escenario, el cada vez mayor interés por delimitar las posesiones francesas y las españolas llevó en 1940 a la realización del primer mapa «científico» de la zona. Para ello se recorrió el desierto palmo a palmo, con la colaboración imprescindible de la población saharaui, que a menudo recurrió a la tradición poética oral no solo para orientarse, sino también para ir poblando ese mapa de topónimos."
@@ -640,6 +653,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1934-10-20",
             "title": "Una colonización completada en silencio",
             "desc": "Mientras los obreros se levantaban en Asturias y Lluis Companys proclamaba en Barcelona el Estado Catalán, los colonizadores del Sáhara se alejaban de la costa y negociaban con notables de las tribus del desierto un sometimiento amistoso en virtud del cual se comienza a conocer como «Sáhara Español». Ese año se completó la ocupación con las fronteras actuales y se fundó la ciudad de El Aaiún. Sin embargo, al contrario de lo ocurrido en el Rif, no hubo ni guerra ni ruido.",
@@ -651,6 +665,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1931-04-14",
             "title": "¡Viva la República!",
             "desc": "Se declara la Segunda República, con Manuel Azaña como presidente. Entre las políticas que trató de llevar a cabo estuvo la de desmilitarizar el Protectorado marroquí para hacerlo más similar al francés, donde los asuntos civiles y militares estaban separados. Lo consiguió parcialmente, aumentando el rechazo de los militares de carrera, a los que no les venía demasiado bien."
@@ -734,6 +749,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1921-08-01",
             "title": "Las guerras de África",
             "desc": "Aunque cuando comenzó la I Guerra Mundial en 1914 España se declaró neutral, las colonias del norte de África eran en ese tiempo escenario de otros conflictos. En 1909 había comenzado en el norte de Marruecos la guerra del Rif, que duraría casi 20 años. Pese a librarse lejos de casa, esta guerra tuvo fuertes consecuencias en la política española. Ya desde su mismo comienzo, cuando la llamada a cientos de reservistas para ir a luchar en esas montañas desconocidas fue el detonante de la llamada Semana Trágica, un levantamiento popular en Barcelona que fue fuertemente reprimido. En 1921 el llamado Desastre de Annual («victoria de Annual» para los rifeños, que instauraron de hecho una república independiente bajo el mando de Abd-el-Krim que duró cinco años) fue uno de los detonantes de la crisis política que llevaría al golpe de Estado y la dictadura de Miguel Primo de Rivera. También en el contexto de esta guerra se crea la Legión Española, con José Millán-Astray y Francisco Franco como jefes. Este tendrá un papel importante en el desembarco de Alhucemas, con el que España gana la guerra. En general, el africanismo fue un vivero tanto ideológico como de rápidos ascensos para un sector del Ejército que no tardaría mucho en empezar a tramar algo.",
@@ -745,6 +761,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1900-06-27",
             "title": "Escuadra y cartabón sobre el desierto",
             "desc": "La gente del desierto seguía su vida nómada ajena a las fronteras mientras, en el Convenio de París, escuadras y cartabones delimitaban el reparto del territorio del Sáhara Occidental (y también el de Guinea Ecuatorial) entre Francia y España. El mapa colonial se acabará de trazar en 1906, cuando en la Conferencia de Algeciras se delimite el protectorado sobre Marruecos. En toda la costa saharaui se van estableciendo guarniciones militares que poco a poco irán creciendo, convirtiéndose en ciudades. Para entender lo que vendrá luego, es importante fijarse en que, en torno a 1912, otros tratados van a atribuir estatutos jurídicos distintos a la región de Villa Bens (más al norte) y la del Sáhara Occidental.",
@@ -759,6 +776,7 @@
             "type": "text",
             "rext": "10",
             "rint": "2",
+            "component": "text-component",
             "date": "1898-11-10",
             "title": "El declive del imperio",
             "desc": "Mientras el africanismo cogía vuelo, España iba perdiendo sin embargo lo que quedaba de su antiguo imperio de ultramar. El tratado de París pone fin a una guerra con Estados Unidos con el mandato de ceder Puerto Rico y Filipinas a este país, y conceder a Cuba la independencia. Un duro golpe para el ego de un país que aún hoy se sigue refiriendo a este episodio como «Desastre del 98»."

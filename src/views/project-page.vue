@@ -1,5 +1,5 @@
 <template>
-    <div class="page__wrap">
+    <div class="page__wrap page__wrap--project">
         <article class="page">
             <div class="page__close">
                 <router-link :to="{name: 'home'}">
@@ -13,6 +13,10 @@
             <p>Hacerse cargo de la <strong>historia colonial y sus consecuencias</strong> es una tarea pendiente, necesaria también  también en otros territorios que fueron también en el pasado colonias de España, pero se hace particularmente flagrante en este caso. 43 años después del fin de la presencia española, el proceso de descolonización continúa inconcluso. Miles de saharauis viven aún en los <strong>campamentos de personas refugiadas</strong> en los campamentos de Tinduf, en Argelia. En 1991 la ONU dictó una resolución que obliga a realizar un <strong>reférendum de autodeterminación</strong>, pero este mandato está paralizado en la práctica. Las sentencias del Tribunal de Justicia de la Unión Europea que reconocen la soberanía del Sáhara Occidental y la legitimidad del Frente Polisario como su representante tampoco impiden que el pueblo saharaui siga sufriendo violaciones de los Derechos Humanos.</p>
             <p>Esta no es una historia ajena, no es algo que ocurra en un lugar lejano por razones que no nos incumben. Esta es una historia que se entrelaza con la de nuestro país, y sobre la que <strong>tenemos una responsabilidad</strong>.</p>
             <p>Así que… ¿Hacemos memoria en común?</p>
+            <div class="logos">
+                <img src="/static/img/logoi25M.png" alt="i25m">
+                <img src="/static/img/logoAECID.png" alt="AECID">
+            </div>
             <footer class="links">
                 <router-link :to="{name: 'home'}">Volver</router-link>
             </footer>

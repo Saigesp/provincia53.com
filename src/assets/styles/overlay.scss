@@ -27,6 +27,17 @@
     }
   }
 
+  .logos {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    img {
+      height: 30px;
+      width: auto;
+      margin-right: 10px;
+    }
+  }
+
   .hamburguer {
     pointer-events: all;
     position: absolute;
