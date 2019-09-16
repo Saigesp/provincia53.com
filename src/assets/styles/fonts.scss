@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'dharma_gothic_eregular';
     src: url('../fonts/dharma/dharmagothice-regular-webfont.woff2') format('woff2'),
          url('../fonts/dharma/dharmagothice-regular-webfont.woff') format('woff');
@@ -20,5 +20,43 @@ body {
 
 h1, h2, h3, h4, h5, h6, text {
     font-family: 'dharma_gothic_eregular', 'webfontregular', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+*/
+
+
+@import url("https://p.typekit.net/p.css?s=1&k=sqj2zyh&ht=tk&f=28977.28991.37231&a=8366341&app=typekit&e=css");
+
+@font-face {
+  font-family: "termina";
+  src: url("https://use.typekit.net/af/da851f/00000000000000003b9adf1a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/da851f/00000000000000003b9adf1a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/da851f/00000000000000003b9adf1a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "termina";
+  src: url("https://use.typekit.net/af/298959/00000000000000003b9adf28/27/l?subset_id=2&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/298959/00000000000000003b9adf28/27/d?subset_id=2&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/298959/00000000000000003b9adf28/27/a?subset_id=2&fvd=n7&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "dharma-gothic-m";
+  src: url("https://use.typekit.net/af/03fd87/00000000000000003b9b1241/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/03fd87/00000000000000003b9b1241/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/03fd87/00000000000000003b9b1241/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+    font-family: termina, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, text {
+    font-family: dharma-gothic-m, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }

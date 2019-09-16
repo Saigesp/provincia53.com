@@ -63,7 +63,7 @@ body {
     margin: 0;
     line-height: 1;
     color: #2b2b2b;
-    font-family: 'dharma_gothic_eregular', 'webfontregular', Helvetica, Arial, sans-serif;
+    font-family: 'dharma-gothic-m', 'webfontregular', Helvetica, Arial, sans-serif;
     font-size: 20px;
     span {
       display: block;
