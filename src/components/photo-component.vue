@@ -9,7 +9,7 @@
             <div class="component__photo">
                 <img :src="'/static'+datum.file" :alt="datum.title">
             </div>
-            <div class="component__poems">
+            <div class="component__poems" v-if="datum.poems">
                 <div v-for="poem in datum.poems">
                     <div v-html="poem.text"></div>
                     <span>{{poem.author}}</span>

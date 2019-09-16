@@ -9,7 +9,7 @@
             <div class="component__video">
                 <iframe :src="datum.file" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="component__poems">
+            <div class="component__poems" v-if="datum.poems">
                 <div v-for="poem in datum.poems">
                     <div v-html="poem.text"></div>
                     <span>{{poem.author}}</span>

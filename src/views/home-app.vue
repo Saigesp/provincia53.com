@@ -30,6 +30,7 @@
             <li><router-link :to="{name: 'about-page'}">Quiénes somos</router-link></li>
             <li><router-link :to="{name: 'characters-page'}">Guía de personajes</router-link></li>
             <li><router-link :to="{name: 'referrers-page'}">Referencias</router-link></li>
+            <li><router-link :to="{name: 'contact-page'}">Contacto</router-link></li>
             <li class="rrss">
               <a href="https://www.facebook.com/Provincia-53-103922694326409/" target="_blank">
                 <img src="/static/img/icons/facebook.svg" alt="Provincia53 en Facebook">

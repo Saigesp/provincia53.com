@@ -39,7 +39,7 @@
                 </li>
             </ul>
             <p>En el camino hemos contado con la compañía y el apoyo de diversas personas expertas en la memoria democrática española, el Sáhara Occidental o el estudio de la colonialidad. A este consejo asesor le agradecemos su disponibilidad para atender nuestras dudas y su generosidad al compartir su conocimiento y reflexiones:</p>
-            <p>Abdeslam Omar - Alicia Torija - Ana Vicente - Bahia M. Awah - Carlos Cañete - Claudia Barona - David Perejil - Gloria Guzmán - Gonzalo Fernández Parrilla - Guillermo Galván - Irene Ruano - Juan Robles - Luis Suárez - Olga Blázquez - Pablo Socorro - Sato Díaz - Tomás Bárbulo</p>
+            <p class="name">Abdeslam Omar - Alicia Torija - Ana Vicente - Bahia M. Awah - Carlos Cañete - Claudia Barona - David Perejil - Gloria Guzmán - Gonzalo Fernández Parrilla - Guillermo Galván - Irene Ruano - Juan Robles - Luis Suárez - Olga Blázquez - Pablo Socorro - Sato Díaz - Tomás Bárbulo</p>
             <p>«Provincia 53» ha sido producido por el Instituto 25M para la Democracia dentro del marco de un proyecto de cooperación internacional financiado por la AECID</p>
             <footer class="links">
                 <router-link :to="{name: 'home'}">Volver</router-link>

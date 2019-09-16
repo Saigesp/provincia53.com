@@ -10,7 +10,7 @@
   overflow-y: scroll;
   
   h3 {
-    margin-top: 0;
+    font-size: 32px;
   }
 
   &__controls {
@@ -38,11 +38,22 @@
   }
 
   &__photo {
+    margin-bottom: 24px;
     img {
       width: 100%;
       height: auto;
     }
+  }
+
+  &__pdf {
     margin-bottom: 24px;
+    a {
+      display: block;
+    }
+    img {
+      margin: 0 auto;
+      display: block;
+    }
   }
 
   &__video {

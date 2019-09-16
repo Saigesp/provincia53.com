@@ -37,14 +37,6 @@
   ul {
     color: #efefef;
     margin-bottom: 24px;
-    .role {
-      display: block;
-      font-size: smaller;
-      font-style: italic;
-    }
-    .name {
-      display: block;
-    }
   }
   li {
     margin-bottom: 16px;
@@ -55,6 +47,16 @@
     text-decoration: underline;
   }
 
+  .role {
+    display: block;
+    font-size: smaller;
+  }
+  .name {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
   .links {
     text-align: center;
     margin-top: 40px;
@@ -62,9 +64,10 @@
   }
 
   .logos {
-    text-align: right;
+    text-align: center;
     img {
       margin-left: 10px;
+      margin-right: 10px;
       height: 40px;
       width: auto;
     }

@@ -13,5 +13,6 @@ export default new Router({
     { path: '/quienes-somos',         name: 'about-page',             component: ComponentFactory('about-page') },
     { path: '/guia-personajes',       name: 'characters-page',        component: ComponentFactory('characters-page') },
     { path: '/referencias',           name: 'referrers-page',         component: ComponentFactory('referrers-page') },
+    { path: '/contacto',              name: 'contact-page',           component: ComponentFactory('contact-page') },
   ]
 })

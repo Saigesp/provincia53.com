@@ -5,3 +5,4 @@ Vue.component('project-page',                        require('./project-page').d
 Vue.component('about-page',                          require('./about-page').default);
 Vue.component('characters-page',                     require('./characters-page').default);
 Vue.component('referrers-page',                      require('./referrers-page').default);
+Vue.component('contact-page',                        require('./contact-page').default);
