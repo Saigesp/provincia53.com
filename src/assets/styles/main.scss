@@ -86,7 +86,7 @@ button {
       fill: transparent;
       pointer-events: none;
       transition: r 1000ms 300ms ease-in-out, opacity 200ms ease;
-      animation: rotation 5s ease-out 500ms 1 forwards;
+      //animation: rotation 5s ease-out 500ms 1 forwards;
       stroke-dasharray: 6000px;
       stroke-dashoffset: 100%;
       opacity: 0.4;
@@ -112,19 +112,16 @@ button {
       cursor: pointer;
       transition: opacity 200ms ease 100ms;
 
-      circle {
-        transition: cy 1000ms ease-in-out, cx 1000ms ease-in-out;
-        stroke: white;
-        stroke-width: 1px;
-      }
-
       &__dot {
         opacity: 0.7;
         fill: white;
         pointer-events: none;
+        stroke: none;
       }
 
       &__circle {
+        stroke: white;
+        stroke-width: 1px;
         opacity: 0;
         fill: #050505;
       }
@@ -138,6 +135,7 @@ button {
       &__text {
         fill: white;
         display: none;
+        font-size: 18px;
       }
 
       &:hover {
@@ -147,6 +145,28 @@ button {
           }
           &__text {
             display: block;
+          }
+        }
+      }
+
+      &--shortaudio {
+        .item {
+          &__dot {
+            fill: #a74c42;
+          }
+          &__circle {
+            stroke: #a74c42;
+          }
+        }
+      }
+
+      &--goodaudio {
+        .item {
+          &__dot {
+            fill: red;
+          }
+          &__circle {
+            stroke: red;
           }
         }
       }

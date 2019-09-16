@@ -1,6 +1,11 @@
 <template>
     <div class="page__wrap">
         <article class="page">
+            <div class="page__close">
+                <router-link :to="{name: 'home'}">
+                    <img src="/static/img/icons/close.svg" alt="Cerrar">
+                </router-link>
+            </div>
             <h1>Quiénes somos</h1>
             <p>Este documental web ha sido realizado por un <strong>equipo</strong> que tiene un pie en la Península y otro en los campamentos de refugiados saharauis de Tinduf. Somos estas personas, y nos hemos encargado de estas tareas:</p>
             <ul>

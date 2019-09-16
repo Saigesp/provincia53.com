@@ -58,10 +58,11 @@
               <g v-for="(yeargroup, i) in datum.years" class="chart__ygroup" :transform="`translate(${center[0]},${center[1]})`">
                 <circle class="year__hover" :r="circleRadius(i)"></circle>
                 <circle class="year" :r="circleRadius(i)"></circle>
-                <g v-for="item in yeargroup.items" class="item" :transform="`translate(${calcItemCenter(item.date, i)[0]},${calcItemCenter(item.date, i)[1]})`">
+                <g v-for="item in yeargroup.items" :class="`item item--${item.type}`" :transform="`translate(${calcItemCenter(item.date, i)[0]},${calcItemCenter(item.date, i)[1]})`">
                   <polyline class="item__line" :points="calcLinePoints(item.date, i)" v-if="item.title"></polyline>
-                  <circle class="item__circle" r="10" @click="showItem(item)"></circle>
-                  <circle class="item__dot" r="1"></circle>
+                  <circle class="item__circle" :r="item.rext" @click="showItem(item)"></circle>
+
+                  <circle class="item__dot" :r="item.rint"></circle>
                   <text
                     class="item__text"
                     :x="calcTextPosition(item.date, i)[0]"
@@ -71,6 +72,9 @@
                     dy="5">{{item.title}}</text>
                 </g>
                 <text class="year__title" y="10">{{yeargroup.title}}</text>
+              </g>
+              <g :transform="`translate(${center[0]},${center[1]})`">
+                <svg-wave v-if="isPlayingAudio"></svg-wave>
               </g>
             </g>
           </svg>
@@ -119,6 +123,8 @@ export default {
       isMenuActive: false,
       currentComponent: false,
       currentComponentData: {},
+      currentAudio: new Audio(),
+      isPlayingAudio: false,
     }
   },
   created: function() {
@@ -147,6 +153,10 @@ export default {
     EventBus.$on('close-component', data => {
       this.currentComponent = false;
       this.currentComponentData = {};
+    })
+
+    EventBus.$on('stop-audio', data => {
+      this.stopAudio();
     })
 
   },
@@ -204,14 +214,30 @@ export default {
       }
     },
     showItem(item) {
-      this.currentComponent = item.component;
-      this.currentComponentData = item;
+      if(item.type == 'shortaudio' || item.type == 'goodaudio'){
+        this.playAudio('/static/'+item.file)
+      }else{
+        this.currentComponent = item.component;
+        this.currentComponentData = item;
+      }
+    },
+    playAudio(source){
+      this.currentAudio.pause();
+      this.currentAudio = new Audio(source);
+      this.currentAudio.onended = (event) => {
+        this.stopAudio()
+      };
+      this.currentAudio.play();
+      this.isPlayingAudio = true;
+    },
+    stopAudio(){
+      this.currentAudio.pause();
+      this.isPlayingAudio = false;
     },
     resetZoom() {
       this.svg.transition()
         .duration(1000)
         .call(this.zoom.transform, d3.zoomIdentity.scale(1));
-
     }
   },
   beforeDestroy() {

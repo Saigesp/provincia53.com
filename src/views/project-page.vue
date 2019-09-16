@@ -1,6 +1,11 @@
 <template>
     <div class="page__wrap">
         <article class="page">
+            <div class="page__close">
+                <router-link :to="{name: 'home'}">
+                    <img src="/static/img/icons/close.svg" alt="Cerrar">
+                </router-link>
+            </div>
             <h1>El proyecto</h1>
             <p>¿Sabías que <strong>hasta el año 1976 España tuvo una provincia más</strong> que las que conocemos actualmente? No te preocupes si no: a mucha gente le pasa. Se trataba del Sáhara Occidental, colonizado desde finales del siglo XIX, y cuyo abandono se de el mismo día de la muerte de Franco. Esta es la historia de la provincia 53, y de cómo la partida de España dejó irresuelta la historia del que sigue siendo el <strong>único territorio pendiente de descolonización de África</strong>. Una historia que tiene todo que ver con la dictadura y con la transición, y que nuestra memoria democrática no puede esquivar.</p>
             <p>En este documental web exploramos esa memoria a través de los <strong>testimonios</strong> de personas que aún recuerdan lo que pasó. Mediante distintas piezas audiovisuales y sonoras repasamos una historia reciente de la que sabemos mucho menos de lo necesario. Puedes navegarlas como quieras: sigue tu curiosidad para saltar entre las distintas historias y descubrir la <strong>memoria cruzada</strong> que construyen estas voces saharauis y españolas.</p>

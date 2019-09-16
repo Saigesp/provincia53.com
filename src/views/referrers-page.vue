@@ -1,6 +1,11 @@
 <template>
   <div class="page__wrap">
     <article class="page">
+      <div class="page__close">
+        <router-link :to="{name: 'home'}">
+          <img src="/static/img/icons/close.svg" alt="Cerrar">
+        </router-link>
+      </div>
       <h1>Referencias</h1>
       <p>«Provincia 53» sigue la senda que han abierto antes muchos otros trabajos de investigación, divulgación y reflexión sobre el Sáhara Occidental. Aquí os dejamos la referencia de algunos de los que han sido más importantes para nosotros, por si queréis seguir indagando:</p>
       <p><strong>HEGOA</strong> es la entidad de referencia en memoria histórica del Sáhara Occidental, sobre todo en relación con las personas desaparecidas. En su página web tienen en libre acceso muchos materiales interesantes, como estos:</p>
