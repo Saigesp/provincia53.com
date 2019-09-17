@@ -1,5 +1,9 @@
 @import './variables';
 
+html {
+  background: #0e0e0e;
+}
+
 body {
   background-color: #ffffff;
   color: #e3e7e8;
@@ -191,9 +195,20 @@ button {
       }
     }
   }
+
+  .biggroup {
+    text {
+      fill: white;
+      font-size: 24px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 860px) {
   .chart {
     &__metawrap {
       display: block;

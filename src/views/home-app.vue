@@ -68,6 +68,11 @@
         <!-- start chart contents -->
         <parallax-element :parallaxStrength="-10" :type="'translation'">
           <svg class="chart" :viewBox="`0 0 ${width} ${height}`" :width="width+400" :height="height+100">
+            <g class="biggroup" :transform="`translate(${center[0]},${center[1]})`">
+              <g class="biggroup__item" v-for="(bigitem, i) in datum.loncon" :transform="`translate(${calcBigItemPosition(i)})`">
+                <text :text-anchor="calcBigItemAnchor(i)" @click="showBigItem(bigitem)">{{bigitem.title}}</text>
+              </g>
+            </g>
             <g ref="gengroup">
               <g v-for="(yeargroup, i) in datum.years" class="chart__ygroup" :transform="`translate(${center[0]},${center[1]})`">
                 <circle class="year__hover" :r="circleRadius(i)"></circle>
@@ -130,7 +135,7 @@ export default {
     return {
       width: 0,
       height: 0,
-      minScaleSize: 700, // Check CSS media queries
+      minScaleSize: 860, // Check CSS media queries
       circleRadius: () => 1,
       zoom: () => {},
       datum: require('../assets/data/data.json'),
@@ -196,7 +201,7 @@ export default {
       this.circleRadius.range([this.calcCircleRadius(), 40]);
     },
     calcCircleRadius() {
-      if(this.width < this.minScaleSize){
+      if(this.width < this.minScaleSize || this.height < 600){
         return this.width/2;
       }else{
         return d3.min([d3.min([this.width / 2, this.height / 2]) - 150, 350]);
@@ -236,6 +241,17 @@ export default {
     },
     calcTextAnchor(strdate, i){
       return this.dateToRadians(new Date(strdate)) <= Math.PI ? 'start' : 'end'
+    },
+    calcBigItemPosition(i){
+      let space = 24;
+      let preStartX = this.width < 1200 ? this.width/2 : 800;
+      let startX = Math.floor(i/4)%2 == 0 ? -preStartX+100 : preStartX-100;
+      let preStartY = Math.floor(i/4)<2 ? -this.circleRadius(0) : this.circleRadius(0)-(space*2);
+      let startY = preStartY+(space*Math.floor(i/4)%2) + space*(i%4);
+      return [startX, startY];
+    },
+    calcBigItemAnchor(i){
+      return Math.floor(i/4)%2 == 0 ? 'start' : 'end';
     },
     dateToRadians(date) {
       let start = new Date(date.getFullYear(), 0, 0);

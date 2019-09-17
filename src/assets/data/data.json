@@ -10,6 +10,11 @@
         "thumbnail": "/static/img/loncon/militares.jpg",
         "link": "https://www.youtube.com/embed/3-9zogPbIr8"
     },{
+        "title": "Memorias cruzadas: profe y alumna",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/profe.jpg",
+        "link": "https://www.youtube.com/embed/bU2CNl4gDJ0"
+    },{
         "title": "Memorias cruzadas: trabajadores",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/trabajadores.jpg",
@@ -153,7 +158,7 @@
             "rext": "10",
             "rint": "2",
             "component": "text-component",
-            "date": "2013-05-21",
+            "date": "2013-06-10",
             "title": "Apátridas por ley",
             "desc": "La Audiencia Nacional española reconoce en dos sentencias el estatus de apátridas a las personas saharauis, una petición histórica porque supone de facto reconocer su condición de refugiadas, y la no obligación de acogerse a una segunda nacionalidad en aquellos países que no reconocen la saharaui. El documento de apatridia permite residir en España y viajar libremente dentro de Europa.",
             "poems": [{
@@ -209,7 +214,7 @@
             "rext": "10",
             "rint": "2",
             "component": "pdf-component",
-            "date": "2002-02-15",
+            "date": "2002-02-20",
             "title": "¿Nadie hace caso a la ONU?",
             "desc": "La Asesoría Jurídica de Naciones Unidas, por petición del Consejo de Seguridad, dictamina que Marruecos no era una potencia administradora del territorio del Sáhara Occidental, que los Acuerdos de Madrid de 1975 no habían transferido ninguna soberanía a sus firmantes y que la condición de territorio no autónomo del Sáhara Occidental no se había visto afectada por esos acuerdos. Esta declaración no tiene ninguna consecuencia. En esos años se suceden las propuestas de acuerdo a la RASD y Marruecos por parte de la ONU (los sucesivos planes Baker), pero ninguna fructifica. En España gobierna José María Aznar.",
             "file": "/media/pdf/resolucion2002.pdf",
@@ -250,7 +255,7 @@
             "rext": "10",
             "rint": "2",
             "component": "photo-component",
-            "date": "1982-11-30",
+            "date": "1982-12-14",
             "title": "El dilema de Felipe",
             "desc": "Felipe González gana las elecciones, y ocupará la Presidencia del Gobierno hasta 1996. En 1983 firma con Marruecos un acuerdo de pesca en aguas saharauis. En 1986 España entra en la Comunidad Económica Europea (ahora Unión Europea), que es quien centraliza hoy en día este tipo de acuerdos.",
             "file": "/media/cambio16.png"
@@ -263,7 +268,7 @@
             "rext": "10",
             "rint": "2",
             "component": "text-component",
-            "date": "1981-11-30",
+            "date": "1981-11-10",
             "title": "Referéndum o no referéndum",
             "desc": "Marruecos acepta la celebración de un referéndum en el Sáhara Occidental. De nuevo, el spoiler es que nunca llegará a celebrarse. Es el año en que España vuelve a temblar con el intento de golpe de Estado del 23F."
         }]
@@ -313,7 +318,7 @@
             "rext": "10",
             "rint": "2",
             "component": "photo-component",
-            "date": "1977-07-31",
+            "date": "1977-07-06",
             "title": "Cambia, todo cambia",
             "desc": "Muchas cosas pasan ese año que empieza en Madrid con siete días sangrientos, marcados por el asesinato de los abogados laboralistas de Atocha y los de varios manifestantes a manos de la extrema derecha. En febrero se permite la legalización de los partidos políticos hasta entonces clandestinos, aunque el PCE se legalizó más tarde, el 9 de abril («sábado santo rojo») y dos días más tarde el PSUC. En abril se liquida el Movimiento Nacional. En junio se celebran elecciones, se forma el primer Gobierno de UCD, presidido por Adolfo Suárez, y se declara la apertura de las Cortes Constituyentes. En el Sahara, la guerra sigue. En Tinduf, los campamentos crecen. El 14 de noviembre, Felipe González, entonces Secretario General del PSOE, los visita y firma con el Frente Polisario un comunicado común en el que aseguraba su apoyo al pueblo saharaui hasta que este «no hubiera obtenido la liberación total de su territorio nacional».",
             "file": "/media/visitax.jpg",

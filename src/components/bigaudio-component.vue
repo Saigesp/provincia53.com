@@ -39,11 +39,9 @@ export default {
             EventBus.$emit('close-component')
         },
         onPlay(){
-            console.log('play');
             this.isPlaying = true;
         },
         onStop(){
-            console.log('stop');
             this.isPlaying = false;
         },
     },
