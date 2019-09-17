@@ -101,14 +101,14 @@
     </div>
 
     <!-- start mobile content -->
-<!--     <div class="mobilick" v-if="width <= minScaleSize">
+    <div class="mobilick" v-if="width <= minScaleSize">
       <div v-for="(yeargroup, i) in datum.years">
         <h3>{{yeargroup.title}}</h3>
         <div v-for="item in yeargroup.items">
           <h4>{{item.title}}</h4>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- end mobile content -->
 
     <!-- start components -->
@@ -148,11 +148,7 @@ export default {
   },
   computed: {
     center() {
-      if(this.width < this.minScaleSize){
-        return [this.width/2, ((this.height-250)/2)+250]
-      }else{
-        return [this.width/2, this.height/2]
-      }
+      return [this.width/2, this.height/2]
     },
   },
   mounted: function() {

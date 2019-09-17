@@ -60,13 +60,13 @@ button {
 * CHART
 */
 .chart {
-  display: block;
   margin: 0 auto;
   min-width: 100px;
   min-height: 100px;
   margin-left: -200px;
 
   &__metawrap {
+    display: none;
   }
 
   &__wrap {
@@ -200,7 +200,7 @@ button {
       pointer-events: all;
     }
     &__wrap {
-    height: 100vh;
+      height: 100vh;
       overflow: hidden;
     }
   }
