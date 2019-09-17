@@ -17,6 +17,9 @@
                 <img src="/static/img/logoi25M.png" alt="i25m">
                 <img src="/static/img/logoAECID.png" alt="AECID">
             </div>
+            <div class="licence">
+                <span>Licenciado bajo <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank">CC BY-NC-Sa 4.0</a></span>
+            </div>
             <footer class="links">
                 <router-link :to="{name: 'home'}">Volver</router-link>
             </footer>
