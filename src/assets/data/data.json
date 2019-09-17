@@ -1,4 +1,55 @@
 {
+    "loncon": [{
+        "title": "Brahim y Jadiya",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/brahimjadiya.jpg",
+        "link": "https://www.youtube.com/embed/36k5l0yl-V0"
+    },{
+        "title": "Memorias cruzadas: trabajadores",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/trabajadores.jpg",
+        "link": "https://www.youtube.com/embed/jpzteZkhXjY"
+    },{
+        "title": "¿Dónde está Basiri?",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/basiri.jpg",
+        "link": "https://www.youtube.com/embed/FbbFr_BY3EM"
+    },{
+        "title": "¿Qué sabes del Sáhara Occidental?",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/quesabes.jpg",
+        "link": "https://www.youtube.com/embed/p_Tv0CtqFZ4"
+    },{
+        "title": "Memorias cruzadas: militares",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/militares.jpg",
+        "link": "https://www.youtube.com/embed/3-9zogPbIr8"
+    },{
+        "title": "Un muro al que no hay que acostumbrarse",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/muro.jpg",
+        "link": "https://www.youtube.com/embed/_Png7uXbNZU"
+    },{
+        "title": "Fosas en el desierto",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/fosas.jpg",
+        "link": "https://www.youtube.com/embed/Txi2GfqIqcs"
+    },{
+        "title": "Recuerdos del primo Basiri",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/recuerdos.jpg",
+        "link": "https://www.youtube.com/embed/tVd3jEgzj60"
+    },{
+        "title": "¿Qué le dirías al Gobierno español?",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/gobierno.jpg",
+        "link": "https://www.youtube.com/embed/LjY3Ge7S-Ds"
+    },{
+        "title": "El día del abandono",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/abandono.jpg",
+        "link": "https://www.youtube.com/embed/SePUv7T62Lg"
+    }],
     "years": [{
         "year": 2019,
         "title": "2019",
@@ -177,7 +228,7 @@
             "date": "1982-11-30",
             "title": "El dilema de Felipe",
             "desc": "Felipe González gana las elecciones, y ocupará la Presidencia del Gobierno hasta 1996. En 1983 firma con Marruecos un acuerdo de pesca en aguas saharauis. En 1986 España entra en la Comunidad Económica Europea (ahora Unión Europea), que es quien centraliza hoy en día este tipo de acuerdos.",
-            "file": "/media/TODO"
+            "file": "/media/cambio16.png"
         }]
     },{
         "year": 1981,
@@ -211,14 +262,13 @@
         "year": 1979,
         "title": "1979",
         "items": [{
-            "type": "pdf",
+            "type": "text",
             "rext": "10",
             "rint": "2",
-            "component": "pdf-component",
+            "component": "text-component",
             "date": "1979-10-30",
             "title": "Hasta luego, Mauritania",
             "desc": "Apenas unos días después de un golpe de Estado pacífico que supuso un cambio de régimen en Mauritania, este país abandona la guerra. Firma con el Frente Polisario su retirada renunciando a los territorios que le correspondían por los Acuerdos de Madrid, aunque en el transcurso del conflicto será Marruecos quien se anexione esas zonas.",
-            "file": "/media/TODO",
             "poems": [{
                 "text": "Hemos elegido subsistir en este espacio abierto y remoto",
                 "author": "Limam Boisha"

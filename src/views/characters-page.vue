@@ -114,6 +114,15 @@ export default {
 @media screen and (min-width: 460px) {
   .characters {
     li {
+      flex: 1 1 180px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .characters {
+    li {
       flex: 0 1 180px;
       margin-right: 30px;
     }

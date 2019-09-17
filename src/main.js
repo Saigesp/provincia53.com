@@ -9,6 +9,7 @@ Vue.use(VueMouseParallax)
 
 import './assets/styles/reset.scss';
 import './assets/styles/flexbox.scss';
+import './assets/styles/flickity.scss';
 import './assets/styles/fonts.scss';
 import './assets/styles/menu.scss';
 import './assets/styles/pages.scss';

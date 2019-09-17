@@ -16,6 +16,15 @@
             <img src="/static/img/logoi25M.png" alt="i25m">
             <img src="/static/img/logoAECID.png" alt="AECID">
         </div>
+        <div class="loncon__wrap">
+          <div class="loncon">
+            <div class="loncon__list">
+              <div class="loncon__item" v-for="loncon in datum.loncon" :style="{backgroundImage: `url(${loncon.thumbnail})`}">
+                <img src="/static/img/icons/play.svg" alt="Play" @click="showBigItem(loncon)">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- end overlay -->
 
@@ -113,6 +122,7 @@
 <script>
 import EventBus from '../plugins/bus'
 import * as d3 from "d3";
+import Flickity from 'flickity'
 
 export default {
   name: 'home-app',
@@ -154,6 +164,16 @@ export default {
 
     this.svg = d3.select(this.$refs.chart)
       .call(this.zoom);
+
+    var flkty = new Flickity( '.loncon__list', {
+      // options
+      cellAlign: 'left',
+      contain: true,
+      prevNextButtons: false,
+      pageDots: false,
+      freeScroll: true,
+      wrapAround: true
+    });
 
     EventBus.$on('close-component', data => {
       this.currentComponent = false;
@@ -225,6 +245,12 @@ export default {
         this.currentComponent = item.component;
         this.currentComponentData = item;
       }
+    },
+    showBigItem(item) {
+      console.log('showBigItem', item);
+      this.stopAudio()
+      this.currentComponent = item.component;
+      this.currentComponentData = item;
     },
     playAudio(source){
       this.currentAudio.pause();
