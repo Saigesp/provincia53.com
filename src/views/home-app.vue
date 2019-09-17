@@ -244,7 +244,7 @@ export default {
     },
     calcBigItemPosition(i){
       let space = 24;
-      let preStartX = this.width < 1200 ? this.width/2 : 800;
+      let preStartX = this.width < 1200 ? this.width/2 : (this.width/2)*0.9;
       let startX = Math.floor(i/4)%2 == 0 ? -preStartX+100 : preStartX-100;
       let preStartY = Math.floor(i/4)<2 ? -this.circleRadius(0) : this.circleRadius(0)-(space*2);
       let startY = preStartY+(space*Math.floor(i/4)%2) + space*(i%4);
