@@ -7,5 +7,6 @@ Vue.component('photo-component',                         require('./photo-compon
 Vue.component('pdf-component',                           require('./pdf-component').default);
 
 Vue.component('bigvideo-component',                      require('./bigvideo-component').default);
+Vue.component('bigaudio-component',                      require('./bigaudio-component').default);
 
 Vue.component('svg-wave',                                require('./svg-wave').default);

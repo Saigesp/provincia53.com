@@ -57,7 +57,7 @@
       <!-- end menu -->
 
       <!-- start chart -->
-      <parallax-container class="chart__metawrap" v-if="width > minScaleSize">
+      <parallax-container class="chart__metawrap">
 
         <!-- start chart background -->
         <parallax-element :parallaxStrength="100" :type="'translation'">
@@ -101,14 +101,14 @@
     </div>
 
     <!-- start mobile content -->
-    <div class="mobilick" v-if="width <= minScaleSize">
+<!--     <div class="mobilick" v-if="width <= minScaleSize">
       <div v-for="(yeargroup, i) in datum.years">
         <h3>{{yeargroup.title}}</h3>
         <div v-for="item in yeargroup.items">
           <h4>{{item.title}}</h4>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- end mobile content -->
 
     <!-- start components -->
@@ -148,12 +148,19 @@ export default {
   },
   computed: {
     center() {
-      return [this.width/2, this.height/2]
+      if(this.width < this.minScaleSize){
+        return [this.width/2, ((this.height-250)/2)+250]
+      }else{
+        return [this.width/2, this.height/2]
+      }
     },
   },
   mounted: function() {
     this.getCanvasSize();
-    window.addEventListener("resize", () => { this.getCanvasSize(); });
+    window.addEventListener("resize", () => {
+      this.getCanvasSize();
+      this.resetZoom();
+    });
 
     this.zoom = d3.zoom()
       .scaleExtent([1 / 4, 30])
@@ -193,7 +200,11 @@ export default {
       this.circleRadius.range([this.calcCircleRadius(), 40]);
     },
     calcCircleRadius() {
-      return d3.min([d3.min([this.width / 2, this.height / 2]) - 150, 350]);
+      if(this.width < this.minScaleSize){
+        return this.width/2;
+      }else{
+        return d3.min([d3.min([this.width / 2, this.height / 2]) - 150, 350]);
+      }
     },
     calcItemCenter(strdate, i) {
       let date = new Date(strdate)
@@ -231,12 +242,8 @@ export default {
       return this.dateToRadians(new Date(strdate)) <= Math.PI ? 'start' : 'end'
     },
     dateToRadians(date) {
-      if (this.width < this.minScaleSize) {
-        return Math.PI;
-      } else {
-        let start = new Date(date.getFullYear(), 0, 0);
-        return Math.floor((date - start) / (1000 * 60 * 60 * 24)) / (183 / Math.PI);
-      }
+      let start = new Date(date.getFullYear(), 0, 0);
+      return Math.floor((date - start) / (1000 * 60 * 60 * 24)) / (183 / Math.PI);
     },
     showItem(item) {
       if(item.type == 'shortaudio' || item.type == 'goodaudio'){
@@ -247,7 +254,6 @@ export default {
       }
     },
     showBigItem(item) {
-      console.log('showBigItem', item);
       this.stopAudio()
       this.currentComponent = item.component;
       this.currentComponentData = item;

@@ -61,7 +61,7 @@
           <img src="/static/img/characters/Larbi.jpg" alt="photo">
           <strong>Larbi Hanuad</strong> fue trabajador de Fos Bucráa durante la época española. Hoy vive a caballo entre los campamentos de refugiados y Cartagena, en España.</li>
         <li>
-          <img src="/static/img/characters/.jpg" alt="photo">
+          <img src="/static/img/characters/padres_jadiya.jpg" alt="photo">
           <strong>Maimuna Mohamed Ali</strong> y <strong>Ali Mohmed Sleima</strong> son los padres de Jadiya Ali. Se criaron como pastores nómadas en el Sáhara Occidental, y hoy viven en los campamentos de refugiados.</li>
         <li>
           <img src="/static/img/characters/Mbarka.jpg" alt="photo">

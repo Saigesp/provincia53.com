@@ -1,20 +1,5 @@
 {
     "loncon": [{
-        "title": "Brahim y Jadiya",
-        "component": "bigvideo-component",
-        "thumbnail": "/static/img/loncon/brahimjadiya.jpg",
-        "link": "https://www.youtube.com/embed/36k5l0yl-V0"
-    },{
-        "title": "Memorias cruzadas: trabajadores",
-        "component": "bigvideo-component",
-        "thumbnail": "/static/img/loncon/trabajadores.jpg",
-        "link": "https://www.youtube.com/embed/jpzteZkhXjY"
-    },{
-        "title": "¿Dónde está Basiri?",
-        "component": "bigvideo-component",
-        "thumbnail": "/static/img/loncon/basiri.jpg",
-        "link": "https://www.youtube.com/embed/FbbFr_BY3EM"
-    },{
         "title": "¿Qué sabes del Sáhara Occidental?",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/quesabes.jpg",
@@ -25,30 +10,70 @@
         "thumbnail": "/static/img/loncon/militares.jpg",
         "link": "https://www.youtube.com/embed/3-9zogPbIr8"
     },{
-        "title": "Un muro al que no hay que acostumbrarse",
+        "title": "Memorias cruzadas: trabajadores",
         "component": "bigvideo-component",
-        "thumbnail": "/static/img/loncon/muro.jpg",
-        "link": "https://www.youtube.com/embed/_Png7uXbNZU"
+        "thumbnail": "/static/img/loncon/trabajadores.jpg",
+        "link": "https://www.youtube.com/embed/jpzteZkhXjY"
+    },{
+        "title": "El día del abandono",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/abandono.jpg",
+        "link": "https://www.youtube.com/embed/SePUv7T62Lg"
+    },{
+        "title": "Transición",
+        "component": "bigaudio-component",
+        "thumbnail": "/static/img/loncon/audio.png",
+        "link": "/media/audiog/abandono.mp3"
     },{
         "title": "Fosas en el desierto",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/fosas.jpg",
         "link": "https://www.youtube.com/embed/Txi2GfqIqcs"
     },{
+        "title": "Buscar a un padre",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/padre.jpg",
+        "link": "https://www.youtube.com/embed/gnph9umz6xg"
+    },{
+        "title": "¿Dónde está Basiri?",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/basiri.jpg",
+        "link": "https://www.youtube.com/embed/FbbFr_BY3EM"
+    },{
+        "title": "Basiri",
+        "component": "bigaudio-component",
+        "thumbnail": "/static/img/loncon/audio.png",
+        "link": "/media/audiog/basiri.mp3"
+    },{
         "title": "Recuerdos del primo Basiri",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/recuerdos.jpg",
         "link": "https://www.youtube.com/embed/tVd3jEgzj60"
     },{
+        "title": "Brahim y Jadiya",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/brahimjadiya.jpg",
+        "link": "https://www.youtube.com/embed/36k5l0yl-V0"
+    },{
+        "title": "De dónde es un saharaui: Identidad",
+        "component": "bigaudio-component",
+        "thumbnail": "/static/img/loncon/audio.png",
+        "link": "/media/audiog/identidad.mp3"
+    },{
+        "title": "De dónde es un saharaui: Papeles",
+        "component": "bigaudio-component",
+        "thumbnail": "/static/img/loncon/audio.png",
+        "link": "/media/audiog/papeles.mp3"
+    },{
+        "title": "Un muro al que no hay que acostumbrarse",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/muro.jpg",
+        "link": "https://www.youtube.com/embed/_Png7uXbNZU"
+    },{
         "title": "¿Qué le dirías al Gobierno español?",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/gobierno.jpg",
         "link": "https://www.youtube.com/embed/LjY3Ge7S-Ds"
-    },{
-        "title": "El día del abandono",
-        "component": "bigvideo-component",
-        "thumbnail": "/static/img/loncon/abandono.jpg",
-        "link": "https://www.youtube.com/embed/SePUv7T62Lg"
     }],
     "years": [{
         "year": 2019,
@@ -708,7 +733,7 @@
             "date": "1936-07-30",
             "title": "La parte africana de la guerra civil",
             "desc": "Los generales Franco, Mola y Queipo de Llano ejecutan un golpe de Estado contra la Segunda República. Comienza la guerra civil española, que dura hasta el 1 de abril de 1939. El llamado Ejército de África, formado por las tropas del Protectorado de Marruecos, tuvo un papel tristemente importante en la sublevación y en el transcurso de la guerra. Franco tenía control sobre estos cuarteles, ganó de manera casi inmediata el territorio y se llevó a la Península a estos soldados y a otros muchos hombres reclutados ex profeso, convirtiéndolos en vanguardia del ataque a Madrid y operaciones posteriores. Fueron las llamadas «tropas moras», de aciaga memoria: otra consecuencia del contexto colonial. En el Sáhara también ocurrió: algunos hombres que formaban parte del ejército fueron enviados a la guerra con las tropas franquistas. Pero, alejado como estaba de la península y con sus particulares características, este territorio cumplió sobre todo otro papel: el de ser una tierra de deportaciones, una prisión a cielo abierto donde se cumplían trabajos forzados.",
-            "file": "media/TODO"
+            "file": "/media/cartilla.png"
         },{
             "type": "text",
             "rext": "10",
