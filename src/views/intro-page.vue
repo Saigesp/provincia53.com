@@ -178,7 +178,7 @@ export default {
       isActive22: false,
     }
   },
-  created: function() {
+  beforeCreate: function() {
     const body = document.body;
     body.classList.add('is-white');
   },

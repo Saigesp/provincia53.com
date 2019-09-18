@@ -154,13 +154,46 @@ button {
         }
       }
 
+      &--text {
+        .item {
+          &__dot {
+            fill: #fdc12c;
+          }
+          &__circle {
+            stroke: #fdc12c;
+          }
+        }
+      }
+
+      &--photo {
+        .item {
+          &__dot {
+            fill: #e73c5d;
+          }
+          &__circle {
+            stroke: #e73c5d;
+          }
+        }
+      }
+
       &--shortaudio {
         .item {
           &__dot {
-            fill: #a74c42;
+            fill: #2abbb2;
           }
           &__circle {
-            stroke: #a74c42;
+            stroke: #2abbb2;
+          }
+        }
+      }
+
+      &--pdf {
+        .item {
+          &__dot {
+            fill: #bc7871;
+          }
+          &__circle {
+            stroke: #bc7871;
           }
         }
       }

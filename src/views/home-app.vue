@@ -154,6 +154,8 @@ export default {
       localStorage.setItem('introprovincia53', true)
       this.$router.push({name:'intro-page'})
     }
+    const body = document.body;
+    body.classList.remove('is-white');
   },
   created: function() {
     this.circleRadius = d3.scaleLinear()
