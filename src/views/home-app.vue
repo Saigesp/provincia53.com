@@ -148,6 +148,13 @@ export default {
       isPlayingAudio: false,
     }
   },
+  beforeCreate: function() {
+    let introduced = localStorage.getItem('introprovincia53');
+    if(!introduced){
+      localStorage.setItem('introprovincia53', true)
+      this.$router.push({name:'intro-page'})
+    }
+  },
   created: function() {
     this.circleRadius = d3.scaleLinear()
       .domain([0, this.datum.years.length])
