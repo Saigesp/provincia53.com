@@ -38,6 +38,7 @@
             <li><router-link :to="{name: 'project-page'}">El proyecto</router-link></li>
             <li><router-link :to="{name: 'about-page'}">Quiénes somos</router-link></li>
             <li><router-link :to="{name: 'characters-page'}">Guía de personajes</router-link></li>
+            <li><router-link :to="{name: 'intro-page'}">Introducción</router-link></li>
             <li><router-link :to="{name: 'referrers-page'}">Referencias</router-link></li>
             <li><router-link :to="{name: 'contact-page'}">Contacto</router-link></li>
             <li class="rrss">
