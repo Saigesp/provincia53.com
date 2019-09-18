@@ -177,7 +177,6 @@ export default {
       // options
       cellAlign: 'left',
       contain: true,
-      prevNextButtons: false,
       pageDots: false,
       freeScroll: true,
       wrapAround: true

@@ -12,6 +12,7 @@
   "dependencies": {
     "d3": "^5.11.0",
     "flickity": "^2.2.1",
+    "graph-scroll": "^1.0.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
