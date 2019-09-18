@@ -126,9 +126,9 @@
 
 
 <script>
-import EventBus from '../plugins/bus'
+import EventBus from '../plugins/bus';
 import * as d3 from "d3";
-import Flickity from 'flickity'
+import Flickity from 'flickity';
 
 export default {
   name: 'home-app',

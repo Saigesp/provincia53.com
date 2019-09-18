@@ -27,7 +27,9 @@
     img {
       width: 20px;
       height: auto;
-      padding: 20px;
+      padding: 10px;
+      margin: 10px;
+      background: black;
       cursor: pointer;
       transition: opacity 200ms ease;
 
@@ -93,22 +95,11 @@
   }
 
 }
-/*
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 960px) {
   .component {
-    &--text {
-      background: transparent;
-      position: absolute;
-      width: calc(50% - 400px);
-      top: 100px;
-      height: unset;
-      right: 0;
-      left: unset;
-      font-size: 12px;
-      line-height: 1.2;
-      .component__controls {
-        display: none;
-      }
+    &__controls {
+      right: calc(50% - 480px);
     }
   }
-}*/
+}

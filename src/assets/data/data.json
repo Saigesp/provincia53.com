@@ -351,10 +351,12 @@
             "type": "slider",
             "rext": "10",
             "rint": "2",
+            "component": "slider-component",
             "date": "1975-05-12",
             "title": "Manifestaciones ante la ONU",
             "desc": "Una misión de la ONU visita el Sahara para «determinar el estado del territorio» de cara a la celebración del referéndum. Las calles se llenan de manifestaciones en apoyo al Frente Polisario.",
-            "file": "/media/TODO"
+            "files": ["/media/slider/onu-01.jpg","/media/slider/onu-02.jpg","/media/slider/onu-03.jpg","/media/slider/onu-04.jpg","/media/slider/onu-05.jpg","/media/slider/onu-06.jpg","/media/slider/onu-07.jpg","/media/slider/onu-08.jpg","/media/slider/onu-09.jpg","/media/slider/onu-10.jpg","/media/slider/onu-11.jpg","/media/slider/onu-12.jpg","/media/slider/onu-13.jpg","/media/slider/onu-14.jpg","/media/slider/onu-15.jpg","/media/slider/onu-16.jpg","/media/slider/onu-17.jpg","/media/slider/onu-18.jpg","/media/slider/onu-19.jpg","/media/slider/onu-20.jpg","/media/slider/onu-21.jpg","/media/slider/onu-22.jpg","/media/slider/onu-23.jpg","/media/slider/onu-24.jpg","/media/slider/onu-25.jpg","/media/slider/onu-26.jpg","/media/slider/onu-27.jpg","/media/slider/onu-28.jpg","/media/slider/onu-29.jpg",
+                "/media/slider/onu-30.jpg","/media/slider/onu-31.jpg","/media/slider/onu-32.jpg","/media/slider/onu-33.jpg","/media/slider/onu-34.jpg","/media/slider/onu-35.jpg","/media/slider/onu-36.jpg","/media/slider/onu-37.jpg","/media/slider/onu-38.jpg","/media/slider/onu-39.jpg","/media/slider/onu-40.jpg","/media/slider/onu-41.jpg","/media/slider/onu-42.jpg","/media/slider/onu-43.jpg","/media/slider/onu-44.jpg","/media/slider/onu-45.jpg","/media/slider/onu-46.jpg","/media/slider/onu-47.jpg","/media/slider/onu-48.jpg","/media/slider/onu-49.jpg","/media/slider/onu-50.jpg","/media/slider/onu-51.jpg","/media/slider/onu-52.jpg","/media/slider/onu-53.jpg","/media/slider/onu-54.jpg"]
         },{
             "type": "pdf",
             "rext": "10",
