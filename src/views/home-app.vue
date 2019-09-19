@@ -103,7 +103,7 @@
               </g>
             </g>
             <g ref="gengroup">
-              <g v-for="(yeargroup, i) in datum.years" class="chart__ygroup" :transform="`translate(${center[0]},${center[1]})`">
+              <g v-for="(yeargroup, i) in datumR" class="chart__ygroup" :transform="`translate(${center[0]},${center[1]})`">
                 <circle class="year__hover" :r="circleRadius(i)"></circle>
                 <circle class="year" :r="circleRadius(i)"></circle>
                 <g v-for="item in yeargroup.items" :class="`item item--${item.type}`" :transform="`translate(${calcItemCenter(item.date, i)[0]},${calcItemCenter(item.date, i)[1]})`">
@@ -137,10 +137,39 @@
 
     <!-- start mobile content -->
     <div class="mobilick" v-if="width <= minScaleSize">
-      <div v-for="(yeargroup, i) in datum.years">
-        <h3>{{yeargroup.title}}</h3>
-        <div v-for="item in yeargroup.items">
-          <h4>{{item.title}}</h4>
+      <div class="mobilick__block" v-for="(yeargroup, i) in datumR" :class="{'is-active': inCurrentMobilick(yeargroup)}">
+        <div class="mobilick__title" @click="setMobilick(yeargroup)">
+          <img src="/static/img/icons/plus.svg" alt="Expandir">
+          <h3>{{yeargroup.title}}</h3>
+        </div>
+        <div class="mobilick__items" v-if="inCurrentMobilick(yeargroup)">
+          <div v-for="item in reverseItemsMobilick(yeargroup.items)" class="item" :class="{'item--line': item.title}">
+            <h4>{{item.title}}</h4>
+            <p>{{item.desc}}</p>
+            <div>
+              <audio v-if="item.type=='shortaudio'||item.type=='goodaudio'" controls :src="'/static'+item.file">
+                  Your browser does not support the audio element.
+              </audio>
+              <div v-if="item.type=='poem'" class="poem">
+                <p>{{item.text}}</p>
+                <p v-show="item.author"><strong>({{item.author}})</strong></p>
+              </div>
+              <div v-if="item.type=='photo'" class="photo">
+                <img :src="'/static'+item.file" alt="Foto">
+              </div>
+              <div v-if="item.type=='video'" class="video">
+                <iframe :src="item.file" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div v-if="item.type=='pdf'" class="pdf">
+                <p>
+                  <a :href="'/static'+item.file" target="_blank">
+                    <img src="/static/img/icons/download.svg" alt="Descarga">
+                    <span>Descargar documento</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -175,6 +204,7 @@ export default {
       currentComponentData: {},
       currentAudio: new Audio(),
       isPlayingAudio: false,
+      currentMobilicks: [],
     }
   },
   beforeCreate: function() {
@@ -194,6 +224,10 @@ export default {
     center() {
       return [this.width/2, this.height/2]
     },
+    datumR(){
+      let rdatum = [...this.datum.years];
+      return rdatum.reverse()
+    }
   },
   mounted: function() {
     this.getCanvasSize();
@@ -320,6 +354,24 @@ export default {
     stopAudio(){
       this.currentAudio.pause();
       this.isPlayingAudio = false;
+    },
+    inCurrentMobilick(yeargroup){
+      return this.currentMobilicks.includes(yeargroup.title)
+    },
+    setMobilick(yeargroup){
+      if(this.inCurrentMobilick(yeargroup)){
+        let index = this.currentMobilicks.indexOf(yeargroup.title);
+        if (index > -1) {
+          this.currentMobilicks.splice(index, 1);
+        }
+      }else{
+        this.currentMobilicks.push(yeargroup.title)
+      }
+      //this.currentMobilick = this.currentMobilick == yeargroup.title ? '': yeargroup.title;
+    },
+    reverseItemsMobilick(items){
+      let ritems = [...items]
+      return ritems.reverse();
     },
     resetZoom() {
       this.svg.transition()

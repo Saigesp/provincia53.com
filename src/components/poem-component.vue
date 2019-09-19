@@ -6,7 +6,7 @@
         <div class="component__content">
             <div class="component__poem">
                 <p>{{datum.text}}</p>
-                <p><strong>({{datum.author}})</strong></p>
+                <p v-show="item.author"><strong>({{datum.author}})</strong></p>
             </div>
         </div>
     </div>

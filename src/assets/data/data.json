@@ -91,12 +91,10 @@
             "title": "¿Y ahora qué?",
             "desc": "En los últimos años, la actualidad política española ha sido un hervidero. El bipartidismo se da por muerto con la aparición de nuevos partidos que irrumpen en el Parlamento y los ayuntamientos. Cataluña declara unilateralmente su independencia. Una moción de censura echa a Mariano Rajoy del Gobierno. Pedro Sánchez pasa a ocuparlo. Las elecciones se siguen sucediendo. El frenesí político no parece que vaya a parar pronto. El Sáhara Occidental, por su parte, sigue esperando."
         },{
-            "type": "poem",
-            "rext": "8",
-            "component": "poem-component",
-            "date": "2019-09-22",
-            "text": "…un mañana distinto, que no conoce\nde espera.",
-            "author": "Saleh Abdalahi"
+            "type": "goodaudio",
+            "rext": "10",
+            "date": "2019-06-30",
+            "file": "/media/audio/tiba.mp3"
         },{
             "type": "poem",
             "rext": "8",
@@ -105,12 +103,10 @@
             "text": "Las costas de ayer\nlos muros de hoy\nlas heridas de siempre.",
             "author": "Ebnu"
         },{
-            "type": "poem",
+            "type": "shortaudio",
             "rext": "8",
-            "component": "poem-component",
-            "date": "2019-04-05",
-            "text": "«Nadie preguntará\npor el tiempo que has estado ausente,\nhijo mío,\ntodos querrán saber\nsi has vuelto\nmás útil,\nmás inteligente,\nun poco más sabio».",
-            "author": "Limam Boisha"
+            "date": "2019-06-12",
+            "file": "/media/audio/yahoraque3.mp3"
         },{
             "type": "poem",
             "rext": "8",
@@ -118,6 +114,11 @@
             "date": "2019-02-05",
             "text": "Mientras tanto, seguimos sobreviviendo:\npedazos rotos de ideal y barro.",
             "author": "Limam Boisha"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "2019-07-29",
+            "file": "/media/audio/yahoraque4.mp3"
         },{
             "type": "poem",
             "rext": "8",
@@ -128,23 +129,27 @@
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "2019-06-12",
-            "file": "/media/audio/yahoraque3.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "2019-07-29",
-            "file": "/media/audio/yahoraque4.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
             "date": "2019-10-14",
             "file": "/media/audio/yahoraque5.mp3"
+        },{
+            "type": "poem",
+            "rext": "8",
+            "component": "poem-component",
+            "date": "2019-04-05",
+            "text": "«Nadie preguntará\npor el tiempo que has estado ausente,\nhijo mío,\ntodos querrán saber\nsi has vuelto\nmás útil,\nmás inteligente,\nun poco más sabio».",
+            "author": "Limam Boisha"
         },{
             "type": "shortaudio",
             "rext": "8",
             "date": "2019-12-22",
             "file": "/media/audio/yahoraque6.mp3"
+        },{
+            "type": "poem",
+            "rext": "8",
+            "component": "poem-component",
+            "date": "2019-09-22",
+            "text": "…un mañana distinto, que no conoce\nde espera.",
+            "author": "Saleh Abdalahi"
         },{
             "type": "shortaudio",
             "rext": "8",
@@ -155,11 +160,6 @@
             "rext": "8",
             "date": "2019-08-12",
             "file": "/media/audio/yahoraque8.mp3"
-        },{
-            "type": "goodaudio",
-            "rext": "10",
-            "date": "2019-06-30",
-            "file": "/media/audio/tiba.mp3"
         }]
     },{
         "year": 2013,
@@ -177,17 +177,17 @@
             "date": "2013-12-15",
             "file": "/media/audio/yahoraque1.mp3"
         },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "2013-03-24",
-            "file": "/media/audio/yahoraque2.mp3"
-        },{
             "type": "poem",
             "rext": "8",
             "component": "poem-component",
             "date": "2013-09-03",
             "text": "Yo soy beduino, y como beduino soy gavilán\nde altas alturas, pero qué le voy a hacer,\nhasta en el cielo fronteras trazaron\ny yo en la tierra soy exiliado.",
             "author": "Saleh Abdalahi"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "2013-03-24",
+            "file": "/media/audio/yahoraque2.mp3"
         }]
     },{
         "year": 2010,
@@ -377,6 +377,18 @@
             "files": ["/media/slider/onu-01.jpg","/media/slider/onu-02.jpg","/media/slider/onu-03.jpg","/media/slider/onu-04.jpg","/media/slider/onu-05.jpg","/media/slider/onu-06.jpg","/media/slider/onu-07.jpg","/media/slider/onu-08.jpg","/media/slider/onu-09.jpg","/media/slider/onu-10.jpg","/media/slider/onu-11.jpg","/media/slider/onu-12.jpg","/media/slider/onu-13.jpg","/media/slider/onu-14.jpg","/media/slider/onu-15.jpg","/media/slider/onu-16.jpg","/media/slider/onu-17.jpg","/media/slider/onu-18.jpg","/media/slider/onu-19.jpg","/media/slider/onu-20.jpg","/media/slider/onu-21.jpg","/media/slider/onu-22.jpg","/media/slider/onu-23.jpg","/media/slider/onu-24.jpg","/media/slider/onu-25.jpg","/media/slider/onu-26.jpg","/media/slider/onu-27.jpg","/media/slider/onu-28.jpg","/media/slider/onu-29.jpg",
                 "/media/slider/onu-30.jpg","/media/slider/onu-31.jpg","/media/slider/onu-32.jpg","/media/slider/onu-33.jpg","/media/slider/onu-34.jpg","/media/slider/onu-35.jpg","/media/slider/onu-36.jpg","/media/slider/onu-37.jpg","/media/slider/onu-38.jpg","/media/slider/onu-39.jpg","/media/slider/onu-40.jpg","/media/slider/onu-41.jpg","/media/slider/onu-42.jpg","/media/slider/onu-43.jpg","/media/slider/onu-44.jpg","/media/slider/onu-45.jpg","/media/slider/onu-46.jpg","/media/slider/onu-47.jpg","/media/slider/onu-48.jpg","/media/slider/onu-49.jpg","/media/slider/onu-50.jpg","/media/slider/onu-51.jpg","/media/slider/onu-52.jpg","/media/slider/onu-53.jpg","/media/slider/onu-54.jpg"]
         },{
+            "type": "poem",
+            "rext": "8",
+            "component": "poem-component",
+            "date": "1975-12-30",
+            "text": "El almuédano perdió la voz\ny el maestro cruzó la frontera",
+            "author": "Ebnu"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1975-02-15",
+            "file": "/media/audio/exodo1.mp3"
+        },{
             "type": "pdf",
             "rext": "10",
             "component": "pdf-component",
@@ -393,6 +405,11 @@
             "desc": "Juan Carlos de Borbón visita las tropas españolas en El Aaiún en un viaje sorpresa. Les dice que «España no dará un paso atrás, cumplirá todos sus compromisos, respetará el derecho de los saharauis a ser libres». «No dudéis que vuestro comandante en jefe estará aquí, con todos vosotros, en cuanto suene el primer disparo», les dice también.",
             "file": "/media/reysahara.jpg"
         },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1975-03-15",
+            "file": "/media/audio/exodo2.mp3"
+        },{
             "type": "photo",
             "rext": "10",
             "component": "photo-component",
@@ -408,6 +425,11 @@
             "text": "Las calles ya no eran las mismas,\nlas casas cambiaron de color\ny ya no entendía las palabras\ny de repente aquel hombre\nse sintió un intruso\nen su propia ciudad.",
             "author": "Iselmu"
         },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1975-06-15",
+            "file": "/media/audio/exodo3.mp3"
+        },{
             "type": "pdf",
             "rext": "10",
             "component": "pdf-component",
@@ -416,6 +438,13 @@
             "desc": "Se firman los Acuerdos de Madrid, mediante los que España cede la administración del territorio a Marruecos y Mauritania, sin contar con el Frente Polisario. Ese mismo día se disuelve el PUNS. En paralelo, el Gobierno español realiza declaraciones institucionales insistiendo en que cumplirá con sus compromisos en relación a la descolonización y la celebración del referéndum.",
             "file": "/media/pdf/acuerdosdemadrid.pdf"
         },{
+            "type": "poem",
+            "rext": "8",
+            "component": "poem-component",
+            "date": "1975-07-18",
+            "text": "Hacia el camino contrario\nfuimos nosotros\ndesnudos como troncos\nsobre cristales rotos.\nNuestros hijos caían\nde nuestros brazos\nsin poder recogerlos.\n(…)\nLas semillas del retorno\nse han bifurcado\nbajo este cielo prestado.",
+            "author": "Limam Boisha"
+        },{
             "type": "pdf",
             "rext": "10",
             "component": "pdf-component",
@@ -423,6 +452,18 @@
             "title": "Atado y bien atado",
             "desc": "Franco muere. El BOE publica la Ley de Descolonización del Sáhara Occidental, aprobada por las Cortes dos días antes, con 100 diputados ausentes. Consta de un solo artículo, que dice: «Se autoriza al Gobierno para que realice los actos y adopte las medidas que sean precisas para llevar a cabo la descolonización del territorio no autónomo del Sáhara, salvaguardando los intereses españoles». Dos días después, Juan Carlos I de Borbón es proclamado Rey de España.",
             "file": "/media/pdf/BOE20nov75.pdf"
+        },{
+            "type": "poem",
+            "rext": "8",
+            "component": "poem-component",
+            "date": "1975-08-10",
+            "text": "Lágrimas de un pueblo herido por pájaros de fuego\ny balas de veneno.",
+            "author": "Fatma Galia"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1975-09-15",
+            "file": "/media/audio/exodo4.mp3"
         },{
             "type": "text",
             "rext": "10",
@@ -434,50 +475,9 @@
             "type": "poem",
             "rext": "8",
             "component": "poem-component",
-            "date": "1975-12-30",
-            "text": "El almuédano perdió la voz\ny el maestro cruzó la frontera",
-            "author": "Ebnu"
-        },{
-            "type": "poem",
-            "rext": "8",
-            "component": "poem-component",
             "date": "1975-08-25",
             "text": "El agua emigra hacia el norte\ny un niño pregunta por el mar.",
             "author": "Ebnu"
-        },{
-            "type": "poem",
-            "rext": "8",
-            "component": "poem-component",
-            "date": "1975-07-18",
-            "text": "Hacia el camino contrario\nfuimos nosotros\ndesnudos como troncos\nsobre cristales rotos.\nNuestros hijos caían\nde nuestros brazos\nsin poder recogerlos.\n(…)\nLas semillas del retorno\nse han bifurcado\nbajo este cielo prestado.",
-            "author": "Limam Boisha"
-        },{
-            "type": "poem",
-            "rext": "8",
-            "component": "poem-component",
-            "date": "1975-08-10",
-            "text": "Lágrimas de un pueblo herido por pájaros de fuego\ny balas de veneno.",
-            "author": "Fatma Galia"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1975-02-15",
-            "file": "/media/audio/exodo1.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1975-03-15",
-            "file": "/media/audio/exodo2.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1975-06-15",
-            "file": "/media/audio/exodo3.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1975-09-15",
-            "file": "/media/audio/exodo4.mp3"
         },{
             "type": "goodaudio",
             "rext": "10",
@@ -550,7 +550,7 @@
             "date": "1970-06-17",
             "title": "La masacre de Zemla",
             "desc": "Ante el creciente runrún nacionalista, la administración colonial, que tenía en ese momento al frente al gobernador José María Pérez de Lema, convoca en El Aaiún una manifestación de adhesión a España. Los integrantes del movimiento nacionalista tenían la consigna de manifestarse por su parte en un lugar no muy lejano. La concentración crece, se convierte en un pequeño campamento y exige hablar con el gobernador para entregarle una carta de reivindicaciones. Horas más tarde, mientras en los actos oficiales se pronuncian discursos de hermandad entre el pueblo español y el saharaui, la Legión disuelve a tiros a los manifestantes en lo que se conoce como «la masacre de Zemla». Nadie sabe con seguridad dónde estaba Basiri aquella noche. Nadie volvió a verle nunca.",
-            "file": "/media/pdf/informeZemla.pdf"
+            "files": ["/media/pdf/informeZemla.pdf","/media/pdf/informe1970.pdf"]
         },{
             "type": "shortaudio",
             "rext": "8",
@@ -667,6 +667,13 @@
             "date": "1961-03-27",
             "file": "/media/audio/memoriascompartidas1.mp3"
         },{
+            "type": "poem",
+            "rext": "8",
+            "component": "poem-component",
+            "date": "1961-05-20",
+            "text": "Una alfombra desvenciajada\ncubre el extraño suelo.\nUn par de sandalias\nesperan el largo viaje.\nY en la pared una bandera.",
+            "author": "Ebnu"
+        },{
             "type": "shortaudio",
             "rext": "8",
             "date": "1961-06-02",
@@ -682,6 +689,13 @@
             "date": "1960-12-05",
             "file": "/media/audio/visualizarterritorio14.mp3"
         },{
+            "type": "poem",
+            "rext": "8",
+            "component": "poem-component",
+            "date": "1961-02-18",
+            "text": "Amigo, este es mi mayo,\nesta es mi primavera,\ntan diferente\na la suya en Fez, Tánger o Meknez.",
+            "author": "Bahia Mahmud Awah"
+        },{
             "type": "shortaudio",
             "rext": "8",
             "date": "1960-10-15",
@@ -696,20 +710,6 @@
             "rext": "8",
             "date": "1960-06-15",
             "file": "/media/audio/visualizarterritorio17.mp3"
-        },{
-            "type": "poem",
-            "rext": "8",
-            "component": "poem-component",
-            "date": "1961-02-18",
-            "text": "Amigo, este es mi mayo,\nesta es mi primavera,\ntan diferente\na la suya en Fez, Tánger o Meknez.",
-            "author": "Bahia Mahmud Awah"
-        },{
-            "type": "poem",
-            "rext": "8",
-            "component": "poem-component",
-            "date": "1961-05-20",
-            "text": "Una alfombra desvenciajada\ncubre el extraño suelo.\nUn par de sandalias\nesperan el largo viaje.\nY en la pared una bandera.",
-            "author": "Ebnu"
         }]
     },{
         "year": 1960,
@@ -722,6 +722,11 @@
             "title": "Un nuevo vecino",
             "desc": "Marruecos obtiene la independencia. España renuncia al Protectorado sobre el Califato del Rif y Francia a sus territorios coloniales del sur, entregándole el poder al sultán Mohamed V, padre de Hassan II. En los meses siguientes, el recién nacido país intenta hacerse con otros territorios que estaban bajo dominio español en la zona (Ifni, el protectorado Sur y el Sáhara). En 1957 comienza la guerra de Ifni, que dura hasta el año siguiente. En la zona del Sáhara se dan fuertes enfrentamientos, que terminan con la victoria hispanofrancesa tras la operación conjunta Huracán/Écouvillon. En 1958 se firman los Acuerdos de Angra de Cintra, por los que España cede a Marruecos Cabo Juby, con capital en Villa Bens, actual Tarfaya. La ciudad de Sidi Ifni permanece asediada durante diez años, y no se entregará a Marruecos hasta 1969.",
             "file": "/media/pdf/decreto1958.pdf"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-06-09",
+            "file": "/media/audio/visualizarterritorio1.mp3"
         },{
             "type": "video",
             "rext": "10",
@@ -738,12 +743,22 @@
             "text": "Un beduino\nse hizo a la mar.\n(…)\nPor el mundo\nse extravió un camello.",
             "author": "Ebnu"
         },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-06-26",
+            "file": "/media/audio/visualizarterritorio2.mp3"
+        },{
             "type": "text",
             "rext": "10",
             "component": "text-component",
             "date": "1939-07-17",
             "title": "¿Neutraliqué?",
             "desc": "Cuando estalla la II Guerra Mundial, que durará hasta 1945, España se declara neutral. Sin embargo, «neutralidad» puede ser una palabra bastante relativa. Las Islas Canarias y el Sáhara Occidental cobraron un nuevo valor estratégico por el incremento de la navegación aérea y la necesidad de escalas intermedias en los viajes al África subsahariana y a América. En este escenario, el cada vez mayor interés por delimitar las posesiones francesas y las españolas llevó en 1940 a la realización del primer mapa «científico» de la zona. Para ello se recorrió el desierto palmo a palmo, con la colaboración imprescindible de la población saharaui, que a menudo recurrió a la tradición poética oral no solo para orientarse, sino también para ir poblando ese mapa de topónimos."
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-08-12",
+            "file": "/media/audio/visualizarterritorio3.mp3"
         },{
             "type": "photo",
             "rext": "10",
@@ -753,6 +768,11 @@
             "desc": "Los generales Franco, Mola y Queipo de Llano ejecutan un golpe de Estado contra la Segunda República. Comienza la guerra civil española, que dura hasta el 1 de abril de 1939. El llamado Ejército de África, formado por las tropas del Protectorado de Marruecos, tuvo un papel tristemente importante en la sublevación y en el transcurso de la guerra. Franco tenía control sobre estos cuarteles, ganó de manera casi inmediata el territorio y se llevó a la Península a estos soldados y a otros muchos hombres reclutados ex profeso, convirtiéndolos en vanguardia del ataque a Madrid y operaciones posteriores. Fueron las llamadas «tropas moras», de aciaga memoria: otra consecuencia del contexto colonial. En el Sáhara también ocurrió: algunos hombres que formaban parte del ejército fueron enviados a la guerra con las tropas franquistas. Pero, alejado como estaba de la península y con sus particulares características, este territorio cumplió sobre todo otro papel: el de ser una tierra de deportaciones, una prisión a cielo abierto donde se cumplían trabajos forzados.",
             "file": "/media/cartilla.png"
         },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-11-12",
+            "file": "/media/audio/visualizarterritorio4.mp3"
+        },{
             "type": "text",
             "rext": "10",
             "component": "text-component",
@@ -760,37 +780,17 @@
             "title": "Una colonización completada en silencio",
             "desc": "Mientras los obreros se levantaban en Asturias y Lluis Companys proclamaba en Barcelona el Estado Catalán, los colonizadores del Sáhara se alejaban de la costa y negociaban con notables de las tribus del desierto un sometimiento amistoso en virtud del cual se comienza a conocer como «Sáhara Español». Ese año se completó la ocupación con las fronteras actuales y se fundó la ciudad de El Aaiún. Sin embargo, al contrario de lo ocurrido en el Rif, no hubo ni guerra ni ruido."
         },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-11-29",
+            "file": "/media/audio/visualizarterritorio5.mp3"
+        },{
             "type": "text",
             "rext": "10",
             "component": "text-component",
             "date": "1931-04-14",
             "title": "¡Viva la República!",
             "desc": "Se declara la Segunda República, con Manuel Azaña como presidente. Entre las políticas que trató de llevar a cabo estuvo la de desmilitarizar el Protectorado marroquí para hacerlo más similar al francés, donde los asuntos civiles y militares estaban separados. Lo consiguió parcialmente, aumentando el rechazo de los militares de carrera, a los que no les venía demasiado bien."
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-06-09",
-            "file": "/media/audio/visualizarterritorio1.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-06-26",
-            "file": "/media/audio/visualizarterritorio2.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-08-12",
-            "file": "/media/audio/visualizarterritorio3.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-11-12",
-            "file": "/media/audio/visualizarterritorio4.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-11-29",
-            "file": "/media/audio/visualizarterritorio5.mp3"
         },{
             "type": "shortaudio",
             "rext": "8",
@@ -828,7 +828,7 @@
             "file": "/media/audio/visualizarterritorio12.mp3"
         }]
     },{
-        "year": 1940,
+        "year": 1930,
         "title": "1884-1930",
         "items": [{
             "type": "text",
@@ -859,19 +859,19 @@
             "text": "Hombres del desierto\nindomables,\ncomo la tormenta roja,\ncomo el dolor de la paciencia,\ncomo la estela de un dromedario\nque persigue la sombra del sol.",
             "author": "Ali Salem Iselmu"
         },{
-            "type": "poem",
-            "rext": "8",
-            "component": "poem-component",
-            "date": "1940-09-12",
-            "text": "Recuerda que existe una tierra sin amo y sin dueño,\nespejo y alma de todo ser inocente.",
-            "author": "Ali Salem Iselmu"
-        },{
             "type": "text",
             "rext": "10",
             "component": "text-component",
             "date": "1898-11-10",
             "title": "El declive del imperio",
             "desc": "Mientras el africanismo cogía vuelo, España iba perdiendo sin embargo lo que quedaba de su antiguo imperio de ultramar. El tratado de París pone fin a una guerra con Estados Unidos con el mandato de ceder Puerto Rico y Filipinas a este país, y conceder a Cuba la independencia. Un duro golpe para el ego de un país que aún hoy se sigue refiriendo a este episodio como «Desastre del 98»."
+        },{
+            "type": "poem",
+            "rext": "8",
+            "component": "poem-component",
+            "date": "1940-09-12",
+            "text": "Recuerda que existe una tierra sin amo y sin dueño,\nespejo y alma de todo ser inocente.",
+            "author": "Ali Salem Iselmu"
         },{
             "type": "pdf",
             "rext": "10",
