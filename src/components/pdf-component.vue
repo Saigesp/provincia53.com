@@ -16,12 +16,6 @@
                     <img :src="previewFile(file)" alt="Archivo">
                 </a>
             </div>
-            <div class="component__poems" v-if="datum.poems">
-                <div v-for="poem in datum.poems">
-                    <div v-html="poem.text"></div>
-                    <span>{{poem.author}}</span>
-                </div>
-            </div>
         </div>
     </div>
 </template>

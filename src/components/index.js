@@ -6,6 +6,7 @@ Vue.component('video-component',                         require('./video-compon
 Vue.component('photo-component',                         require('./photo-component').default);
 Vue.component('pdf-component',                           require('./pdf-component').default);
 Vue.component('slider-component',                        require('./slider-component').default);
+Vue.component('poem-component',                          require('./poem-component').default);
 
 Vue.component('bigvideo-component',                      require('./bigvideo-component').default);
 Vue.component('bigaudio-component',                      require('./bigaudio-component').default);

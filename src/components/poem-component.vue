@@ -1,13 +1,12 @@
 <template>
-    <div class="component component--photo">
+    <div class="component component--poem">
         <div class="component__controls">
             <img src="/static/img/icons/close.svg" alt="Cerrar" @click="closeComponent()">
         </div>
         <div class="component__content">
-            <h3>{{datum.title}}</h3>
-            <p>{{datum.desc}}</p>
-            <div class="component__photo">
-                <img :src="'/static'+datum.file" :alt="datum.title">
+            <div class="component__poem">
+                <p>{{datum.text}}</p>
+                <p><strong>({{datum.author}})</strong></p>
             </div>
         </div>
     </div>
@@ -19,7 +18,7 @@
 import EventBus from '../plugins/bus'
 
 export default {
-    name: 'photo-component',
+    name: 'poem-component',
     props: ['datum'],
     methods: {
         closeComponent(){

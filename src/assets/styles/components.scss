@@ -90,15 +90,9 @@
     margin-bottom: 24px;
   }
 
-  &__poems {
-    > div {
-      margin-bottom: 20px;
-      > div {
-        white-space: pre;
-      }
-    }
-    span {
-      font-style: italic;
+  &__poem {
+    p {
+      white-space: pre;
     }
   }
 

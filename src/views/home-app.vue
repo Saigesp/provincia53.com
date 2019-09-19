@@ -69,6 +69,34 @@
         <!-- start chart contents -->
         <parallax-element :parallaxStrength="-10" :type="'translation'">
           <svg class="chart" :viewBox="`0 0 ${width} ${height}`" :width="width+400" :height="height+100">
+
+            <defs>
+              <pattern id="text" width="10" height="10" patternUnits="objectBoundingBox">
+                <image xlink:href="/static/img/defs/text.png" width="20" height="20"></image>
+              </pattern>
+              <pattern id="pdf" width="10" height="10" patternUnits="objectBoundingBox">
+                <image xlink:href="/static/img/defs/pdf.png" width="20" height="20"></image>
+              </pattern>
+              <pattern id="photo" width="10" height="10" patternUnits="objectBoundingBox">
+                <image xlink:href="/static/img/defs/photo.png" width="20" height="20"></image>
+              </pattern>
+              <pattern id="slider" width="10" height="10" patternUnits="objectBoundingBox">
+                <image xlink:href="/static/img/defs/photo.png" width="20" height="20"></image>
+              </pattern>
+              <pattern id="video" width="10" height="10" patternUnits="objectBoundingBox">
+                <image xlink:href="/static/img/defs/video.png" width="20" height="20"></image>
+              </pattern>
+              <pattern id="goodaudio" width="10" height="10" patternUnits="objectBoundingBox">
+                <image xlink:href="/static/img/defs/bigaudio.png" width="20" height="20"></image>
+              </pattern>
+              <pattern id="shortaudio" width="10" height="10" patternUnits="objectBoundingBox">
+                <image xlink:href="/static/img/defs/audio.png" width="16" height="16"></image>
+              </pattern>
+              <pattern id="poem" width="10" height="10" patternUnits="objectBoundingBox">
+                <image xlink:href="/static/img/defs/poem.png" width="16" height="16"></image>
+              </pattern>
+            </defs>
+
             <g class="biggroup" :transform="`translate(${center[0]},${center[1]})`">
               <g class="biggroup__item" v-for="(bigitem, i) in datum.loncon" :transform="`translate(${calcBigItemPosition(i)})`">
                 <text :text-anchor="calcBigItemAnchor(i)" @click="showBigItem(bigitem)">{{bigitem.title}}</text>
@@ -82,7 +110,8 @@
                   <polyline class="item__line" :points="calcLinePoints(item.date, i)" v-if="item.title"></polyline>
                   <circle class="item__circle" :r="item.rext" @click="showItem(item)"></circle>
 
-                  <circle class="item__dot" :r="item.rint"></circle>
+                  <circle class="item__dot" :r="item.rext" :fill="`url(#${item.type})`"></circle>
+                  <circle class="item__doty" r="3"></circle>
                   <text
                     class="item__text"
                     :x="calcTextPosition(item.date, i)[0]"
@@ -262,11 +291,11 @@ export default {
     calcBigItemAnchor(i){
       return Math.floor(i/4)%2 == 0 ? 'start' : 'end';
     },
-    dateToRadians(date) {
+    dateToRadians(date){
       let start = new Date(date.getFullYear(), 0, 0);
       return Math.floor((date - start) / (1000 * 60 * 60 * 24)) / (183 / Math.PI);
     },
-    showItem(item) {
+    showItem(item){
       if(item.type == 'shortaudio' || item.type == 'goodaudio'){
         this.playAudio('/static/'+item.file)
       }else{
@@ -274,7 +303,7 @@ export default {
         this.currentComponentData = item;
       }
     },
-    showBigItem(item) {
+    showBigItem(item){
       this.stopAudio()
       this.currentComponent = item.component;
       this.currentComponentData = item;

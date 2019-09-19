@@ -118,8 +118,12 @@ button {
       transition: opacity 200ms ease 100ms;
 
       &__dot {
-        opacity: 0.7;
-        fill: white;
+        pointer-events: none;
+        stroke: none;
+        display: none;
+      }
+
+      &__doty {
         pointer-events: none;
         stroke: none;
       }
@@ -145,66 +149,98 @@ button {
 
       &:hover {
         .item {
-          &__line {
+          &__line,
+          &__text,
+          &__dot {
             display: block;
           }
-          &__text {
-            display: block;
+          &__doty {
+            display: none;
           }
         }
       }
 
       &--text {
         .item {
-          &__dot {
-            fill: #fdc12c;
-          }
+          &__line,
           &__circle {
             stroke: #fdc12c;
+          }
+          &__doty {
+            fill: #fdc12c;
           }
         }
       }
 
-      &--photo {
+      &--photo,
+      &--slider {
         .item {
-          &__dot {
-            fill: #e73c5d;
-          }
+          &__line,
           &__circle {
             stroke: #e73c5d;
+          }
+          &__doty {
+            fill: #e73c5d;
           }
         }
       }
 
       &--shortaudio {
         .item {
-          &__dot {
-            fill: #2abbb2;
-          }
+          &__line,
           &__circle {
             stroke: #2abbb2;
+          }
+          &__doty {
+            fill: #2abbb2;
           }
         }
       }
 
       &--pdf {
         .item {
-          &__dot {
-            fill: #bc7871;
-          }
+          &__line,
           &__circle {
             stroke: #bc7871;
+          }
+          &__doty {
+            fill: #bc7871;
+          }
+        }
+      }
+
+      &--poem {
+        .item {
+          &__line,
+          &__circle {
+            stroke: #d8643f;
+          }
+          &__doty {
+            fill: #d8643f;
           }
         }
       }
 
       &--goodaudio {
         .item {
-          &__dot {
-            fill: red;
-          }
+          &__line,
           &__circle {
             stroke: red;
+          }
+          &__doty {
+            fill: red;
+          }
+        }
+      }
+
+      &--video {
+        .item {
+          &__line,
+          &__circle {
+            stroke: #916f8a;
+          }
+          &__doty {
+            fill: #916f8a;
           }
         }
       }
@@ -222,7 +258,10 @@ button {
 
       .item {
         &__dot {
-          opacity: 1;
+          display: block;
+        }
+        &__doty {
+          display: none;
         }
 
         &__circle {
