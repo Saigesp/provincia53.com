@@ -14,13 +14,6 @@
         "backsize": "cover",
         "link": "https://www.youtube.com/embed/bU2CNl4gDJ0?rel=0"
     },{
-        "id": "trabajadores",
-        "title": "Memorias cruzadas: trabajadores",
-        "component": "bigvideo-component",
-        "thumbnail": "/static/img/loncon/trabajadores.jpg",
-        "backsize": "cover",
-        "link": "https://www.youtube.com/embed/jpzteZkhXjY?rel=0"
-    },{
         "id": "militares",
         "title": "Memorias cruzadas: militares",
         "component": "bigvideo-component",

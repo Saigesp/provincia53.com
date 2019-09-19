@@ -19,7 +19,7 @@
         <div class="loncon__wrap">
           <div class="loncon">
             <div class="loncon__list">
-              <div class="loncon__item" v-for="loncon in datum.loncon" :style="{backgroundImage: `url(${loncon.thumbnail})`, backgroundSize: loncon.backsize}">
+              <div class="loncon__item" v-for="loncon in datum.loncon" :style="{backgroundImage: `url(${loncon.thumbnail})`, backgroundSize: loncon.backsize}" v-if="loncon.id">
                 <img src="/static/img/icons/play.svg" alt="Play" @click="showBigItem(loncon)">
               </div>
             </div>
@@ -324,19 +324,24 @@ export default {
     calcBigItemPosition(i){
       let space = 30;
       let preStartX = this.width < 1200 ? this.width/2 : (this.width/2)*0.9;
-      let startX = Math.floor(i/4)%2 == 0 ? -preStartX+100 : preStartX-100;
-      let preStartY = Math.floor(i/4)<2 ? -this.circleRadius(0)+10 : this.circleRadius(0)-(space*2)-10;
+      let startX = (i<3||(i>4&&i<10)) ? -preStartX+100 : preStartX-100;
+      let preStartY = (i==0||i==1||i==2||i==3||i==4) ? -this.circleRadius(0)+10 : this.circleRadius(0)-(space*2)-46;
       let startY = preStartY+(space*Math.floor(i/4)%2) + space*(i%4);
+      if(i==3) startY = preStartY+(space*Math.floor(i/4)%2);
+      if(i==4) startY = preStartY+(space*Math.floor(i/4)%2) + space;
+      if(i==5) startY = preStartY+(space*Math.floor(i/4)%2) + space*2;
+      if(i>4&&i<10) startY = preStartY+(space*Math.floor(i/4)%2) + space*(i-5);
+      if(i>=10) startY = preStartY+(space*Math.floor(i/4)%2) + space*(i-10);
       return [startX, startY];
     },
     calcBigItemAnchor(i){
-      return Math.floor(i/4)%2 == 0 ? 'start' : 'end';
+      return (i<3||(i>4&&i<10)) ? 'start' : 'end';
     },
     calcBigItemDx(i){
-      return Math.floor(i/4)%2 == 0 ? 32 : -32;
+      return (i<3||(i>4&&i<10)) ? 32 : -32;
     },
     calcBigItemX(i){
-      return Math.floor(i/4)%2 == 0 ? 0 : -30;
+      return (i<3||(i>4&&i<10)) ? 0 : -30;
     },
     dateToRadians(date){
       let start = new Date(date.getFullYear(), 0, 0);
