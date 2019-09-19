@@ -6,9 +6,14 @@
         <div class="component__content">
             <h3>{{datum.title}}</h3>
             <p>{{datum.desc}}</p>
-            <div class="component__pdf">
-                <a :href="'/static'+datum.file">
+            <div class="component__pdf" v-if="datum.file">
+                <a :href="'/static'+datum.file" target="_blank">
                     <img :src="previewFile(datum.file)" alt="Archivo">
+                </a>
+            </div>
+            <div class="component__pdf component__pdf--multiple" v-if="datum.files">
+                <a :href="'/static'+file" target="_blank" v-for="file in datum.files">
+                    <img :src="previewFile(file)" alt="Archivo">
                 </a>
             </div>
             <div class="component__poems" v-if="datum.poems">

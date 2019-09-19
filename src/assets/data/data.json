@@ -314,14 +314,14 @@
         "year": 1977,
         "title": "1977",
         "items": [{
-            "type": "photo",
+            "type": "pdf",
             "rext": "10",
             "rint": "2",
-            "component": "photo-component",
-            "date": "1977-07-06",
+            "component": "pdf-component",
+            "date": "1977-11-14",
             "title": "Cambia, todo cambia",
             "desc": "Muchas cosas pasan ese año que empieza en Madrid con siete días sangrientos, marcados por el asesinato de los abogados laboralistas de Atocha y los de varios manifestantes a manos de la extrema derecha. En febrero se permite la legalización de los partidos políticos hasta entonces clandestinos, aunque el PCE se legalizó más tarde, el 9 de abril («sábado santo rojo») y dos días más tarde el PSUC. En abril se liquida el Movimiento Nacional. En junio se celebran elecciones, se forma el primer Gobierno de UCD, presidido por Adolfo Suárez, y se declara la apertura de las Cortes Constituyentes. En el Sahara, la guerra sigue. En Tinduf, los campamentos crecen. El 14 de noviembre, Felipe González, entonces Secretario General del PSOE, los visita y firma con el Frente Polisario un comunicado común en el que aseguraba su apoyo al pueblo saharaui hasta que este «no hubiera obtenido la liberación total de su territorio nacional».",
-            "file": "/media/visitax.jpg",
+            "file": "/media/pdf/informeViguiri.pdf",
             "poems": [{
                 "text": "En la pared una bandera.\nColores comunes trazados\nsobre una tela blanca.",
                 "author": "Ebnu"
@@ -525,14 +525,14 @@
         "year": 1970,
         "title": "1970",
         "items": [{
-            "type": "photo",
+            "type": "pdf",
             "rext": "10",
             "rint": "2",
-            "component": "photo-component",
+            "component": "pdf-component",
             "date": "1970-06-17",
             "title": "La masacre de Zemla",
             "desc": "Ante el creciente runrún nacionalista, la administración colonial, que tenía en ese momento al frente al gobernador José María Pérez de Lema, convoca en El Aaiún una manifestación de adhesión a España. Los integrantes del movimiento nacionalista tenían la consigna de manifestarse por su parte en un lugar no muy lejano. La concentración crece, se convierte en un pequeño campamento y exige hablar con el gobernador para entregarle una carta de reivindicaciones. Horas más tarde, mientras en los actos oficiales se pronuncian discursos de hermandad entre el pueblo español y el saharaui, la Legión disuelve a tiros a los manifestantes en lo que se conoce como «la masacre de Zemla». Nadie sabe con seguridad dónde estaba Basiri aquella noche. Nadie volvió a verle nunca.",
-            "file": "/media/pintadabasiri.jpg"
+            "file": "/media/pdf/informeZemla.pdf"
         },{
             "type": "shortaudio",
             "rext": "8",
@@ -544,13 +544,14 @@
         "year": 1969,
         "title": "1969",
         "items": [{
-            "type": "text",
+            "type": "pdf",
             "rext": "10",
             "rint": "2",
-            "component": "text-component",
+            "component": "pdf-component",
             "date": "1969-12-18",
-            "title": "Habemus rey",
-            "desc": "Se constituye el Movimiento de Vanguardia para la Liberación del Sáhara, una organización político-armada liderada por Mohamed Basiri. La fundan seis hombres, pero en solo unos meses llegará a tener cerca de 4700 integrantes. Estaba prohibida, claro: como cualquier organización política bajo la legislación franquista."
+            "title": "El nacimiento de la lucha nacionalista",
+            "desc": "Se constituye el Movimiento de Vanguardia para la Liberación del Sáhara, una organización político-armada liderada por Mohamed Basiri. La fundan seis hombres, pero en solo unos meses llegará a tener cerca de 4700 integrantes. Estaba prohibida, claro: como cualquier organización política bajo la legislación franquista.",
+            "files": ["/media/pdf/informeOALS2.pdf", "/media/pdf/declaracionBasiri.pdf"]
         },{
             "type": "text",
             "rext": "10",
