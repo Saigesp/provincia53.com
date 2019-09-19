@@ -275,12 +275,20 @@ audio {
   }
 
   .biggroup {
+    rect {
+      cursor: pointer;
+      transition: opacity 200ms ease;
+    }
     text {
       fill: white;
       font-size: 24px;
       cursor: pointer;
-      &:hover {
-        opacity: 0.7;
+      transition: opacity 200ms ease;
+    }
+    &__item:hover {
+      rect,
+      text {
+        opacity: 0.6;
       }
     }
   }

@@ -1,5 +1,5 @@
 <template>
-    <div class="component component--big component--big-video">
+    <div class="component component--popup component--big component--big-audio" ref="component" @click="closeComponentDesktop()">
         <div class="component__controls">
             <img src="/static/img/icons/close.svg" alt="Cerrar" @click="closeComponent()">
         </div>
@@ -29,14 +29,16 @@ export default {
             isPlaying: false,
             width: 100,
             height: 160,
+            minScaleSize: 860, // Check CSS media queries
         }
     },
     props: ['datum'],
-    mounted: function(){
-    },
     methods: {
         closeComponent(){
             EventBus.$emit('close-component')
+        },
+        closeComponentDesktop(){
+            if(parseInt(this.$refs.component.offsetWidth) >= this.minScaleSize) this.closeComponent();
         },
         onPlay(){
             this.isPlaying = true;

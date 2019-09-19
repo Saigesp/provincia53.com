@@ -19,7 +19,7 @@
         <div class="loncon__wrap">
           <div class="loncon">
             <div class="loncon__list">
-              <div class="loncon__item" v-for="loncon in datum.loncon" :style="{backgroundImage: `url(${loncon.thumbnail})`}">
+              <div class="loncon__item" v-for="loncon in datum.loncon" :style="{backgroundImage: `url(${loncon.thumbnail})`, backgroundSize: loncon.backsize}">
                 <img src="/static/img/icons/play.svg" alt="Play" @click="showBigItem(loncon)">
               </div>
             </div>
@@ -95,11 +95,17 @@
               <pattern id="poem" width="10" height="10" patternUnits="objectBoundingBox">
                 <image xlink:href="/static/img/defs/poem.png" width="16" height="16"></image>
               </pattern>
+
+              <pattern :id="bigitem.id" width="30" height="20" patternUnits="objectBoundingBox" v-for="bigitem in datum.loncon">
+                <image :xlink:href="'/static/img/lonsvg/'+bigitem.id+'.jpg'" width="30" height="22"></image>
+              </pattern>
+
             </defs>
 
             <g class="biggroup" :transform="`translate(${center[0]},${center[1]})`">
-              <g class="biggroup__item" v-for="(bigitem, i) in datum.loncon" :transform="`translate(${calcBigItemPosition(i)})`">
-                <text :text-anchor="calcBigItemAnchor(i)" @click="showBigItem(bigitem)">{{bigitem.title}}</text>
+              <g class="biggroup__item" v-for="(bigitem, i) in datum.loncon" :transform="`translate(${calcBigItemPosition(i)})`" @click="showBigItem(bigitem)">
+                <text v-if="bigitem.id" :text-anchor="calcBigItemAnchor(i)" :dx="calcBigItemDx(i)">{{bigitem.title}}</text>
+                <rect v-if="bigitem.id" :x="calcBigItemX(i)" y="-20" width="30" height="22" :fill="`url(#${bigitem.id})`" rx="8" ry="8"></rect>
               </g>
             </g>
             <g ref="gengroup">
@@ -267,8 +273,8 @@ export default {
   },
   methods: {
     getCanvasSize() {
-      this.width = parseInt(this.$refs.chart.offsetWidth);
-      this.height = parseInt(this.$refs.chart.offsetHeight);
+      this.width = this.$refs.chart ? parseInt(this.$refs.chart.offsetWidth) : 700;
+      this.height = this.$refs.chart ? parseInt(this.$refs.chart.offsetHeight) : 700;
       this.calcCircleRadius();
       this.circleRadius.range([this.calcCircleRadius(), 40]);
     },
@@ -315,15 +321,21 @@ export default {
       return this.dateToRadians(new Date(strdate)) <= Math.PI ? 'start' : 'end'
     },
     calcBigItemPosition(i){
-      let space = 24;
+      let space = 30;
       let preStartX = this.width < 1200 ? this.width/2 : (this.width/2)*0.9;
       let startX = Math.floor(i/4)%2 == 0 ? -preStartX+100 : preStartX-100;
-      let preStartY = Math.floor(i/4)<2 ? -this.circleRadius(0) : this.circleRadius(0)-(space*2);
+      let preStartY = Math.floor(i/4)<2 ? -this.circleRadius(0)+10 : this.circleRadius(0)-(space*2)-10;
       let startY = preStartY+(space*Math.floor(i/4)%2) + space*(i%4);
       return [startX, startY];
     },
     calcBigItemAnchor(i){
       return Math.floor(i/4)%2 == 0 ? 'start' : 'end';
+    },
+    calcBigItemDx(i){
+      return Math.floor(i/4)%2 == 0 ? 32 : -32;
+    },
+    calcBigItemX(i){
+      return Math.floor(i/4)%2 == 0 ? 0 : -30;
     },
     dateToRadians(date){
       let start = new Date(date.getFullYear(), 0, 0);

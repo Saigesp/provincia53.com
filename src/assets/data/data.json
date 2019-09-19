@@ -1,84 +1,116 @@
 {
     "loncon": [{
+        "id": "quesabes",
         "title": "¿Qué sabes del Sáhara Occidental?",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/quesabes.jpg",
-        "link": "https://www.youtube.com/embed/p_Tv0CtqFZ4"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/p_Tv0CtqFZ4?rel=0"
     },{
-        "title": "Memorias cruzadas: militares",
-        "component": "bigvideo-component",
-        "thumbnail": "/static/img/loncon/militares.jpg",
-        "link": "https://www.youtube.com/embed/3-9zogPbIr8"
-    },{
+        "id": "profe",
         "title": "Memorias cruzadas: profe y alumna",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/profe.jpg",
-        "link": "https://www.youtube.com/embed/bU2CNl4gDJ0"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/bU2CNl4gDJ0?rel=0"
     },{
+        "id": "trabajadores",
         "title": "Memorias cruzadas: trabajadores",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/trabajadores.jpg",
-        "link": "https://www.youtube.com/embed/jpzteZkhXjY"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/jpzteZkhXjY?rel=0"
     },{
+        "id": "militares",
+        "title": "Memorias cruzadas: militares",
+        "component": "bigvideo-component",
+        "thumbnail": "/static/img/loncon/militares.jpg",
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/3-9zogPbIr8?rel=0"
+    },{
+        "id": "abandono",
         "title": "El día del abandono",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/abandono.jpg",
-        "link": "https://www.youtube.com/embed/SePUv7T62Lg"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/SePUv7T62Lg?rel=0"
     },{
+        "id": "transicion",
         "title": "Transición",
         "component": "bigaudio-component",
-        "thumbnail": "/static/img/loncon/audio.png",
+        "thumbnail": "/static/img/loncon/cassete_transicion.png",
+        "backsize": "contain",
         "link": "/media/audiog/abandono.mp3"
     },{
+        "id": "fosas",
         "title": "Fosas en el desierto",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/fosas.jpg",
-        "link": "https://www.youtube.com/embed/Txi2GfqIqcs"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/Txi2GfqIqcs?rel=0"
     },{
+        "id": "padre",
         "title": "Buscar a un padre",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/padre.jpg",
-        "link": "https://www.youtube.com/embed/gnph9umz6xg"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/gnph9umz6xg?rel=0"
     },{
+        "id": "basiri",
         "title": "¿Dónde está Basiri?",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/basiri.jpg",
-        "link": "https://www.youtube.com/embed/FbbFr_BY3EM"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/FbbFr_BY3EM?rel=0"
     },{
+        "id": "basiri_cassete",
         "title": "Basiri",
         "component": "bigaudio-component",
-        "thumbnail": "/static/img/loncon/audio.png",
+        "thumbnail": "/static/img/loncon/cassete_basiri.png",
+        "backsize": "contain",
         "link": "/media/audiog/basiri.mp3"
     },{
+        "id": "recuerdos",
         "title": "Recuerdos del primo Basiri",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/recuerdos.jpg",
-        "link": "https://www.youtube.com/embed/tVd3jEgzj60"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/tVd3jEgzj60?rel=0"
     },{
+        "id": "brahimjadiya",
         "title": "Brahim y Jadiya",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/brahimjadiya.jpg",
-        "link": "https://www.youtube.com/embed/36k5l0yl-V0"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/36k5l0yl-V0?rel=0"
     },{
+        "id": "identidad",
         "title": "De dónde es un saharaui: Identidad",
         "component": "bigaudio-component",
-        "thumbnail": "/static/img/loncon/audio.png",
+        "thumbnail": "/static/img/loncon/cassete_saharaui.png",
+        "backsize": "contain",
         "link": "/media/audiog/identidad.mp3"
     },{
+        "id": "papeles",
         "title": "De dónde es un saharaui: Papeles",
         "component": "bigaudio-component",
-        "thumbnail": "/static/img/loncon/audio.png",
+        "thumbnail": "/static/img/loncon/cassete_saharaui.png",
+        "backsize": "contain",
         "link": "/media/audiog/papeles.mp3"
     },{
+        "id": "muro",
         "title": "Un muro al que no hay que acostumbrarse",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/muro.jpg",
-        "link": "https://www.youtube.com/embed/_Png7uXbNZU"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/_Png7uXbNZU?rel=0"
     },{
+        "id": "gobierno",
         "title": "¿Qué le dirías al Gobierno español?",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/gobierno.jpg",
-        "link": "https://www.youtube.com/embed/LjY3Ge7S-Ds"
+        "backsize": "cover",
+        "link": "https://www.youtube.com/embed/LjY3Ge7S-Ds?rel=0"
     }],
     "years": [{
         "year": 2019,
@@ -654,6 +686,11 @@
         "year": 1961,
         "title": "1961",
         "items": [{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1961-03-27",
+            "file": "/media/audio/memoriascompartidas1.mp3"
+        },{
             "type": "pdf",
             "rext": "10",
             "component": "pdf-component",
@@ -664,8 +701,18 @@
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "1961-03-27",
-            "file": "/media/audio/memoriascompartidas1.mp3"
+            "date": "1961-06-02",
+            "file": "/media/audio/memoriascompartidas2.mp3"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-05-05",
+            "file": "/media/audio/visualizarterritorio17.mp3"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-12-05",
+            "file": "/media/audio/visualizarterritorio16.mp3"
         },{
             "type": "poem",
             "rext": "8",
@@ -676,17 +723,12 @@
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "1961-06-02",
-            "file": "/media/audio/memoriascompartidas2.mp3"
+            "date": "1960-10-15",
+            "file": "/media/audio/visualizarterritorio15.mp3"
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "1960-05-05",
-            "file": "/media/audio/visualizarterritorio13.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-12-05",
+            "date": "1960-08-15",
             "file": "/media/audio/visualizarterritorio14.mp3"
         },{
             "type": "poem",
@@ -698,18 +740,8 @@
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "1960-10-15",
-            "file": "/media/audio/visualizarterritorio15.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-08-15",
-            "file": "/media/audio/visualizarterritorio16.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
             "date": "1960-06-15",
-            "file": "/media/audio/visualizarterritorio17.mp3"
+            "file": "/media/audio/visualizarterritorio13.mp3"
         }]
     },{
         "year": 1960,
@@ -726,7 +758,12 @@
             "type": "shortaudio",
             "rext": "8",
             "date": "1960-06-09",
-            "file": "/media/audio/visualizarterritorio1.mp3"
+            "file": "/media/audio/visualizarterritorio12.mp3"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-06-26",
+            "file": "/media/audio/visualizarterritorio11.mp3"
         },{
             "type": "video",
             "rext": "10",
@@ -734,7 +771,12 @@
             "date": "1949-09-20",
             "title": "La maldición de los fosfatos",
             "desc": "El valor militar se va a ver reforzado por el económico cuando se descubren los yacimientos de fosfatos en la región de Bucraa. El geólogo español Manuel Alia Medina los estudió durante más de una década y llegó a la conclusión de que eran los yacimientos más importantes del mundo a cielo abierto. Solo un año más tarde, en 1950, ya estaba creada la empresa Adaro y comenzaban las excavaciones. Casualidad o no, el 20 de octubre Franco visitaba el Sáhara Occidental.",
-            "file": "https://www.youtube.com/embed/YRRPPf_jzC0"
+            "file": "https://www.youtube.com/embed/YRRPPf_jzC0?rel=0"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-08-12",
+            "file": "/media/audio/visualizarterritorio10.mp3"
         },{
             "type": "poem",
             "rext": "8",
@@ -745,8 +787,13 @@
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "1960-06-26",
-            "file": "/media/audio/visualizarterritorio2.mp3"
+            "date": "1960-11-12",
+            "file": "/media/audio/visualizarterritorio9.mp3"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-11-29",
+            "file": "/media/audio/visualizarterritorio8.mp3"
         },{
             "type": "text",
             "rext": "10",
@@ -757,8 +804,13 @@
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "1960-08-12",
-            "file": "/media/audio/visualizarterritorio3.mp3"
+            "date": "1960-12-15",
+            "file": "/media/audio/visualizarterritorio7.mp3"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-01-01",
+            "file": "/media/audio/visualizarterritorio6.mp3"
         },{
             "type": "photo",
             "rext": "10",
@@ -770,7 +822,12 @@
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "1960-11-12",
+            "date": "1960-01-18",
+            "file": "/media/audio/visualizarterritorio5.mp3"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-02-03",
             "file": "/media/audio/visualizarterritorio4.mp3"
         },{
             "type": "text",
@@ -782,8 +839,13 @@
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "1960-11-29",
-            "file": "/media/audio/visualizarterritorio5.mp3"
+            "date": "1960-03-24",
+            "file": "/media/audio/visualizarterritorio3.mp3"
+        },{
+            "type": "shortaudio",
+            "rext": "8",
+            "date": "1960-08-30",
+            "file": "/media/audio/visualizarterritorio2.mp3"
         },{
             "type": "text",
             "rext": "10",
@@ -794,38 +856,8 @@
         },{
             "type": "shortaudio",
             "rext": "8",
-            "date": "1960-12-15",
-            "file": "/media/audio/visualizarterritorio6.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-01-01",
-            "file": "/media/audio/visualizarterritorio7.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-01-18",
-            "file": "/media/audio/visualizarterritorio8.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-02-03",
-            "file": "/media/audio/visualizarterritorio9.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-03-24",
-            "file": "/media/audio/visualizarterritorio10.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
-            "date": "1960-08-30",
-            "file": "/media/audio/visualizarterritorio11.mp3"
-        },{
-            "type": "shortaudio",
-            "rext": "8",
             "date": "1960-05-23",
-            "file": "/media/audio/visualizarterritorio12.mp3"
+            "file": "/media/audio/visualizarterritorio1.mp3"
         }]
     },{
         "year": 1930,
@@ -834,7 +866,7 @@
             "type": "text",
             "rext": "10",
             "component": "text-component",
-            "date": "1921-08-01",
+            "date": "1921-09-01",
             "title": "Las guerras de África",
             "desc": "Aunque cuando comenzó la I Guerra Mundial en 1914 España se declaró neutral, las colonias del norte de África eran en ese tiempo escenario de otros conflictos. En 1909 había comenzado en el norte de Marruecos la guerra del Rif, que duraría casi 20 años. Pese a librarse lejos de casa, esta guerra tuvo fuertes consecuencias en la política española. Ya desde su mismo comienzo, cuando la llamada a cientos de reservistas para ir a luchar en esas montañas desconocidas fue el detonante de la llamada Semana Trágica, un levantamiento popular en Barcelona que fue fuertemente reprimido. En 1921 el llamado Desastre de Annual («victoria de Annual» para los rifeños, que instauraron de hecho una república independiente bajo el mando de Abd-el-Krim que duró cinco años) fue uno de los detonantes de la crisis política que llevaría al golpe de Estado y la dictadura de Miguel Primo de Rivera. También en el contexto de esta guerra se crea la Legión Española, con José Millán-Astray y Francisco Franco como jefes. Este tendrá un papel importante en el desembarco de Alhucemas, con el que España gana la guerra. En general, el africanismo fue un vivero tanto ideológico como de rápidos ascensos para un sector del Ejército que no tardaría mucho en empezar a tramar algo."
         },{
@@ -876,7 +908,7 @@
             "type": "pdf",
             "rext": "10",
             "component": "pdf-component",
-            "date": "1884-12-07",
+            "date": "1884-12-12",
             "title": "Tres casetas en la Bahía",
             "desc": "La historia de la colonización del Sáhara Occidental empieza con tres casetas. Concretamente, tres casetas-factoría construidas en la bahía del Río de Oro, la ensenada del Sintra y Cabo Blanco. Sobre ellas puso la bandera española una expedición que había mandado a la zona el primer ministro de Isabel II, Antonio Cánovas, con el propósito de adelantarse a otras potencias que pudieran tener intención de instalarse en esas costas que tenían enfrente las islas Canarias (y en especial a los ingleses). También les puso sendos nombres: Villa Cisneros, Puerto Badía y Medina Gatell. Con esos gestos y un real decreto se estableció un protectorado español en toda la zona, hasta la frontera con Marruecos, país con el que en 1767 se había firmado un tratado en el que el Sultán firmaba que su autoridad llegaba hasta el río Nun. Cuando, en 1885, las fuerzas coloniales se reparten África en el tratado de Berlín, todo quedó ratificado.",
             "file": "/media/pdf/decreto1885.pdf"

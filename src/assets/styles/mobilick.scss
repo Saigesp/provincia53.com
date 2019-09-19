@@ -1,103 +1,120 @@
 .mobilick {
-    margin-top: 350px;
-    padding: 20px;
-    height: calc(100vh - 450px);
-    overflow-y: scroll;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-        display: none;
+  margin-top: 350px;
+  padding: 20px;
+  height: calc(100vh - 450px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__block {
+    background-image: url('/static/img/icons/strip.svg');
+    background-size: 34px;
+    background-repeat: repeat-y;
+    background-position: -6px 0;
+    padding: 16px 0;
+  }
+
+  &__title {
+    cursor: pointer;
+
+    img {
+      width: 22px;
+      height: auto;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 4px;
+      margin-right: 10px;
     }
 
-    &__block {
-        background-image: url('/static/img/icons/strip.svg');
+    h3 {
+      margin: 0;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 32px;
+    }
+  }
+
+  &__items {
+    display: none;
+
+    .item {
+      margin-left: 11px;
+      padding-left: 26px;
+
+      &--line {
+        background-image: url('/static/img/icons/strip-h.svg');
         background-size: 34px;
-        background-repeat: repeat-y;
-        background-position: -6px 0;
-        padding: 16px 0;
-    }
+        background-repeat: no-repeat;
+        background-position: -14px -6px;
+      }
 
-    &__title {
-        cursor: pointer;
+      audio {
+        width: 100%;
+      }
+
+      .poem p {
+        white-space: pre;
+        margin-bottom: 0;
+        font-size: 12px;
+      }
+
+      .photo {
         img {
-            width: 22px;
-            height: auto;
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 4px;
-            margin-right: 10px;
+          max-width: 100%;
         }
-        h3 {
-            margin: 0;
-            display: inline-block;
-            vertical-align: top;
-            font-size: 32px;
-        }
-    }
+      }
 
-    &__items {
-        display: none;
-        .item {
-            margin-left: 11px;
-            padding-left: 26px;
-            &--line {
-                background-image: url('/static/img/icons/strip-h.svg');
-                background-size: 34px;
-                background-repeat: no-repeat;
-                background-position: -14px -6px;
-            }
-            audio {
-                width: 100%;
-            }
-            .poem p {
-                white-space: pre;
-                margin-bottom: 0;
-                font-size: 12px;
-            }
-            .photo {
-                img {
-                    max-width: 100%;
-                }
-            }
-            .video {
-                height: 0;
-                overflow: hidden;
-                padding-bottom: 56.25%;
-                padding-top: 30px;
-                position: relative;
-                iframe {
-                    height: 100%;
-                    left: 0;
-                    position: absolute;
-                    top: 0;
-                    width: 100%;
-                }
-            }
-            .pdf {
-                a {
-                    display: inline-block;
-                    vertical-align: top;
-                }
-                img {
-                    width: 18px;
-                    height: auto;
-                    display: inline-block;
-                    vertical-align: top;
-                    margin-right: 6px;
-                }
-                span {
-                    display: inline-block;
-                    vertical-align: top;
-                    font-weight: 700;
-                }
-            }
-        }
-    }
+      .video {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        position: relative;
+        background-image: url('/static/img/loader.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60px 60px;
 
-    &__block.is-active {
-        .mobilick__items {
-            display: block;
+        iframe {
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
         }
+      }
+
+      .pdf {
+        a {
+          display: inline-block;
+          vertical-align: top;
+        }
+
+        img {
+          width: 18px;
+          height: auto;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 6px;
+        }
+
+        span {
+          display: inline-block;
+          vertical-align: top;
+          font-weight: 700;
+        }
+      }
     }
+  }
+
+  &__block.is-active {
+    .mobilick__items {
+      display: block;
+    }
+  }
 }
 
 @media screen and (min-width: 860px) {
