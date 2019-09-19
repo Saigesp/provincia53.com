@@ -29,7 +29,7 @@
     </div>
     <div class="intro__back intro__back--21" :class="{'is-active': isActive21, 'is-deactive': currentSlide >= 22}">
     </div>
-    <div class="intro__back intro__back--22" :class="{'is-active': isActive22}">
+    <div class="intro__back intro__back--25" :class="{'is-active': isActive25}">
     </div>
 
 
@@ -62,7 +62,7 @@
         <div class="photo__wrap"></div>
         <div class="text__wrap">
           <div></div>
-          <p><span>Las excursiones</span><br>de los fines de semana con tus primos</p>
+          <p><span class="pre"> Las excursiones </span><br>de los fines de semana con tus primos</p>
         </div>
       </div>
       <div class="intro__block intro__block--empty"></div>
@@ -77,7 +77,7 @@
         <div class="photo__wrap"></div>
         <div class="text__wrap">
           <div></div>
-          <p><span>El otoño de 1975 tenías nervios</span><br>Acababas de empezar la escuela<br>¿Te imaginas? Todo era nuevo.</p>
+          <p><span style="background: white">El otoño de 1975 tenías nervios</span><br>Acababas de empezar la escuela<br>¿Te imaginas? Todo era nuevo.</p>
         </div>
       </div>
       <div class="intro__block intro__block--empty"></div>
@@ -122,6 +122,31 @@
         </div>
       </div>
       <div class="intro__block intro__block--empty"></div>
+
+      <div class="intro__block  intro__block--last">
+        <div class="photo__wrap"></div>
+        <div class="text__wrap">
+          <div></div>
+          <p>¿Te imaginas?</p>
+        </div>
+      </div>
+
+      <div class="intro__block  intro__block--last">
+        <div class="photo__wrap"></div>
+        <div class="text__wrap">
+          <div></div>
+          <p>No hace falta que te lo imagines:<br>Esta historia existe</p>
+        </div>
+      </div>
+
+      <div class="intro__block  intro__block--last">
+        <div class="photo__wrap"></div>
+        <div class="text__wrap">
+          <div></div>
+          <p>Es la historia de la provincia 53</p>
+        </div>
+      </div>
+
       <div class="intro__block intro__block--logo">
         <div class="text__wrap">
           <div></div>
@@ -176,6 +201,9 @@ export default {
       isActive20: false,
       isActive21: false,
       isActive22: false,
+      isActive23: false,
+      isActive24: false,
+      isActive25: false,
     }
   },
   beforeCreate: function() {
@@ -236,6 +264,12 @@ export default {
       if(to == 20 && from == 21) this.isActive21 = false;
       if(to == 22 && from == 21) this.isActive22 = true;
       if(to == 21 && from == 22) this.isActive22 = false;
+      if(to == 23 && from == 22) this.isActive23 = true;
+      if(to == 22 && from == 23) this.isActive23 = false;
+      if(to == 24 && from == 23) this.isActive24 = true;
+      if(to == 23 && from == 24) this.isActive24 = false;
+      if(to == 25 && from == 24) this.isActive25 = true;
+      if(to == 24 && from == 25) this.isActive25 = false;
     }
   }
 }
@@ -398,7 +432,7 @@ export default {
         opacity: 0;
       }
     }
-    &--22 {
+    &--25 {
       background: #050505;
       opacity: 0;
       transition: opacity 1000ms ease;
@@ -538,6 +572,10 @@ export default {
         font-size: 24vw !important;
       }
     }
+    &--last {
+      color: black;
+      text-align: center;
+    }
     &--logo {
       p {
         text-align: center;
@@ -617,6 +655,10 @@ export default {
         margin-left: 10px;
       }
     }
+  }
+  span.pre {
+    background: white;
+    white-space: pre;
   }
 }
 </style>
