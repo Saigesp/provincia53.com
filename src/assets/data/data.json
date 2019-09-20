@@ -65,7 +65,7 @@
         "link": "https://www.youtube.com/embed/FbbFr_BY3EM?rel=0"
     },{
         "id": "basiri_cassete",
-        "title": "Basiri",
+        "title": "Historia de Basiri",
         "desc": "La historia de Mohamed Basiri se mueve hoy entre la memoria y la leyenda. Un líder desaparecido prematuramente, pero que dejó un profundo legado. Un hombre apuesto, un periodista, un estratega, un valiente, un misterio. Aquí un puzle de voces para construir el retrato robot de un personaje sobre el que se cruzan la admiración y el silencio.",
         "component": "bigaudio-component",
         "thumbnail": "/static/img/loncon/cassete_basiri.png",
@@ -765,7 +765,7 @@
             "type": "pdf",
             "rext": "10",
             "component": "pdf-component",
-            "date": "1956-04-02",
+            "date": "1956-11-02",
             "datestr": "2-4-1956",
             "title": "Un nuevo vecino",
             "desc": "Marruecos obtiene la independencia. España renuncia al Protectorado sobre el Califato del Rif y Francia a sus territorios coloniales del sur, entregándole el poder al sultán Mohamed V, padre de Hassan II. En los meses siguientes, el recién nacido país intenta hacerse con otros territorios que estaban bajo dominio español en la zona (Ifni, el protectorado Sur y el Sáhara). En 1957 comienza la guerra de Ifni, que dura hasta el año siguiente. En la zona del Sáhara se dan fuertes enfrentamientos, que terminan con la victoria hispanofrancesa tras la operación conjunta Huracán/Écouvillon. En 1958 se firman los Acuerdos de Angra de Cintra, por los que España cede a Marruecos Cabo Juby, con capital en Villa Bens, actual Tarfaya. La ciudad de Sidi Ifni permanece asediada durante diez años, y no se entregará a Marruecos hasta 1969.",
@@ -785,6 +785,7 @@
             "rext": "10",
             "component": "video-component",
             "date": "1949-09-20",
+            "datestr": "1949",
             "title": "La maldición de los fosfatos",
             "desc": "El valor militar se va a ver reforzado por el económico cuando se descubren los yacimientos de fosfatos en la región de Bucraa. El geólogo español Manuel Alia Medina los estudió durante más de una década y llegó a la conclusión de que eran los yacimientos más importantes del mundo a cielo abierto. Solo un año más tarde, en 1950, ya estaba creada la empresa Adaro y comenzaban las excavaciones. Casualidad o no, el 20 de octubre Franco visitaba el Sáhara Occidental.",
             "file": "https://www.youtube.com/embed/YRRPPf_jzC0?rel=0"
@@ -851,7 +852,8 @@
             "type": "text",
             "rext": "10",
             "component": "text-component",
-            "date": "1934-10-20",
+            "date": "1934-03-08",
+            "datestr": "1934",
             "title": "Una colonización completada en silencio",
             "desc": "Mientras los obreros se levantaban en Asturias y Lluis Companys proclamaba en Barcelona el Estado Catalán, los colonizadores del Sáhara se alejaban de la costa y negociaban con notables de las tribus del desierto un sometimiento amistoso en virtud del cual se comienza a conocer como «Sáhara Español». Ese año se completó la ocupación con las fronteras actuales y se fundó la ciudad de El Aaiún. Sin embargo, al contrario de lo ocurrido en el Rif, no hubo ni guerra ni ruido."
         },{
@@ -868,7 +870,7 @@
             "type": "text",
             "rext": "10",
             "component": "text-component",
-            "date": "1931-04-14",
+            "date": "1931-02-14",
             "datestr": "14-4-1931",
             "title": "¡Viva la República!",
             "desc": "Se declara la Segunda República, con Manuel Azaña como presidente. Entre las políticas que trató de llevar a cabo estuvo la de desmilitarizar el Protectorado marroquí para hacerlo más similar al francés, donde los asuntos civiles y militares estaban separados. Lo consiguió parcialmente, aumentando el rechazo de los militares de carrera, a los que no les venía demasiado bien."
@@ -914,7 +916,7 @@
             "type": "text",
             "rext": "10",
             "component": "text-component",
-            "date": "1898-12-12",
+            "date": "1898-01-30",
             "datestr": "10-12-1898",
             "title": "El declive del imperio",
             "desc": "Mientras el africanismo cogía vuelo, España iba perdiendo sin embargo lo que quedaba de su antiguo imperio de ultramar. El tratado de París pone fin a una guerra con Estados Unidos con el mandato de ceder Puerto Rico y Filipinas a este país, y conceder a Cuba la independencia. Un duro golpe para el ego de un país que aún hoy se sigue refiriendo a este episodio como «Desastre del 98»."
@@ -929,7 +931,7 @@
             "type": "pdf",
             "rext": "10",
             "component": "pdf-component",
-            "date": "1884-12-07",
+            "date": "1884-01-07",
             "datestr": "7-12-1884",
             "title": "Tres casetas en la Bahía",
             "desc": "La historia de la colonización del Sáhara Occidental empieza con tres casetas. Concretamente, tres casetas-factoría construidas en la bahía del Río de Oro, la ensenada del Sintra y Cabo Blanco. Sobre ellas puso la bandera española una expedición que había mandado a la zona el primer ministro de Isabel II, Antonio Cánovas, con el propósito de adelantarse a otras potencias que pudieran tener intención de instalarse en esas costas que tenían enfrente las islas Canarias (y en especial a los ingleses). También les puso sendos nombres: Villa Cisneros, Puerto Badía y Medina Gatell. Con esos gestos y un real decreto se estableció un protectorado español en toda la zona, hasta la frontera con Marruecos, país con el que en 1767 se había firmado un tratado en el que el Sultán firmaba que su autoridad llegaba hasta el río Nun. Cuando, en 1885, las fuerzas coloniales se reparten África en el tratado de Berlín, todo quedó ratificado.",
