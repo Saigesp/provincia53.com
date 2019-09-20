@@ -113,12 +113,6 @@
 
             </defs>
 
-            <g class="biggroup" :transform="`translate(${center[0]},${center[1]})`">
-              <g class="biggroup__item" v-for="(bigitem, i) in datum.loncon" :transform="`translate(${calcBigItemPosition(i)})`" @click="showBigItem(bigitem)">
-                <text v-if="bigitem.id" :text-anchor="calcBigItemAnchor(i)" :dx="calcBigItemDx(i)">{{bigitem.title}}</text>
-                <rect v-if="bigitem.id" :x="calcBigItemX(i)" y="-20" width="30" height="22" :fill="`url(#${bigitem.id})`" rx="8" ry="8"></rect>
-              </g>
-            </g>
             <g ref="gengroup">
               <line class="startyear" :x1="center[0]" :x2="center[0]" :y1="center[1]-circleRadius(datum.years.length-1)+6" :y2="center[1]-circleRadius(0)-14"></line>
               <circle :cx="center[0]+8" :cy="center[1]-circleRadius(0)-10" fill="url(#left)" r="6"></circle>
@@ -152,6 +146,15 @@
                 <svg-wave v-if="isPlayingAudio"></svg-wave>
               </g>
             </g>
+
+            <g class="biggroup" :transform="`translate(${center[0]},${center[1]})`">
+              <g class="biggroup__item" v-for="(bigitem, i) in datum.loncon" :transform="`translate(${calcBigItemPosition(i)})`" @click="showBigItem(bigitem)">
+                <text v-if="bigitem.id" :text-anchor="calcBigItemAnchor(i)" :dx="calcBigItemDx(i)">{{bigitem.title}}</text>
+                <rect v-if="bigitem.id" :x="calcBigItemX(i)" y="-20" width="30" height="22" :fill="`url(#${bigitem.id})`" rx="8" ry="8"></rect>
+              </g>
+              <text class="biggroup__title" v-for="(title, i) in bigTitles" :x="calcBigTitleX(i)" :y="calcBigTitleY(i)" :text-anchor="calcBigTitleAnchor(i)">{{title}}</text>
+            </g>
+
           </svg>
         </parallax-element>
         <!-- end chart contents -->
@@ -238,7 +241,8 @@ export default {
         {icon: 'video', name: 'Video'},
         {icon: 'audio', name: 'Audio'},
         {icon: 'poem', name: 'Poema'},
-      ]
+      ],
+      bigTitles: ['El tiempo colonial', 'La Transición', 'Personas desaparecidas', 'La espera que continúa'],
     }
   },
   beforeCreate: function() {
@@ -369,6 +373,16 @@ export default {
     },
     calcBigItemX(i){
       return (i<3||(i>4&&i<10)) ? 0 : -30;
+    },
+    calcBigTitleX(i){
+      let preStartX = this.width < 1200 ? this.width/2 : (this.width/2)*0.9;
+      return i%2 == 0 ? -preStartX+100 : preStartX-100;
+    },
+    calcBigTitleY(i){
+      return i<2 ? -this.circleRadius(0)-12 : this.circleRadius(0)-130;
+    },
+    calcBigTitleAnchor(i){
+      return i%2 == 0 ? 'start' : 'end';
     },
     dateToRadians(date){
       let start = new Date(date.getFullYear(), 0, 0);
