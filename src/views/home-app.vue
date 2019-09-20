@@ -168,11 +168,12 @@
     <div class="mobilick" v-if="width <= minScaleSize">
       <div class="mobilick__block" v-for="(yeargroup, i) in datumR" :class="{'is-active': inCurrentMobilick(yeargroup)}">
         <div class="mobilick__title" @click="setMobilick(yeargroup)">
-          <img src="/static/img/icons/plus.svg" alt="Expandir">
+          <img src="/static/img/icons/plus.svg" alt="Expandir" v-if="!inCurrentMobilick(yeargroup)">
+          <img src="/static/img/icons/minus.svg" alt="Colapsar" v-else>
           <h3>{{yeargroup.title}}</h3>
         </div>
         <div class="mobilick__items" v-if="inCurrentMobilick(yeargroup)">
-          <div v-for="item in reverseItemsMobilick(yeargroup.items)" class="item" :class="{'item--line': item.title}">
+          <div v-for="item in reverseItemsMobilick(yeargroup.items)" class="item" :class="{'item--line': item.title}" v-if="item.type != 'slider'">
             <h4>{{item.title}}</h4>
             <p>{{item.desc}}</p>
             <div>

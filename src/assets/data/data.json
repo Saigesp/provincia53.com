@@ -123,6 +123,14 @@
     "years": [{
         "title": "2019",
         "items": [{
+            "type": "slider",
+            "rext": "10",
+            "component": "slider-component",
+            "date": "2019-11-10",
+            "datestr": "Actualidad",
+            "title": "Campamentos",
+            "files": ["/media/slider5/act-01.jpg","/media/slider5/act-02.jpg","/media/slider5/act-03.jpg","/media/slider5/act-04.jpg","/media/slider5/act-05.jpg","/media/slider5/act-06.jpg","/media/slider5/act-07.jpg","/media/slider5/act-08.jpg","/media/slider5/act-09.jpg","/media/slider5/act-10.jpg","/media/slider5/act-11.jpg","/media/slider5/act-12.jpg","/media/slider5/act-13.jpg","/media/slider5/act-14.jpg","/media/slider5/act-15.jpg","/media/slider5/act-16.jpg","/media/slider5/act-17.jpg","/media/slider5/act-18.jpg","/media/slider5/act-19.jpg","/media/slider5/act-20.jpg","/media/slider5/act-21.jpg","/media/slider5/act-22.jpg","/media/slider5/act-23.jpg","/media/slider5/act-24.jpg","/media/slider5/act-25.jpg","/media/slider5/act-26.jpg","/media/slider5/act-27.jpg","/media/slider5/act-28.jpg","/media/slider5/act-29.jpg","/media/slider5/act-30.jpg","/media/slider5/act-31.jpg","/media/slider5/act-32.jpg","/media/slider5/act-33.jpg","/media/slider5/act-34.jpg","/media/slider5/act-35.jpg","/media/slider5/act-36.jpg","/media/slider5/act-37.jpg"]
+        },{
             "type": "text",
             "rext": "10",
             "component": "text-component",
@@ -419,6 +427,14 @@
             "type": "slider",
             "rext": "10",
             "component": "slider-component",
+            "date": "1975-12-12",
+            "datestr": "Diciembre de 1975",
+            "title": "Éxodo",
+            "files": ["/media/slider4/exodo-01.jpg","/media/slider4/exodo-02.jpg","/media/slider4/exodo-03.jpg","/media/slider4/exodo-04.jpg","/media/slider4/exodo-05.jpg","/media/slider4/exodo-06.jpg","/media/slider4/exodo-07.jpg","/media/slider4/exodo-08.jpg","/media/slider4/exodo-09.jpg","/media/slider4/exodo-10.jpg","/media/slider4/exodo-11.jpg","/media/slider4/exodo-12.jpg","/media/slider4/exodo-13.jpg","/media/slider4/exodo-14.jpg","/media/slider4/exodo-15.jpg","/media/slider4/exodo-16.jpg","/media/slider4/exodo-17.jpg","/media/slider4/exodo-18.jpg","/media/slider4/exodo-19.jpg","/media/slider4/exodo-20.jpg","/media/slider4/exodo-21.jpg","/media/slider4/exodo-22.jpg","/media/slider4/exodo-23.jpg","/media/slider4/exodo-24.jpg","/media/slider4/exodo-25.jpg","/media/slider4/exodo-26.jpg","/media/slider4/exodo-27.jpg","/media/slider4/exodo-28.jpg","/media/slider4/exodo-29.jpg","/media/slider4/exodo-30.jpg","/media/slider4/exodo-31.jpg","/media/slider4/exodo-32.jpg","/media/slider4/exodo-33.jpg","/media/slider4/exodo-34.jpg","/media/slider4/exodo-35.jpg","/media/slider4/exodo-36.jpg","/media/slider4/exodo-37.jpg","/media/slider4/exodo-38.jpg","/media/slider4/exodo-39.jpg","/media/slider4/exodo-40.jpg","/media/slider4/exodo-41.jpg","/media/slider4/exodo-42.jpg","/media/slider4/exodo-43.jpg","/media/slider4/exodo-44.jpg","/media/slider4/exodo-45.jpg","/media/slider4/exodo-46.jpg","/media/slider4/exodo-47.jpg","/media/slider4/exodo-48.jpg","/media/slider4/exodo-49.jpg","/media/slider4/exodo-50.jpg","/media/slider4/exodo-51.jpg","/media/slider4/exodo-52.jpg","/media/slider4/exodo-53.jpg","/media/slider4/exodo-54.jpg"]
+        },{
+            "type": "slider",
+            "rext": "10",
+            "component": "slider-component",
             "date": "1975-05-12",
             "datestr": "12-5-1975",
             "title": "Manifestaciones ante la ONU",
@@ -520,7 +536,7 @@
             "type": "text",
             "rext": "10",
             "component": "text-component",
-            "date": "1975-12-15",
+            "date": "1975-12-05",
             "datestr": "Diciembre de 1975",
             "title": "La huida",
             "desc": "España se reorganiza bajo el primer Gobierno de la Monarquía, presidido por Carlos Arias Navarro, un franquista conocido por su intransigencia y su severidad. En el Sáhara Occidental, los últimos colonos españoles recogen sus cosas. El día 20, la última compañía de la Legión abandona El Aaiún. En los meses siguientes población civil saharaui huye de manera masiva y comienza a establecerse en los campamentos de refugiados de Tinduf, en Argelia, donde continúa hasta hoy. Marruecos bombardea con napalm y fósforo blanco (armas prohibidas por los tratados internacionales) estos campamentos y la población en éxodo: uno de los bombardeos más graves es de Um Draiga, el 18 de febrero de 1976, con centenares de muertos."
@@ -727,6 +743,14 @@
             "desc": "El 14 de diciembre de 1960, la ONU promulga su resolución 1514, una «declaración sobre la concesión de la independencia a los países y pueblos coloniales» que, básicamente, obliga a las metrópolis a preparar su salida y facilitar la transición de sus colonias hacia la democracia. España responde de una manera peculiar: convierte al Sáhara en una provincia española más. La provincia número 53. En los años siguientes, firma acuerdos con once empresas, la mayoría estadounidenses, para la búsqueda y explotación de petróleo.",
             "file": "/media/pdf/resolucion1514.pdf"
         },{
+            "type": "slider",
+            "rext": "10",
+            "component": "slider-component",
+            "date": "1961-09-30",
+            "datestr": "1961",
+            "title": "Recuerdos",
+            "files": ["/media/slider3/recuerdos-01.jpg","/media/slider3/recuerdos-02.jpg","/media/slider3/recuerdos-03.jpg","/media/slider3/recuerdos-04.jpg","/media/slider3/recuerdos-05.jpg","/media/slider3/recuerdos-06.jpg","/media/slider3/recuerdos-07.jpg","/media/slider3/recuerdos-08.jpg","/media/slider3/recuerdos-09.jpg","/media/slider3/recuerdos-10.jpg","/media/slider3/recuerdos-11.jpg","/media/slider3/recuerdos-12.jpg","/media/slider3/recuerdos-13.jpg","/media/slider3/recuerdos-14.jpg","/media/slider3/recuerdos-15.jpg","/media/slider3/recuerdos-16.jpg","/media/slider3/recuerdos-17.jpg","/media/slider3/recuerdos-18.jpg","/media/slider3/recuerdos-19.jpg","/media/slider3/recuerdos-20.jpg"]
+        },{
             "type": "shortaudio",
             "rext": "8",
             "date": "1961-06-02",
@@ -895,6 +919,14 @@
     },{
         "title": "1884-1930",
         "items": [{
+            "type": "slider",
+            "rext": "10",
+            "component": "slider-component",
+            "date": "1884-02-05",
+            "datestr": "1884",
+            "title": "Postales de 1884",
+            "files": ["/media/slider2/postales-01.jpg","/media/slider2/postales-02.jpg","/media/slider2/postales-03.jpg","/media/slider2/postales-04.jpg","/media/slider2/postales-05.jpg","/media/slider2/postales-06.jpg","/media/slider2/postales-07.jpg","/media/slider2/postales-08.jpg","/media/slider2/postales-09.jpg","/media/slider2/postales-10.jpg","/media/slider2/postales-11.jpg","/media/slider2/postales-12.jpg","/media/slider2/postales-13.jpg","/media/slider2/postales-14.jpg"]
+        },{
             "type": "text",
             "rext": "10",
             "component": "text-component",
@@ -943,7 +975,7 @@
             "type": "pdf",
             "rext": "10",
             "component": "pdf-component",
-            "date": "1884-02-07",
+            "date": "1884-01-20",
             "datestr": "7-12-1884",
             "title": "Tres casetas en la Bahía",
             "desc": "La historia de la colonización del Sáhara Occidental empieza con tres casetas. Concretamente, tres casetas-factoría construidas en la bahía del Río de Oro, la ensenada del Sintra y Cabo Blanco. Sobre ellas puso la bandera española una expedición que había mandado a la zona el primer ministro de Isabel II, Antonio Cánovas, con el propósito de adelantarse a otras potencias que pudieran tener intención de instalarse en esas costas que tenían enfrente las islas Canarias (y en especial a los ingleses). También les puso sendos nombres: Villa Cisneros, Puerto Badía y Medina Gatell. Con esos gestos y un real decreto se estableció un protectorado español en toda la zona, hasta la frontera con Marruecos, país con el que en 1767 se había firmado un tratado en el que el Sultán firmaba que su autoridad llegaba hasta el río Nun. Cuando, en 1885, las fuerzas coloniales se reparten África en el tratado de Berlín, todo quedó ratificado.",
