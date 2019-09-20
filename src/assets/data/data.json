@@ -33,7 +33,7 @@
         "link": "https://www.youtube.com/embed/SePUv7T62Lg?rel=0"
     },{
         "id": "transicion",
-        "title": "Transición",
+        "title": "Abandono/Transición",
         "desc": "Mientras España salía de la dictadura y trataba de sentar las bases de un nuevo tiempo, en su Provincia 53 también estaban pasando muchas cosas. Un naciente movimiento de liberación nacional iba dejando cada vez más claros los anhelos de independencia, las élites trataban de controlar el proceso a su manera, y, en general, las cosas se iban poniendo cada vez más tensas. ¿Cómo se vivió ese tiempo? ¿Qué consecuencias tuvo?",
         "component": "bigaudio-component",
         "thumbnail": "/static/img/loncon/cassete_transicion.png",
@@ -65,7 +65,7 @@
         "link": "https://www.youtube.com/embed/FbbFr_BY3EM?rel=0"
     },{
         "id": "basiri_cassete",
-        "title": "Historia de Basiri",
+        "title": "La historia de Basiri",
         "desc": "La historia de Mohamed Basiri se mueve hoy entre la memoria y la leyenda. Un líder desaparecido prematuramente, pero que dejó un profundo legado. Un hombre apuesto, un periodista, un estratega, un valiente, un misterio. Aquí un puzle de voces para construir el retrato robot de un personaje sobre el que se cruzan la admiración y el silencio.",
         "component": "bigaudio-component",
         "thumbnail": "/static/img/loncon/cassete_basiri.png",
@@ -127,6 +127,7 @@
             "rext": "10",
             "component": "text-component",
             "date": "2019-04-21",
+            "datestr": "2019",
             "title": "¿Y ahora qué?",
             "desc": "En los últimos años, la actualidad política española ha sido un hervidero. El bipartidismo se da por muerto con la aparición de nuevos partidos que irrumpen en el Parlamento y los ayuntamientos. Cataluña declara unilateralmente su independencia. Una moción de censura echa a Mariano Rajoy del Gobierno. Pedro Sánchez pasa a ocuparlo. Las elecciones se siguen sucediendo. El frenesí político no parece que vaya a parar pronto. El Sáhara Occidental, por su parte, sigue esperando."
         },{
@@ -207,6 +208,7 @@
             "rext": "10",
             "component": "text-component",
             "date": "2013-06-10",
+            "datestr": "2013",
             "title": "Apátridas por ley",
             "desc": "La Audiencia Nacional española reconoce en dos sentencias el estatus de apátridas a las personas saharauis, una petición histórica porque supone de facto reconocer su condición de refugiadas, y la no obligación de acogerse a una segunda nacionalidad en aquellos países que no reconocen la saharaui. El documento de apatridia permite residir en España y viajar libremente dentro de Europa."
         },{
@@ -234,6 +236,7 @@
             "rext": "10",
             "component": "text-component",
             "date": "2010-06-15",
+            "datestr": "2010",
             "title": "Jaimas en todas las plazas",
             "desc": "En Gdeim Izik, a las afueras de El Aaiún, una protesta saharaui contra las malas condiciones de vida bajo la ocupación marroquí se convierte en el que será llamado «campamento de la dignidad». En su desmantelamiento hubo una veintena de muertos y cientos de heridos y desaparecidos, y 19 activistas detenidos siguen cumpliendo penas de prisión. Se dice que fue la primera de las revueltas de la llamada «primavera árabe». Campamentos como aquel pronto llegaron a plazas de todo el mundo. A Sol, por ejemplo, cuando el 15 de mayo de 2011 el centro de Madrid también supo lo que era improvisar una jaima, sin saber por cuánto tiempo."
         }]
@@ -244,6 +247,7 @@
             "rext": "10",
             "component": "text-component",
             "date": "2007-04-15",
+            "datestr": "2007",
             "title": "Las conversaciones de Nueva York",
             "desc": "En Nueva York tienen lugar las negociaciones de Manhasset: tres rondas de conversaciones en las que el gobierno marroquí y el Frente Polisario negocian de manera directa por primera vez, en presencia de Argelia y Mauritania. España no tiene ninguna implicación. José Luis Rodríguez Zapatero lleva tres años en el Gobierno."
         },{
@@ -261,6 +265,7 @@
             "rext": "10",
             "component": "pdf-component",
             "date": "2002-02-20",
+            "datestr": "2002",
             "title": "¿Nadie hace caso a la ONU?",
             "desc": "La Asesoría Jurídica de Naciones Unidas, por petición del Consejo de Seguridad, dictamina que Marruecos no era una potencia administradora del territorio del Sáhara Occidental, que los Acuerdos de Madrid de 1975 no habían transferido ninguna soberanía a sus firmantes y que la condición de territorio no autónomo del Sáhara Occidental no se había visto afectada por esos acuerdos. Esta declaración no tiene ninguna consecuencia. En esos años se suceden las propuestas de acuerdo a la RASD y Marruecos por parte de la ONU (los sucesivos planes Baker), pero ninguna fructifica. En España gobierna José María Aznar.",
             "file": "/media/pdf/resolucion2002.pdf"
@@ -279,6 +284,7 @@
             "rext": "10",
             "component": "text-component",
             "date": "1992-02-01",
+            "datestr": "1992",
             "title": "El año en que el mundo miró a España",
             "desc": "El referéndum de autodeterminación saharaui no se celebra. Los Juegos Olímpicos de Barcelona y la Expo de Sevilla son el escaparate ante el mundo de una «nueva España» que hace gala de su progreso. En agosto se produce la primera llegada masiva de migrantes marroquíes en patera a las costas españolas, y la inmigración empieza a convertirse en un tema central. En el Sáhara, en septiembre se lleva a cabo la primera Intifada, cuando los participantes en manifestaciones pacíficas frente al palacio del gobernador fueron atacados por unidades de policía y del ejército. Desde entonces, septiembre ha sido el «mes de Intifada» del territorio."
         },{
@@ -304,6 +310,7 @@
             "rext": "10",
             "component": "photo-component",
             "date": "1982-12-14",
+            "datestr": "1982",
             "title": "El dilema de Felipe",
             "desc": "Felipe González gana las elecciones, y ocupará la Presidencia del Gobierno hasta 1996. En 1983 firma con Marruecos un acuerdo de pesca en aguas saharauis. En 1986 España entra en la Comunidad Económica Europea (ahora Unión Europea), que es quien centraliza hoy en día este tipo de acuerdos.",
             "file": "/media/cambio16.png"
@@ -315,6 +322,7 @@
             "rext": "10",
             "component": "text-component",
             "date": "1981-11-10",
+            "datestr": "1981",
             "title": "Referéndum o no referéndum",
             "desc": "Marruecos acepta la celebración de un referéndum en el Sáhara Occidental. De nuevo, el spoiler es que nunca llegará a celebrarse. Es el año en que España vuelve a temblar con el intento de golpe de Estado del 23F."
         }]
@@ -325,6 +333,7 @@
             "rext": "10",
             "component": "text-component",
             "date": "1980-08-30",
+            "datestr": "1980",
             "title": "El Muro de la Vergüenza",
             "desc": "Marruecos comienza la construcción del Muro de la Vergüenza, que en años sucesivos irá abarcando zonas cada vez más amplias de territorio. Terminado en abril de 1987, mide 2720km, protege los yacimientos de fosfatos de Bucráa, El Aaiún y Smara y está resguardado por más de 100000 soldados."
         },{
@@ -342,6 +351,7 @@
             "rext": "10",
             "component": "text-component",
             "date": "1979-10-30",
+            "datestr": "1979",
             "title": "Hasta luego, Mauritania",
             "desc": "Apenas unos días después de un golpe de Estado pacífico que supuso un cambio de régimen en Mauritania, este país abandona la guerra. Firma con el Frente Polisario su retirada renunciando a los territorios que le correspondían por los Acuerdos de Madrid, aunque en el transcurso del conflicto será Marruecos quien se anexione esas zonas."
         },{
@@ -450,14 +460,13 @@
             "date": "1975-03-15",
             "file": "/media/audio/exodo2.mp3"
         },{
-            "type": "photo",
+            "type": "text",
             "rext": "10",
-            "component": "photo-component",
+            "component": "text-component",
             "date": "1975-11-06",
             "datestr": "6-11-1975",
             "title": "La marcha verde",
-            "desc": "Mientras Franco agoniza, el rey Hassán II lanza la «Marcha Verde». 350000 personas avanzan desde Marruecos con aire festivo y el discurso de recuperar un territorio perdido. 50000 cruzan la frontera y acampan. El Consejo de Seguridad de la ONU condena la marcha, pero EEUU y Francia dan su beneplácito a la anexión del territorio: en el contexto de la Guerra Fría, les preocupaba la fuerza del Polisario en alianza con una Argelia en la órbita de Moscú. El 9 de noviembre, el ministro de la Presidencia español, Antonio Carro Martínez, negocia en Agadir la entrega del territorio a Marruecos. Juan Carlos de Borbón da la orden de repliegue y los civiles abandonan la provincia española.",
-            "file": "/media/reyretirada.jpg"
+            "desc": "Mientras Franco agoniza, el rey Hassán II lanza la «Marcha Verde». 350000 personas avanzan desde Marruecos con aire festivo y el discurso de recuperar un territorio perdido. 50000 cruzan la frontera y acampan. El Consejo de Seguridad de la ONU condena la marcha, pero EEUU y Francia dan su beneplácito a la anexión del territorio: en el contexto de la Guerra Fría, les preocupaba la fuerza del Polisario en alianza con una Argelia en la órbita de Moscú. El 9 de noviembre, el ministro de la Presidencia español, Antonio Carro Martínez, negocia en Agadir la entrega del territorio a Marruecos. Juan Carlos de Borbón da la orden de repliegue y los civiles abandonan la provincia española."
         },{
             "type": "poem",
             "rext": "8",
@@ -560,6 +569,7 @@
             "rext": "10",
             "component": "photo-component",
             "date": "1974-09-30",
+            "datestr": "1974",
             "title": "Todo empieza a acelerarse",
             "desc": "España anuncia un referéndum de autodeterminación para el primer semestre de 1975 y va preparando un censo de población entre las tribus. Marruecos solicita al Tribunal de la Haya un veredicto acerca de sus derechos de soberanía sobre el territorio y empieza a concentrar a su ejército en la frontera. El Polisario atenta contra la cinta transportadora de Fos Bucráa. El Banco Mundial califica el territorio saharaui como el más rico de todo el Magreb y uno de los más ricos de África. La tensión no para de subir, parece claro.",
             "file": "/media/tanques.jpg"
@@ -662,6 +672,7 @@
             "rext": "10",
             "component": "text-component",
             "date": "1967-05-30",
+            "datestr": "1967",
             "title": "Cómo irse in irse",
             "desc": "Como la ONU sigue insistiendo, España accede a organizar un referéndum de autodeterminación. Spoiler: nunca llegará a realizarse. Lo que sí ocurre es que Franco crea la Yemáa, una suerte de Parlamento autonómico formado por notables saharauis, con representantes en las Cortes franquistas de Madrid, con el objetivo de incorporar al sistema de gobierno a unas élites fieles a los intereses del régimen de la metrópoli. Por lo que pudiera pasar."
         },{
@@ -711,6 +722,7 @@
             "rext": "10",
             "component": "pdf-component",
             "date": "1961-06-24",
+            "datestr": "1961",
             "title": "¿Metrópolis Go Home?",
             "desc": "El 14 de diciembre de 1960, la ONU promulga su resolución 1514, una «declaración sobre la concesión de la independencia a los países y pueblos coloniales» que, básicamente, obliga a las metrópolis a preparar su salida y facilitar la transición de sus colonias hacia la democracia. España responde de una manera peculiar: convierte al Sáhara en una provincia española más. La provincia número 53. En los años siguientes, firma acuerdos con once empresas, la mayoría estadounidenses, para la búsqueda y explotación de petróleo.",
             "file": "/media/pdf/resolucion1514.pdf"
@@ -894,7 +906,7 @@
             "type": "poem",
             "rext": "8",
             "component": "poem-component",
-            "date": "1940-02-20",
+            "date": "1940-03-01",
             "text": "Decirles que la tierra no es de ellos.\nDecirles que la gente no es de ellos.\nDecirles que las piedras necesitan ser libres.",
             "author": "Ali Salem Iselmu"
         },{
@@ -909,14 +921,14 @@
             "type": "poem",
             "rext": "8",
             "component": "poem-component",
-            "date": "1940-01-12",
+            "date": "1940-12-12",
             "text": "Hombres del desierto\nindomables,\ncomo la tormenta roja,\ncomo el dolor de la paciencia,\ncomo la estela de un dromedario\nque persigue la sombra del sol.",
             "author": "Ali Salem Iselmu"
         },{
             "type": "text",
             "rext": "10",
             "component": "text-component",
-            "date": "1898-01-30",
+            "date": "1898-02-20",
             "datestr": "10-12-1898",
             "title": "El declive del imperio",
             "desc": "Mientras el africanismo cogía vuelo, España iba perdiendo sin embargo lo que quedaba de su antiguo imperio de ultramar. El tratado de París pone fin a una guerra con Estados Unidos con el mandato de ceder Puerto Rico y Filipinas a este país, y conceder a Cuba la independencia. Un duro golpe para el ego de un país que aún hoy se sigue refiriendo a este episodio como «Desastre del 98»."
@@ -931,7 +943,7 @@
             "type": "pdf",
             "rext": "10",
             "component": "pdf-component",
-            "date": "1884-01-07",
+            "date": "1884-02-07",
             "datestr": "7-12-1884",
             "title": "Tres casetas en la Bahía",
             "desc": "La historia de la colonización del Sáhara Occidental empieza con tres casetas. Concretamente, tres casetas-factoría construidas en la bahía del Río de Oro, la ensenada del Sintra y Cabo Blanco. Sobre ellas puso la bandera española una expedición que había mandado a la zona el primer ministro de Isabel II, Antonio Cánovas, con el propósito de adelantarse a otras potencias que pudieran tener intención de instalarse en esas costas que tenían enfrente las islas Canarias (y en especial a los ingleses). También les puso sendos nombres: Villa Cisneros, Puerto Badía y Medina Gatell. Con esos gestos y un real decreto se estableció un protectorado español en toda la zona, hasta la frontera con Marruecos, país con el que en 1767 se había firmado un tratado en el que el Sultán firmaba que su autoridad llegaba hasta el río Nun. Cuando, en 1885, las fuerzas coloniales se reparten África en el tratado de Berlín, todo quedó ratificado.",

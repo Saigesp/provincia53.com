@@ -1,9 +1,10 @@
 <template>
-    <div class="component component--text">
+    <div class="component component--pdf">
         <div class="component__controls">
             <img src="/static/img/icons/close.svg" alt="Cerrar" @click="closeComponent()">
         </div>
         <div class="component__content">
+            <span class="datestr" v-if="datum.datestr">{{datum.datestr}}</span>
             <h3>{{datum.title}}</h3>
             <p v-if="datum.desc">{{datum.desc}}</p>
             <div class="component__photo" v-if="datum.photo">

@@ -11,6 +11,7 @@
   
   h3 {
     font-size: 32px;
+    margin-top: 0;
   }
 
   audio {
@@ -106,6 +107,30 @@
       padding: 5px;
       max-width: 500px;
     }
+  }
+
+  .datestr {
+    font-family: dharma-gothic-m, Helvetica, Arial, sans-serif;
+    display: block;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  &--text .datestr {
+    color: #fdc12c;
+  }
+  &--pdf .datestr {
+    margin-top: 30px;
+    color: #bc7871;
+  }
+  &--slider .datestr,
+  &--photo .datestr {
+    margin-top: 30px;
+    color: #e73c5d;
+  }
+  &--video .datestr {
+    margin-top: 30px;
+    color: #916f8a;
   }
 
 }
