@@ -19,7 +19,7 @@
         </div>
         <div class="legend">
           <div class="legend__item" v-for="legend in legends">
-            <img :src="`/static/img/defs/${legend.icon}.png`" alt="Icono"><span>{{legend.name}}</span>
+            <img :class="legend.icon" :src="`/static/img/defs/${legend.icon}.png`" alt="Icono"><span>{{legend.name}}</span>
           </div>
         </div>
         <div class="loncon__wrap">
@@ -240,6 +240,7 @@ export default {
         {icon: 'photo', name: 'Foto'},
         {icon: 'video', name: 'Video'},
         {icon: 'audio', name: 'Audio'},
+        {icon: 'audiodest', name: 'Audio destacado'},
         {icon: 'poem', name: 'Poema'},
       ],
       bigTitles: ['El tiempo colonial', 'La Transición', 'Personas desaparecidas', 'La espera que continúa'],
