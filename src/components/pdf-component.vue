@@ -5,7 +5,10 @@
         </div>
         <div class="component__content">
             <h3>{{datum.title}}</h3>
-            <p>{{datum.desc}}</p>
+            <p v-if="datum.desc">{{datum.desc}}</p>
+            <div class="component__photo" v-if="datum.photo">
+                <img :src="'/static'+datum.photo" :alt="datum.title">
+            </div>
             <div class="component__pdf" v-if="datum.file">
                 <a :href="'/static'+datum.file" target="_blank">
                     <img :src="previewFile(datum.file)" alt="Archivo">

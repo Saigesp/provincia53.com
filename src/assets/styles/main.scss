@@ -150,10 +150,16 @@ audio {
         font-size: 18px;
       }
 
+      &__date {
+        display: none;
+        font-size: 18px;
+      }
+
       &:hover {
         .item {
           &__line,
           &__text,
+          &__date,
           &__dot {
             display: block;
           }
@@ -169,6 +175,7 @@ audio {
           &__circle {
             stroke: #fdc12c;
           }
+          &__date,
           &__doty {
             fill: #fdc12c;
           }
@@ -182,6 +189,7 @@ audio {
           &__circle {
             stroke: #e73c5d;
           }
+          &__date,
           &__doty {
             fill: #e73c5d;
           }
@@ -194,6 +202,7 @@ audio {
           &__circle {
             stroke: #2abbb2;
           }
+          &__date,
           &__doty {
             fill: #2abbb2;
           }
@@ -206,6 +215,7 @@ audio {
           &__circle {
             stroke: #bc7871;
           }
+          &__date,
           &__doty {
             fill: #bc7871;
           }
@@ -218,6 +228,7 @@ audio {
           &__circle {
             stroke: #d8643f;
           }
+          &__date,
           &__doty {
             fill: #d8643f;
           }
@@ -230,6 +241,7 @@ audio {
           &__circle {
             stroke: red;
           }
+          &__date,
           &__doty {
             fill: red;
           }
@@ -242,6 +254,7 @@ audio {
           &__circle {
             stroke: #916f8a;
           }
+          &__date,
           &__doty {
             fill: #916f8a;
           }

@@ -5,7 +5,7 @@
     </div>
     <div class="component__content">
       <h3>{{datum.title}}</h3>
-      <p>{{datum.desc}}</p>
+      <p v-if="datum.desc">{{datum.desc}}</p>
     </div>
     <div class="component__slider">
       <div class="slider__item" v-for="file in datum.files" :style="{backgroundImage: `url(/static${file})`}"></div>

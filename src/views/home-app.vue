@@ -132,6 +132,13 @@
                     :text-anchor="calcTextAnchor(item.date, i)"
                     v-if="item.title"
                     dy="5">{{item.title}}</text>
+                  <text
+                    class="item__date"
+                    :x="calcTextPosition(item.date, i)[0]"
+                    :y="calcTextPosition(item.date, i)[1]"
+                    :text-anchor="calcTextAnchor(item.date, i)"
+                    v-if="item.datestr"
+                    dy="-12">{{item.datestr}}</text>
                 </g>
                 <text class="year__title" y="10">{{yeargroup.title}}</text>
               </g>
@@ -302,30 +309,30 @@ export default {
     calcLinePoints(strdate, i){
       let date = new Date(strdate);
       let rads = this.dateToRadians(date);
-      let xtrsp = rads <= Math.PI*2 ? -20 : 20;
+      let xtrsp = rads <= 0 ? -20 : 20;
       return [
         [0,0],
         [
-          Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-2)),
-          Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-2))
+          Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-1)),
+          Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-1))
         ],
         [
-          (Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-2)))+xtrsp,
-          (Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-2)))
+          (Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-1)))+xtrsp,
+          (Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-1)))
         ]
       ]
     },
     calcTextPosition(strdate, i){
       let date = new Date(strdate);
       let rads = this.dateToRadians(date);
-      let xtrsp = rads <= Math.PI*2 ? -26 : 26;
+      let xtrsp = rads <= 0 ? -26 : 26;
       return [
-        (Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-2)))+xtrsp,
-        (Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-2)))
+        (Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-1)))+xtrsp,
+        (Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-1)))
       ]
     },
     calcTextAnchor(strdate, i){
-      return this.dateToRadians(new Date(strdate)) <= Math.PI*2 ? 'end' : 'start'
+      return this.dateToRadians(new Date(strdate)) <= 0 ? 'end' : 'start'
     },
     calcBigItemPosition(i){
       let space = 30;
@@ -352,7 +359,7 @@ export default {
     dateToRadians(date){
       let start = new Date(date.getFullYear(), 0, 0);
       let rads = Math.floor((date - start) / (1000 * 60 * 60 * 24)) / (183 / Math.PI)
-      return Math.abs(rads+(Math.PI));
+      return (rads-Math.PI)*-1;
     },
     showItem(item){
       if(item.type == 'shortaudio' || item.type == 'goodaudio'){

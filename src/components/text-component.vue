@@ -5,7 +5,7 @@
         </div>
         <div class="component__content">
             <h3>{{datum.title}}</h3>
-            <p>{{datum.desc}}</p>
+            <p v-if="datum.desc">{{datum.desc}}</p>
         </div>
     </div>
 </template>

@@ -100,6 +100,14 @@
     }
   }
 
+  &--slider {
+    .component__content p {
+      background: rgba(255,255,255,0.5);
+      padding: 5px;
+      max-width: 500px;
+    }
+  }
+
 }
 
 @media screen and (min-width: 860px) {
@@ -130,30 +138,6 @@
         audio {
           margin-bottom: 0;
         }
-      }
-    }
-    &--big-video {
-      max-width: initial;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      h3 {
-        display: none;
-      }
-      .component__content {
-        min-height: initial;
-        flex: 0 1 auto;
-        width: calc(100% - 40px);
-        max-width: 75%;
-      }
-      .component__video {
-        margin-bottom: 0;
-        iframe {
-          //max-height: 100vh;
-        }
-      }
-      .component__controls {
-        right: 0 !important;
       }
     }
   }
