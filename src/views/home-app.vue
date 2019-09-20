@@ -19,7 +19,7 @@
         </div>
         <div class="legend">
           <div class="legend__item" v-for="legend in legends">
-            <img :class="legend.icon" :src="`/static/img/defs/${legend.icon}.png`" alt="Icono"><span>{{legend.name}}</span>
+            <img :class="legend.icon" :src="`/static/img/defs/${legend.icon}.png`" alt="Icono" v-if="legend.icon"><span>{{legend.name}}</span>
           </div>
         </div>
         <div class="loncon__wrap">
@@ -236,6 +236,7 @@ export default {
       isPlayingAudio: false,
       currentMobilicks: [],
       legends: [
+        {name: 'Leyenda:'},
         {icon: 'text', name: 'Historia'},
         {icon: 'pdf', name: 'Documento'},
         {icon: 'photo', name: 'Foto'},

@@ -66,14 +66,14 @@
   .legend {
     position: absolute;
     bottom: 10px;
-    left: 200px;
+    left: 194px;
     color: white;
     display: none;
-    font-size: 12px;
+    font-size: 11px;
     &__item {
       display: inline-block;
       vertical-align: top;
-      margin-right: 16px;
+      margin-right: 9px;
       img {
         display: inline-block;
         vertical-align: top;
@@ -89,6 +89,9 @@
         &.audio { border: 1px solid #2abbb2; }
         &.audiodest { border: 1px solid #ff0000; }
         &.poem { border: 1px solid #d8643f; }
+      }
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
