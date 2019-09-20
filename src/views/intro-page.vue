@@ -40,7 +40,7 @@
         </div>
         <div class="text__wrap">
           <div></div>
-          <p>Imagínate que naciste a principios de los años 70...</p>
+          <p style="background: black; display: inline-block; max-width: 600px; padding: 10px;">Imagínate que naciste a principios de los años 70...</p>
         </div>
       </div>
       <div class="intro__block intro__block--empty"></div>

@@ -130,6 +130,10 @@
 <script>
 export default {
   name: 'referrers-page',
+  beforeCreate: function() {
+    const body = document.body;
+    body.classList.remove('is-white');
+  },
 }
 </script>
 

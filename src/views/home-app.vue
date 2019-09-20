@@ -35,10 +35,10 @@
         </div>
         <div class="menu">
           <ul>
+            <li><router-link :to="{name: 'intro-page'}">Introducción</router-link></li>
             <li><router-link :to="{name: 'project-page'}">El proyecto</router-link></li>
             <li><router-link :to="{name: 'about-page'}">Quiénes somos</router-link></li>
             <li><router-link :to="{name: 'characters-page'}">Guía de personajes</router-link></li>
-            <li><router-link :to="{name: 'intro-page'}">Introducción</router-link></li>
             <li><router-link :to="{name: 'referrers-page'}">Referencias</router-link></li>
             <li><router-link :to="{name: 'map-page'}">Mapa</router-link></li>
             <li><router-link :to="{name: 'contact-page'}">Contacto</router-link></li>
@@ -97,6 +97,10 @@
                 <image xlink:href="/static/img/defs/poem.png" width="16" height="16"></image>
               </pattern>
 
+              <pattern id="left" width="12" height="12" patternUnits="objectBoundingBox">
+                <image xlink:href="/static/img/defs/left.png" width="12" height="12"></image>
+              </pattern>
+
               <pattern :id="bigitem.id" width="30" height="20" patternUnits="objectBoundingBox" v-for="bigitem in datum.loncon">
                 <image :xlink:href="'/static/img/lonsvg/'+bigitem.id+'.jpg'" width="30" height="22"></image>
               </pattern>
@@ -110,6 +114,8 @@
               </g>
             </g>
             <g ref="gengroup">
+              <line class="startyear" :x1="center[0]" :x2="center[0]" :y1="center[1]-circleRadius(datum.years.length-1)+6" :y2="center[1]-circleRadius(0)-14"></line>
+              <circle :cx="center[0]+8" :cy="center[1]-circleRadius(0)-10" fill="url(#left)" r="6"></circle>
               <g v-for="(yeargroup, i) in datumR" class="chart__ygroup" :transform="`translate(${center[0]},${center[1]})`">
                 <circle class="year__hover" :r="circleRadius(i)"></circle>
                 <circle class="year" :r="circleRadius(i)"></circle>
@@ -296,7 +302,7 @@ export default {
     calcLinePoints(strdate, i){
       let date = new Date(strdate);
       let rads = this.dateToRadians(date);
-      let xtrsp = rads <= Math.PI ? 20 : -20;
+      let xtrsp = rads <= Math.PI*2 ? -20 : 20;
       return [
         [0,0],
         [
@@ -312,14 +318,14 @@ export default {
     calcTextPosition(strdate, i){
       let date = new Date(strdate);
       let rads = this.dateToRadians(date);
-      let xtrsp = rads <= Math.PI ? 26 : -26;
+      let xtrsp = rads <= Math.PI*2 ? -26 : 26;
       return [
         (Math.sin(rads) * this.circleRadius(this.datum.years.length-(i-2)))+xtrsp,
         (Math.cos(rads) * this.circleRadius(this.datum.years.length-(i-2)))
       ]
     },
     calcTextAnchor(strdate, i){
-      return this.dateToRadians(new Date(strdate)) <= Math.PI ? 'start' : 'end'
+      return this.dateToRadians(new Date(strdate)) <= Math.PI*2 ? 'end' : 'start'
     },
     calcBigItemPosition(i){
       let space = 30;
@@ -345,7 +351,8 @@ export default {
     },
     dateToRadians(date){
       let start = new Date(date.getFullYear(), 0, 0);
-      return Math.floor((date - start) / (1000 * 60 * 60 * 24)) / (183 / Math.PI);
+      let rads = Math.floor((date - start) / (1000 * 60 * 60 * 24)) / (183 / Math.PI)
+      return Math.abs(rads+(Math.PI));
     },
     showItem(item){
       if(item.type == 'shortaudio' || item.type == 'goodaudio'){

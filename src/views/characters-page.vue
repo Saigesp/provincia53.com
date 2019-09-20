@@ -91,6 +91,10 @@
 <script>
 export default {
   name: 'characters-page',
+  beforeCreate: function() {
+    const body = document.body;
+    body.classList.remove('is-white');
+  },
 }
 </script>
 

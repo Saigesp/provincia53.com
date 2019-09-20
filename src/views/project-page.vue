@@ -32,6 +32,10 @@
 
 <script>
 export default {
-    name: 'project-page',
+  name: 'project-page',
+  beforeCreate: function() {
+    const body = document.body;
+    body.classList.remove('is-white');
+  },
 }
 </script>

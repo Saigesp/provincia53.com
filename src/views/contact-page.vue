@@ -22,6 +22,10 @@
 
 <script>
 export default {
-    name: 'contact-page',
+  name: 'contact-page',
+  beforeCreate: function() {
+    const body = document.body;
+    body.classList.remove('is-white');
+  },
 }
 </script>
