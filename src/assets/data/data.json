@@ -2,6 +2,7 @@
     "loncon": [{
         "id": "quesabes",
         "title": "¿Qué sabes del Sáhara Occidental?",
+        "desc": "¿Sabes dónde está el Sáhara Occidental? ¿Cuál es su historia? ¿Qué idioma se habla allí? ¿Qué tiene que ver con España? Si la respuesta es no, no te preocupes: a mucha gente le pasa. Ni nos lo enseñaron en la escuela, ni lo leerás a menudo en los medios de comunicación. Y, sin embargo, aquí hay una historia que también tiene que ver contigo.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/quesabes.jpg",
         "backsize": "cover",
@@ -9,6 +10,7 @@
     },{
         "id": "profe",
         "title": "Memorias cruzadas: profe y alumna",
+        "desc": "Durante el tiempo de la colonización, muchas personas españolas se trasladaron al Sáhara Occidental. Militares, maestras, trabajadores de empresas como Fos Bucráa o Cubiertas y Tejados, funcionarios y funcionarias… Allí convivían con las y los saharauis que también habitaban la Provincia 53. ¿Cuál era la realidad de esa convivencia? Cruzamos memorias, igual que se cruzaban sus vidas.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/profe.jpg",
         "backsize": "cover",
@@ -16,6 +18,7 @@
     },{
 
         "title": "Memorias cruzadas: militares",
+        "desc": "Durante el tiempo de la colonización, muchas personas españolas se trasladaron al Sáhara Occidental. Militares, maestras, trabajadores de empresas como Fos Bucráa o Cubiertas y Tejados, funcionarios y funcionarias… Allí convivían con las y los saharauis que también habitaban la Provincia 53. ¿Cuál era la realidad de esa convivencia? Cruzamos memorias, igual que se cruzaban sus vidas.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/militares.jpg",
         "backsize": "cover",
@@ -23,6 +26,7 @@
     },{
         "id": "abandono",
         "title": "El día del abandono",
+        "desc": "En noviembre de 1976, sin previo aviso, todo cambió. Una España en la cuerda floja decidió abandonar el Sáhara Occidental, aunque había prometido defenderlo. Los cuarteles se quedaron vacíos, las casas cambiaron de habitantes, las tiendas y oficinas cerraron. Las armas y las empresas pasaron a nuevas manos. Y para las y los saharauis comenzó la etapa más triste de su historia.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/abandono.jpg",
         "backsize": "cover",
@@ -30,6 +34,7 @@
     },{
         "id": "transicion",
         "title": "Transición",
+        "desc": "Mientras España salía de la dictadura y trataba de sentar las bases de un nuevo tiempo, en su Provincia 53 también estaban pasando muchas cosas. Un naciente movimiento de liberación nacional iba dejando cada vez más claros los anhelos de independencia, las élites trataban de controlar el proceso a su manera, y, en general, las cosas se iban poniendo cada vez más tensas. ¿Cómo se vivió ese tiempo? ¿Qué consecuencias tuvo?",
         "component": "bigaudio-component",
         "thumbnail": "/static/img/loncon/cassete_transicion.png",
         "backsize": "contain",
@@ -37,6 +42,7 @@
     },{
         "id": "fosas",
         "title": "Fosas en el desierto",
+        "desc": "«Aquí hay una fosa, aquí está la otra»: el antropólogo forense Paco Etxebarria, uno de los más reputados en el ámbito de la memoria histórica, que ha dirigido la exhumación de muchas fosas comunes en España y también en países latinoamericanos, sigue la pista de una que quizá no está donde esperarías. Y, al abrirla, en ella aparecen cuerpos, objetos… y documentos de identidad españoles.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/fosas.jpg",
         "backsize": "cover",
@@ -44,6 +50,7 @@
     },{
         "id": "padre",
         "title": "Buscar a un padre",
+        "desc": "Tras años de luchas clandestinas, un éxodo repentino en condiciones extremas y una guerra de más de una década, son muchos los y las saharauis que buscan a personas desaparecidas. Padres, hijos, hermanas. De ellas, buena parte datan de la época en que España aún administraba el territorio. Como ocurre en España, esas personas a las que se busca desaparecieron porque eran molestas para el régimen franquista. Como ocurre en España, la verdad, la justicia y la reparación demasiado a menudo siguen sin llegar.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/padre.jpg",
         "backsize": "cover",
@@ -51,6 +58,7 @@
     },{
         "id": "basiri",
         "title": "¿Dónde está Basiri?",
+        "desc": "Mohamed Basiri fue uno de los pioneros de la lucha de liberación saharaui. Junto con algunos compañeros, fundó el movimiento precursor de lo que hoy es el Frente Polisario. Despareció en 1971, la noche de la llamada «masacre de Zemla», cuando España aún administraba el territorio y controlaba por tanto sus servicios secretos y fuerzas militares. A día de hoy, la población saharaui se sigue preguntando: «¿dónde está Basiri?» Y solo España puede responder a eso.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/basiri.jpg",
         "backsize": "cover",
@@ -58,6 +66,7 @@
     },{
         "id": "basiri_cassete",
         "title": "Basiri",
+        "desc": "La historia de Mohamed Basiri se mueve hoy entre la memoria y la leyenda. Un líder desaparecido prematuramente, pero que dejó un profundo legado. Un hombre apuesto, un periodista, un estratega, un valiente, un misterio. Aquí un puzle de voces para construir el retrato robot de un personaje sobre el que se cruzan la admiración y el silencio.",
         "component": "bigaudio-component",
         "thumbnail": "/static/img/loncon/cassete_basiri.png",
         "backsize": "contain",
@@ -65,6 +74,7 @@
     },{
         "id": "recuerdos",
         "title": "Recuerdos del primo Basiri",
+        "primo": "Sid Emhamed era uno de los seis (¡solo seis!) hombres que, una tarde de reflexión, en una habitación cualquiera, dieron por nacido el primer movimiento de liberación saharaui. Era primo de Mohamed Basiri, y una de las personas que más conoció y mejor recuerda al líder desaparecido, y aquellas semanas en que pusieron en marcha una aventura que iba a cambiar sus vidas y la historia de su país.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/recuerdos.jpg",
         "backsize": "cover",
@@ -72,6 +82,7 @@
     },{
         "id": "brahimjadiya",
         "title": "Brahim y Jadiya",
+        "desc": "Brahim y Jadiya encarnan la vida de una generación. Nacidos en los campamentos de refugiados saharauis en Tinduf (Argelia), han pasado buena parte de sus vidas en España, a donde llegaron por primera vez como niños con un programa de solidaridad, y donde acabarían por hacer sus estudios. Ya adultos, regresan a los campamentos y retoman la lucha de su pueblo: aunque en un mundo que presenta muchas más contradicciones que el de sus mayores.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/brahimjadiya.jpg",
         "backsize": "cover",
@@ -79,6 +90,7 @@
     },{
         "id": "identidad",
         "title": "De dónde es un saharaui: Identidad",
+        "desc": "¿De dónde es una persona que vive en el exilio? ¿De dónde una que nunca ha visto su tierra? ¿De dónde es alguien que nació en un campo de refugiados y vivió entre distintos países de acogida? ¿De dónde es quien regresa? Ser saharaui es también pelearse con la burocracia, luchar porque pinten una línea en el mapa, tener muchos papeles por no tener uno propio. ¿De dónde es un saharaui?",
         "component": "bigaudio-component",
         "thumbnail": "/static/img/loncon/cassete_saharaui.png",
         "backsize": "contain",
@@ -86,6 +98,7 @@
     },{
         "id": "papeles",
         "title": "De dónde es un saharaui: Papeles",
+        "desc": "¿De dónde es una persona que vive en el exilio? ¿De dónde una que nunca ha visto su tierra? ¿De dónde es alguien que nació en un campo de refugiados y vivió entre distintos países de acogida? ¿De dónde es quien regresa? Ser saharaui es también pelearse con la burocracia, luchar porque pinten una línea en el mapa, tener muchos papeles por no tener uno propio. ¿De dónde es un saharaui?",
         "component": "bigaudio-component",
         "thumbnail": "/static/img/loncon/cassete_saharaui.png",
         "backsize": "contain",
@@ -93,6 +106,7 @@
     },{
         "id": "muro",
         "title": "Un muro al que no hay que acostumbrarse",
+        "desc": "El muro de la vergüenza construido por Marruecos para delimitar el territorio ocupado es una frontera física, militar, pero también simbólica. Eeparar a las personas saharauis de su tierra, a familias entre sí, marca el exilio. Y, sin embargo, lleva ahí tanto tiempo que, a veces, se naturaliza. Algunas iniciativas intentan mantener siempre la alerta, recordar lo que significa este muro para no resignarse. Y para imaginar cómo serán las cosas cuando desaparezca.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/muro.jpg",
         "backsize": "cover",
@@ -100,6 +114,7 @@
     },{
         "id": "gobierno",
         "title": "¿Qué le dirías al Gobierno español?",
+        "desc": "Dice un refrán saharaui que hay dos personas a las que no se olvida: a la que te ayudó cuando lo necesitabas, y a la que te abandonó cuando necesitabas ayuda. Para el pueblo saharaui, España es ambas cosas. 43 años después de su partida, aún esperan una explicación, y una reparación. Estas son algunas de las cosas que las y los saharauis quieren decirle al Gobierno español. ¿Hacemos que le lleguen?",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/gobierno.jpg",
         "backsize": "cover",

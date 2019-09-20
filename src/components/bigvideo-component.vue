@@ -5,6 +5,7 @@
         </div>
         <div class="component__content">
             <h3>{{datum.title}}</h3>
+            <p v-if="datum.desc">{{datum.desc}}</p>
             <div class="component__video">
                 <iframe :src="datum.link" frameborder="0" allowfullscreen></iframe>
             </div>

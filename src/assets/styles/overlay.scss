@@ -63,6 +63,26 @@
     }
   }
 
+  .legend {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    color: white;
+    display: none;
+    font-size: 12px;
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 16px;
+      img {
+        display: inline-block;
+        vertical-align: top;
+        width: 18px;
+        height: auto;
+      }
+    }
+  }
+
   .hamburguer {
     pointer-events: all;
     position: absolute;
@@ -87,8 +107,17 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 20px;
+    margin: 15px 20px;
     opacity: 0;
+    transition: opacity 200ms ease, background 250ms ease;
+  }
+  .stopaudio {
+    display: none;
+    pointer-events: all;
+    position: absolute;
+    bottom: 40px;
+    opacity: 0;
+    right: calc(50% - 14px);
     transition: opacity 200ms ease, background 250ms ease;
   }
 }
@@ -99,8 +128,17 @@
     .loncon__list {
       display: none;
     }
+    .legend {
+      display: block;
+    }
     .resetzoom {
       display: block;
+    }
+    .stopaudio {
+      display: block;
+      &.is-active {
+        opacity: 1;
+      }
     }
   }
 }

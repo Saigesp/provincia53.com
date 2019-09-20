@@ -12,9 +12,15 @@
           <img src="/static/img/icons/menu.svg" alt="Menu" @click="isMenuActive = true; currentComponent = false; currentComponentData = {}">
         </div>
         <button class="resetzoom" @click="resetZoom()">Centrar</button>
+        <button class="stopaudio" :class="{'is-active': isPlayingAudio}" @click="stopAudio()">Stop</button>
         <div class="logos">
             <img src="/static/img/logoi25M.png" alt="i25m">
             <img src="/static/img/logoAECID.png" alt="AECID">
+        </div>
+        <div class="legend">
+          <div class="legend__item" v-for="legend in legends">
+            <img :src="`/static/img/defs/${legend.icon}.png`" alt="Icono"><span>{{legend.name}}</span>
+          </div>
         </div>
         <div class="loncon__wrap">
           <div class="loncon">
@@ -225,6 +231,14 @@ export default {
       currentAudio: new Audio(),
       isPlayingAudio: false,
       currentMobilicks: [],
+      legends: [
+        {icon: 'text', name: 'Historia'},
+        {icon: 'pdf', name: 'Documento'},
+        {icon: 'photo', name: 'Foto'},
+        {icon: 'video', name: 'Video'},
+        {icon: 'audio', name: 'Audio'},
+        {icon: 'poem', name: 'Poema'},
+      ]
     }
   },
   beforeCreate: function() {
@@ -242,7 +256,7 @@ export default {
   },
   computed: {
     center() {
-      return [this.width/2, this.height/2]
+      return [this.width/2, (this.height/2)-20]
     },
     datumR(){
       let rdatum = [...this.datum.years];

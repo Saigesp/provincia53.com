@@ -5,6 +5,7 @@
         </div>
         <div class="component__content" ref="svgel">
             <h3>{{datum.title}}</h3>
+            <p v-if="datum.desc">{{datum.desc}}</p>
             <svg class="audiowave" viewbox="0 0 100 100" width="200" height="160">
                 <g transform="translate(100,0), scale(3)" v-if="isPlaying">
                     <svg-wave></svg-wave>
