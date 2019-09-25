@@ -35,10 +35,10 @@
         "id": "transicion",
         "title": "Abandono/Transición",
         "desc": "Mientras España salía de la dictadura y trataba de sentar las bases de un nuevo tiempo, en su Provincia 53 también estaban pasando muchas cosas. Un naciente movimiento de liberación nacional iba dejando cada vez más claros los anhelos de independencia, las élites trataban de controlar el proceso a su manera, y, en general, las cosas se iban poniendo cada vez más tensas. ¿Cómo se vivió ese tiempo? ¿Qué consecuencias tuvo?",
-        "component": "bigaudio-component",
+        "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/cassete_transicion.png",
         "backsize": "contain",
-        "link": "/media/audiog/abandono.mp3"
+        "link": "https://www.youtube.com/embed/Ald4SUQoso8?rel=0"
     },{
         "id": "fosas",
         "title": "Fosas en el desierto",
@@ -67,10 +67,10 @@
         "id": "basiri_cassete",
         "title": "La historia de Basiri",
         "desc": "La historia de Mohamed Basiri se mueve hoy entre la memoria y la leyenda. Un líder desaparecido prematuramente, pero que dejó un profundo legado. Un hombre apuesto, un periodista, un estratega, un valiente, un misterio. Aquí un puzle de voces para construir el retrato robot de un personaje sobre el que se cruzan la admiración y el silencio.",
-        "component": "bigaudio-component",
+        "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/cassete_basiri.png",
         "backsize": "contain",
-        "link": "/media/audiog/basiri.mp3"
+        "link": "https://www.youtube.com/embed/k50uGwcKBT0?rel=0"
     },{
         "id": "recuerdos",
         "title": "Recuerdos del primo Basiri",
@@ -91,18 +91,18 @@
         "id": "identidad",
         "title": "De dónde es un saharaui: Identidad",
         "desc": "¿De dónde es una persona que vive en el exilio? ¿De dónde una que nunca ha visto su tierra? ¿De dónde es alguien que nació en un campo de refugiados y vivió entre distintos países de acogida? ¿De dónde es quien regresa? Ser saharaui es también pelearse con la burocracia, luchar porque pinten una línea en el mapa, tener muchos papeles por no tener uno propio. ¿De dónde es un saharaui?",
-        "component": "bigaudio-component",
+        "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/cassete_saharaui.png",
         "backsize": "contain",
-        "link": "/media/audiog/identidad.mp3"
+        "link": "https://www.youtube.com/embed/go45h3MLr10?rel=0"
     },{
         "id": "papeles",
         "title": "De dónde es un saharaui: Papeles",
         "desc": "¿De dónde es una persona que vive en el exilio? ¿De dónde una que nunca ha visto su tierra? ¿De dónde es alguien que nació en un campo de refugiados y vivió entre distintos países de acogida? ¿De dónde es quien regresa? Ser saharaui es también pelearse con la burocracia, luchar porque pinten una línea en el mapa, tener muchos papeles por no tener uno propio. ¿De dónde es un saharaui?",
-        "component": "bigaudio-component",
+        "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/cassete_saharaui.png",
         "backsize": "contain",
-        "link": "/media/audiog/papeles.mp3"
+        "link": "https://www.youtube.com/embed/Tf10Ah-20KU?rel=0"
     },{
         "id": "muro",
         "title": "Un muro al que no hay que acostumbrarse",
