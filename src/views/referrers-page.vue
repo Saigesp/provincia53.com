@@ -40,6 +40,12 @@
             Saber al fin: Fosas comunes, desaparición forzada y derecho a la verdad en el Sáhara Occidental
           </a>
         </li>
+        <li>
+          <a target="_blank" href="http://publicaciones.hegoa.ehu.es/es/publications/348">
+            <img src="/static/img/referrers/tierraocupada.png" alt="Portada">
+            En tierra ocupada: memoria y resistencia de las mujeres en el Sáhara Occidental
+          </a>
+        </li>
       </ul>
       
       <div class="refblocks">
@@ -170,7 +176,7 @@ export default {
 @media screen and (min-width: 560px) {
   .page__wrap--referrers {
     li {
-      flex: 1 1 15%;
+      flex: 1 1 10%;
       margin-right: 10px;
     }
     .refblocks {

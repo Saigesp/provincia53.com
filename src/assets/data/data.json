@@ -26,7 +26,7 @@
     },{
         "id": "abandono",
         "title": "El día del abandono",
-        "desc": "En noviembre de 1976, sin previo aviso, todo cambió. Una España en la cuerda floja decidió abandonar el Sáhara Occidental, aunque había prometido defenderlo. Los cuarteles se quedaron vacíos, las casas cambiaron de habitantes, las tiendas y oficinas cerraron. Las armas y las empresas pasaron a nuevas manos. Y para las y los saharauis comenzó la etapa más triste de su historia.",
+        "desc": "En noviembre de 1975, sin previo aviso, todo cambió. Una España en la cuerda floja decidió abandonar el Sáhara Occidental, aunque había prometido defenderlo. Los cuarteles se quedaron vacíos, las casas cambiaron de habitantes, las tiendas y oficinas cerraron. Las armas y las empresas pasaron a nuevas manos. Y para las y los saharauis comenzó la etapa más triste de su historia.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/abandono.jpg",
         "backsize": "cover",
@@ -74,7 +74,7 @@
     },{
         "id": "recuerdos",
         "title": "Recuerdos del primo Basiri",
-        "primo": "Sid Emhamed era uno de los seis (¡solo seis!) hombres que, una tarde de reflexión, en una habitación cualquiera, dieron por nacido el primer movimiento de liberación saharaui. Era primo de Mohamed Basiri, y una de las personas que más conoció y mejor recuerda al líder desaparecido, y aquellas semanas en que pusieron en marcha una aventura que iba a cambiar sus vidas y la historia de su país.",
+        "desc": "Sid Emhamed era uno de los seis (¡solo seis!) hombres que, una tarde de reflexión, en una habitación cualquiera, dieron por nacido el primer movimiento de liberación saharaui. Era primo de Mohamed Basiri, y una de las personas que más conoció y mejor recuerda al líder desaparecido, y aquellas semanas en que pusieron en marcha una aventura que iba a cambiar sus vidas y la historia de su país.",
         "component": "bigvideo-component",
         "thumbnail": "/static/img/loncon/recuerdos.jpg",
         "backsize": "cover",
