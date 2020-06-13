@@ -14,6 +14,7 @@ export default new Router({
     { path: '/quienes-somos',         name: 'about-page',             component: ComponentFactory('about-page') },
     { path: '/guia-personajes',       name: 'characters-page',        component: ComponentFactory('characters-page') },
     { path: '/referencias',           name: 'referrers-page',         component: ComponentFactory('referrers-page') },
+    { path: '/informes-policiales',   name: 'basiri-page',            component: ComponentFactory('basiri-page') },
     { path: '/mapa',                  name: 'map-page',               component: ComponentFactory('map-page') },
     { path: '/contacto',              name: 'contact-page',           component: ComponentFactory('contact-page') },
   ]

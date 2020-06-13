@@ -8,3 +8,4 @@ Vue.component('characters-page',                     require('./characters-page'
 Vue.component('referrers-page',                      require('./referrers-page').default);
 Vue.component('map-page',                            require('./map-page').default);
 Vue.component('contact-page',                        require('./contact-page').default);
+Vue.component('basiri-page',                         require('./basiri-page').default);
