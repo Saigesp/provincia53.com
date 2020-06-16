@@ -8,7 +8,7 @@
       </div>
 
       <h1>Informes policiales</h1>
-      <p>A finales de 1969 nació el Movimiento de Vanguardia para la Liberación del Sáhara (llamado también Organización Avanzada para la Liberación de Saguia El Hamra y Río de Oro, una organización nacionalista liderada por Mohamed Basiri. Como cualquier otro grupo político durante el franquismo, su mera existencia estaba prohibida.</p>
+      <p>A finales de 1969 nació el Movimiento de Vanguardia para la Liberación del Sáhara (llamado también Organización Avanzada para la Liberación de Saguia El Hamra y Río de Oro), una organización nacionalista liderada por Mohamed Basiri. Como cualquier otro grupo político durante el franquismo, su mera existencia estaba prohibida.</p>
       <p>Estos son documentos inéditos realizados por los servicios secretos españoles sobre su actividad y sus integrantes. Están muy relacionados son la masacre de Zemla, que tuvo lugar el 17 de junio de 1970, cuando la administración colonial envió a la Legión a disolver a tiros una manifestación pacífica, causando decenas de heridos y detenidos, así como la desaparición de Basiri.</p>
 
       <p>Haz click en la imagen para descargar el documento.</p>
